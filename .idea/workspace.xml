@@ -11,7 +11,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32c92096-46ed-4c9f-bd15-b018eacded21" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/Layouts/WebLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Layouts/WebLayout.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -218,7 +217,7 @@
       <workItem from="1601481917128" duration="2026000" />
       <workItem from="1601512075608" duration="14539000" />
       <workItem from="1601532915042" duration="10367000" />
-      <workItem from="1601586373127" duration="23091000" />
+      <workItem from="1601586373127" duration="23702000" />
     </task>
     <servers />
   </component>

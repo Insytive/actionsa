@@ -32,6 +32,8 @@
 <!--                Become a Member-->
 <!--              </jet-nav-link>-->
 
+                
+
               <jet-nav-link
                 href="/register"
                 :active="$page.currentRouteName == 'register'"
