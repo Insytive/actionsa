@@ -41847,9 +41847,8 @@ var render = function() {
                     "jet-nav-link",
                     {
                       attrs: {
-                        href: "/become-a-volunteer",
-                        active:
-                          _vm.$page.currentRouteName == "become-a-volunteer"
+                        href: "/register",
+                        active: _vm.$page.currentRouteName == "register"
                       }
                     },
                     [
@@ -41959,7 +41958,7 @@ var render = function() {
                   {
                     attrs: {
                       href: "/become-a-supporter",
-                      active: _vm.$page.currentRouteName == "become-a-volunteer"
+                      active: _vm.$page.currentRouteName == "become-a-supporter"
                     }
                   },
                   [
@@ -41981,7 +41980,7 @@ var render = function() {
                   {
                     attrs: {
                       href: "/register",
-                      active: _vm.$page.currentRouteName == "become-a-volunteer"
+                      active: _vm.$page.currentRouteName == "register"
                     }
                   },
                   [

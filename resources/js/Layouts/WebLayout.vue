@@ -33,8 +33,8 @@
 <!--              </jet-nav-link>-->
 
               <jet-nav-link
-                href="/become-a-volunteer"
-                :active="$page.currentRouteName == 'become-a-volunteer'"
+                href="/register"
+                :active="$page.currentRouteName == 'register'"
               >
                 Become a Volunteer
               </jet-nav-link>
@@ -104,7 +104,7 @@
           <div class="pt-2 pb-3 space-y-1 text-white">
               <jet-nav-link
                   href="/become-a-supporter"
-                  :active="$page.currentRouteName == 'become-a-volunteer'"
+                  :active="$page.currentRouteName == 'become-a-supporter'"
               >
                   Become a Supporter
               </jet-nav-link>
@@ -113,7 +113,7 @@
           <div class="pt-2 pb-3 space-y-1 text-white">
               <jet-nav-link
                   href="/register"
-                  :active="$page.currentRouteName == 'become-a-volunteer'"
+                  :active="$page.currentRouteName == 'register'"
               >
                   Become a Volunteer
               </jet-nav-link>
