@@ -7,7 +7,7 @@
           <div class="flex">
             <!-- Logo -->
             <div class="flex-shrink-0 flex items-center">
-              <a href="/dashboard">
+              <a href="/">
                 <jet-application-mark class="block h-9 w-auto" />
               </a>
             </div>
@@ -122,7 +122,7 @@
           <div class="-mr-2 flex items-center sm:hidden">
             <button
               @click="showingNavigationDropdown = !showingNavigationDropdown"
-              class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
+              class="inline-flex items-center justify-center p-2 rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
             >
               <svg
                 class="h-6 w-6"
@@ -202,13 +202,13 @@
               Profile
             </jet-responsive-nav-link>
 
-            <jet-responsive-nav-link
-              href="/user/api-tokens"
-              :active="$page.currentRouteName == 'api-tokens.index'"
-              v-if="$page.jetstream.hasApiFeatures"
-            >
-              API Tokens
-            </jet-responsive-nav-link>
+<!--            <jet-responsive-nav-link-->
+<!--              href="/user/api-tokens"-->
+<!--              :active="$page.currentRouteName == 'api-tokens.index'"-->
+<!--              v-if="$page.jetstream.hasApiFeatures"-->
+<!--            >-->
+<!--              API Tokens-->
+<!--            </jet-responsive-nav-link>-->
 
             <!-- Authentication -->
             <form method="POST" @submit.prevent="logout">

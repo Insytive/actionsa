@@ -29,6 +29,6 @@ class SupporterWelcome extends Mailable
     public function build()
     {
         return $this->markdown('emails.supporter')
-            ->subject('Welcome to ActionSA');
+            ->subject('Thank you, for taking ACTION!');
     }
 }

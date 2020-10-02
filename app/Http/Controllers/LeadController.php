@@ -6,8 +6,10 @@ use App\Gamify\Points\LeadCreated;
 use App\Mail\SupporterWelcome;
 use App\Models\Lead;
 use App\Models\Station;
+use App\Notifications\LeadAdded;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Notification;
 use Inertia\Inertia;
 use Illuminate\Support\Facades\Auth;
 
@@ -38,6 +40,8 @@ class LeadController extends Controller
 
     public function store(Request $request)
     {
+//        Notification::send(request()-user(), new LeadAdded());
+
         $postData = $this->validate($request, [
             'first_name' => 'required',
             'last_name' => 'required',
@@ -51,6 +55,8 @@ class LeadController extends Controller
         ]);
 
         $duplicateIDnumber = Lead::where('id_number', $postData['id_number'])->first();
+
+        $leadEmail = $postData['lead_email'];
 
         if ($duplicateIDnumber) {
             return redirect()->route('registration-error', ['msg' => 'A record with that ID number already exists!']);
@@ -107,10 +113,19 @@ class LeadController extends Controller
 //        $user = $request->user();
 //        $user->givePoint(new LeadCreated($postData));
 
-//        Mail::to(request('lead_email'))
-//            ->send(new SupporterWelcome());
+        if (!is_null($leadEmail)) {
+            Mail::to(request('lead_email'))
+                ->send(new SupporterWelcome());
+        }
 
-        return redirect()->route('dashboard');
+        if (Auth::check())
+        {
+            return redirect()->route('dashboard');
+
+        } else {
+
+            return redirect()->route('success');
+        }
     }
 
     public function view (Lead $lead)

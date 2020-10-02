@@ -29,6 +29,6 @@ class VolunteerWelcome extends Mailable
     public function build()
     {
         return $this->markdown('emails.volunteer')
-            ->subject('Welcome to ActionSA');
+            ->subject('Thank you, for taking ACTION!');
     }
 }
