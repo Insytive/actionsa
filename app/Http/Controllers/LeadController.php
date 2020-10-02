@@ -110,7 +110,7 @@ class LeadController extends Controller
 //        Mail::to(request('lead_email'))
 //            ->send(new SupporterWelcome());
 
-        return redirect()->route('success');
+        return redirect()->route('dashboard');
     }
 
     public function view (Lead $lead)

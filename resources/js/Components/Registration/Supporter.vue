@@ -56,7 +56,7 @@
                                     placeholder="ID number"
                                     id="id_number"
                                     name="id_number"
-                                    class="appearance-none block w-full bg-gray-200 text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white"
+                                    class="appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white"
                                     tabindex="1"
                                     :class="{
                                         'border-red-500':
@@ -93,7 +93,7 @@
                                     v-model="lead.first_name"
                                     id="first_name"
                                     tabindex="2"
-                                    class="appearance-none block w-full bg-gray-200 text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white"
+                                    class="appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white"
                                     name="first_name"
                                     placeholder="First name"
                                     :class="{
@@ -123,7 +123,7 @@
                                     type="text"
                                     v-model="lead.last_name"
                                     id="last_name"
-                                    class="appearance-none block w-full bg-gray-200 text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white"
+                                    class="appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white"
                                     name="last_name"
                                     placeholder="Last name"
                                     :class="{
@@ -157,7 +157,7 @@
                                     placeholder="Email"
                                     id="lead_email"
                                     name="lead_email"
-                                    class="appearance-none block w-full bg-gray-200 text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white"
+                                    class="appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white"
                                     :class="{
                                         'border-red-500':
                                             submitted &&
@@ -196,7 +196,7 @@
                                     id="phone"
                                     name="phone"
                                     tabindex="4"
-                                    class="appearance-none block w-full bg-gray-200 text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white"
+                                    class="appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white"
                                     :class="{
                                         'border-red-500':
                                             submitted && $v.lead.phone.$error
@@ -261,7 +261,7 @@
                                     ref="address"
                                     id="map"
                                     v-model="lead.address"
-                                    classname="appearance-none block w-full bg-gray-200 text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white"
+                                    classname="appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white"
                                     placeholder="Please type your address"
                                     v-on:placechanged="getAddressData"
                                     country="za"
@@ -281,7 +281,7 @@
                                     v-model="lead.address"
                                     name="address"
                                     placeholder="Please type your address"
-                                    class="appearance-none block w-full bg-gray-200 text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white"
+                                    class="appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white"
                                 />
 
                                 <div
@@ -352,7 +352,7 @@
                                             'Please type your voting station address',
                                         name: 'voting_station',
                                         class:
-                                            'appearance-none block w-full bg-gray-200 text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white'
+                                            'appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white'
                                     }"
                                     :sectionConfigs="sectionConfigs"
                                     :renderSuggestion="renderSuggestion"
@@ -367,7 +367,7 @@
                                 </vue-autosuggest>
 
                                 <input
-                                    class="appearance-none block w-full bg-gray-200 text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white"
+                                    class="appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white"
                                     type="text"
                                     id="voting_station"
                                     name="voting_station"
