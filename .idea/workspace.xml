@@ -10,21 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32c92096-46ed-4c9f-bd15-b018eacded21" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/vlc-3.0.11-win32.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vlc-3.0.5-streamer_0422915618.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/actionsa.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/actionsa.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Gamify/Points/LeadCreated.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Gamify/Points/LeadCreated.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LeadController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LeadController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Lead.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Lead.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/gamify.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/gamify.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_20_151815_create_leads_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_20_151815_create_leads_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-    </list>
+    <list default="true" id="32c92096-46ed-4c9f-bd15-b018eacded21" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -231,7 +217,7 @@
       <workItem from="1601512075608" duration="14539000" />
       <workItem from="1601532915042" duration="10367000" />
       <workItem from="1601586373127" duration="34308000" />
-      <workItem from="1601713490448" duration="16889000" />
+      <workItem from="1601713490448" duration="17489000" />
     </task>
     <servers />
   </component>
