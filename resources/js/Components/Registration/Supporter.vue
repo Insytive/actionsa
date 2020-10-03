@@ -358,6 +358,15 @@
               </div>
             </div>
 
+            <input
+              type="radio"
+              id="customRadio1"
+              class="custom-control-input"
+              name="interest"
+              value="0"
+              v-model="lead.is_member"
+            />
+
             <div class="flex flex-wrap -mx-3 mb-3">
               <div class="w-full px-3">
                 <button class="register-btn font-bold">Register</button>
@@ -472,7 +481,7 @@ export default {
         is_member: 0,
         first_name: "",
         last_name: "",
-        lead_email: "signup@actionsa.org.za",
+        lead_email: " ",
         id_number: "",
         phone: "",
         first_time_voter: 1,
@@ -537,8 +546,8 @@ export default {
         return;
       }
 
-      alert("SUCCESS!! :-)\n\n" + JSON.stringify(this.lead));
-      //   let response = await this.$inertia.post("/leads/save", this.lead);
+      // alert("SUCCESS!! :-)\n\n" + JSON.stringify(this.lead));
+      let response = await this.$inertia.post("/leads/save", this.lead);
     },
     doSearch() {
       // console.log("Searching...");

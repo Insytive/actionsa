@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen bg-gray-100">
-    <nav class="dots border-b">
+    <nav class="bg-white text-green-100 border-b">
       <!-- Primary Navigation Menu -->
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
@@ -95,7 +95,7 @@
         }"
         class="sm:hidden"
       >
-        <div class="pt-2 pb-3 space-y-1 text-white">
+        <div class="pt-2 pb-3 space-y-1">
           <jet-responsive-nav-link
             href="/dashboard"
             :active="$page.currentRouteName == 'dashboard'"
@@ -113,7 +113,7 @@
           </jet-nav-link>
         </div>
 
-        <div class="pt-2 pb-3 space-y-1 text-white">
+        <div class="pt-2 pb-3 space-y-1 text-green-100">
           <jet-nav-link
             href="/register"
             :active="$page.currentRouteName == 'register'"

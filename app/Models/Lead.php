@@ -28,7 +28,7 @@ class Lead extends Model
 
     const FIRST_TIME_VOTER_RADIO = [
         '1' => 'Yes',
-        '2' => 'No',
+        '0' => 'No',
     ];
 
     protected $dates = [
@@ -38,16 +38,19 @@ class Lead extends Model
         'deleted_at',
     ];
 
-    const INTEREST_RADIO = [
-        '1' => 'Supporter',
-        '2' => 'Membership',
+    const IS_MEMBER = [
+        '0' => 'false',
+        '1' => 'true',
     ];
 
     const LEAD_STATUS_SELECT = [
-        '1' => 'Incomplete',
-        '2' => 'Being Vetted',
-        '3' => 'Completed',
+
+        '0' => 'Inactive',
+        '1' => 'Active',
+    
     ];
+
+
 
     protected $fillable = [
         'first_name',
@@ -61,8 +64,8 @@ class Lead extends Model
         'city',
         'reported_station',
         'first_time_voter',
-        'lead_status',
-        'interest',
+        'is_active',
+        'is_member',
         'id_number',
         'phone',
         'created_by',
@@ -75,6 +78,26 @@ class Lead extends Model
         'member_id',
         'employee_id',
         'volunteer_id',
+    ];
+
+
+    
+       /**
+     * The attributes that should be hidden for arrays.
+     *
+     * @var array
+     */
+    protected $hidden = [
+        'id_number',
+        'phone',
+        'lead_email',
+        'province_id',
+        'station_id',
+        'user_id',
+        'member_id',
+        'employee_id',
+        'volunteer_id',
+        'building',
     ];
 
     protected function serializeDate(DateTimeInterface $date)

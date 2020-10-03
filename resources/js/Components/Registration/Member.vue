@@ -498,7 +498,7 @@ export default {
         is_member: 1,
         first_name: "",
         last_name: "",
-        lead_email: "signup@actionsa.org.za",
+        lead_email: " ",
         id_number: "",
         phone: "",
         first_time_voter: 1,
@@ -506,7 +506,6 @@ export default {
         voting_station: "",
         province: "",
         station_id: "",
-        is_member: 1,
         terms_conditions: "",
       },
       submitted: false,
@@ -567,8 +566,8 @@ export default {
         return;
       }
 
-      alert("SUCCESS!! :-)\n\n" + JSON.stringify(this.lead));
-      //   let response = await this.$inertia.post("/leads/save", this.lead);
+      //   alert("SUCCESS!! :-)\n\n" + JSON.stringify(this.lead));
+      let response = await this.$inertia.post("/leads/save", this.lead);
     },
     doSearch() {
       // console.log("Searching...");

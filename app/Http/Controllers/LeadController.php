@@ -50,7 +50,7 @@ class LeadController extends Controller
             'phone' => 'required',
             'first_time_voter' => 'required',
             'address' => 'required',
-            'interest' => 'required',
+            'is_member' => 'boolean|nullable',
             'station_id' => 'required'
         ]);
 
@@ -58,14 +58,12 @@ class LeadController extends Controller
 
         $leadEmail = $postData['lead_email'];
 
+
+        $membership = $postData['is_member'];
+      
+
         if ($duplicateIDnumber) {
             return redirect()->route('registration-error', ['msg' => 'A record with that ID number already exists!']);
-        }
-
-        // check interest
-        $interest = 2;
-        if ((boolean)$postData['interest']) {
-            $interest = 1;
         }
 
 //        $station_id = null;
@@ -97,7 +95,7 @@ class LeadController extends Controller
             $created_by = $request->input('referrer_id');
         }
 
-        Lead::create([
+        $lead = Lead::create([
             'first_name' => $postData['first_name'],
             'last_name' => $postData['last_name'],
             'lead_email' => $postData['lead_email'],
@@ -106,20 +104,27 @@ class LeadController extends Controller
             'address' => $postData['address'],
             'first_time_voter' => $postData['first_time_voter'],
             'station_id' => $postData['station_id'],
-            'interest' => $interest,
+            'is_member' => $membership,
             'created_by' => $created_by,
         ]);
 
-//        $user = $request->user();
-//        $user->givePoint(new LeadCreated($postData));
+        // var_dump($lead);
+        // exit();
+
 
         if (!is_null($leadEmail)) {
             Mail::to(request('lead_email'))
                 ->send(new SupporterWelcome());
         }
 
+        
+
         if (Auth::check())
         {
+            
+            $user = Auth::user();
+            $user->givePoint(new LeadCreated($postData));
+            
             return redirect()->route('dashboard');
 
         } else {

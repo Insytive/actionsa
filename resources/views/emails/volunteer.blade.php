@@ -5,7 +5,7 @@ Thank you for taking that first important step on the journey towards building a
 
 Here are a few things we thought you might be interested in:
 
-@component('mail::button-green', ['url' => 'https://www.actionsa.org.za/'])
+@component('mail::button', ['url' => 'https://www.actionsa.org.za/'])
     Herman's Story
 @endcomponent
 

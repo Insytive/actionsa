@@ -74,13 +74,13 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', 'App\Http\Con
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard/leads/view/{lead}', 'App\Http\Controllers\LeadController@index')->name('lead.view');
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/add-lead', function () {
+Route::middleware(['auth:sanctum', 'verified'])->get('/add/supporter', function () {
     return Inertia\Inertia::render('AddLead');
-})->name('add-lead');
+})->name('add/supporter');
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/add-member', function () {
+Route::middleware(['auth:sanctum', 'verified'])->get('/add/member', function () {
     return Inertia\Inertia::render('AddMember');
-})->name('add-member');
+})->name('add/member');
 
 //Route::group(['middleware' => 'auth:sanctum', 'verified'], function () {
 //    Route::post('leads/save', [LeadController::class, 'store']);

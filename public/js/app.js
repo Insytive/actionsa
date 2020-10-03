@@ -5151,8 +5151,6 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 //
 //
 //
@@ -5634,23 +5632,23 @@ var phoneRegex = vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_5__["helpers"
     VueAutosuggest: vue_autosuggest__WEBPACK_IMPORTED_MODULE_3__["VueAutosuggest"]
   },
   data: function data() {
-    var _lead,
-        _this = this;
+    var _this = this;
 
     return {
-      lead: (_lead = {
+      lead: {
         is_member: 1,
         first_name: "",
         last_name: "",
-        lead_email: "signup@actionsa.org.za",
+        lead_email: " ",
         id_number: "",
         phone: "",
         first_time_voter: 1,
         address: "",
         voting_station: "",
         province: "",
-        station_id: ""
-      }, _defineProperty(_lead, "is_member", 1), _defineProperty(_lead, "terms_conditions", ""), _lead),
+        station_id: "",
+        terms_conditions: ""
+      },
       submitted: false,
       suggestions: [],
       suggestionUrl: "/api/search-voting-stations",
@@ -5717,6 +5715,7 @@ var phoneRegex = vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_5__["helpers"
       var _this2 = this;
 
       return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+        var response;
         return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
@@ -5733,9 +5732,13 @@ var phoneRegex = vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_5__["helpers"
                 return _context.abrupt("return");
 
               case 4:
-                alert("SUCCESS!! :-)\n\n" + JSON.stringify(_this2.lead)); //   let response = await this.$inertia.post("/leads/save", this.lead);
+                _context.next = 6;
+                return _this2.$inertia.post("/leads/save", _this2.lead);
 
-              case 5:
+              case 6:
+                response = _context.sent;
+
+              case 7:
               case "end":
                 return _context.stop();
             }
@@ -6268,6 +6271,15 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
  // import Autocomplete from "../AutoComplete";
 
 
@@ -6290,7 +6302,7 @@ var phoneRegex = vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_5__["helpers"
         is_member: 0,
         first_name: "",
         last_name: "",
-        lead_email: "signup@actionsa.org.za",
+        lead_email: " ",
         id_number: "",
         phone: "",
         first_time_voter: 1,
@@ -6362,6 +6374,7 @@ var phoneRegex = vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_5__["helpers"
       var _this2 = this;
 
       return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+        var response;
         return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
@@ -6378,9 +6391,13 @@ var phoneRegex = vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_5__["helpers"
                 return _context.abrupt("return");
 
               case 4:
-                alert("SUCCESS!! :-)\n\n" + JSON.stringify(_this2.lead)); //   let response = await this.$inertia.post("/leads/save", this.lead);
+                _context.next = 6;
+                return _this2.$inertia.post("/leads/save", _this2.lead);
 
-              case 5:
+              case 6:
+                response = _context.sent;
+
+              case 7:
               case "end":
                 return _context.stop();
             }
@@ -8150,6 +8167,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Jetstream_DropdownLink__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../Jetstream/DropdownLink */ "./resources/js/Jetstream/DropdownLink.vue");
 /* harmony import */ var _Jetstream_NavLink__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../Jetstream/NavLink */ "./resources/js/Jetstream/NavLink.vue");
 /* harmony import */ var _Jetstream_ResponsiveNavLink__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./../Jetstream/ResponsiveNavLink */ "./resources/js/Jetstream/ResponsiveNavLink.vue");
+//
 //
 //
 //
@@ -38538,6 +38556,30 @@ var render = function() {
                   ])
                 ]),
                 _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.lead.is_member,
+                      expression: "lead.is_member"
+                    }
+                  ],
+                  staticClass: "custom-control-input",
+                  attrs: {
+                    type: "radio",
+                    id: "customRadio1",
+                    name: "interest",
+                    value: "0"
+                  },
+                  domProps: { checked: _vm._q(_vm.lead.is_member, "0") },
+                  on: {
+                    change: function($event) {
+                      return _vm.$set(_vm.lead, "is_member", "0")
+                    }
+                  }
+                }),
+                _vm._v(" "),
                 _vm._m(0)
               ])
             ])
@@ -41128,11 +41170,12 @@ var render = function() {
             _c("div", { staticClass: "flex" }, [
               _c(
                 "div",
-                { staticClass: "hidden space-x-8 sm:-my-px sm:ml-10 sm:flex" },
+                { staticClass: "hidden space-x-8 sm:-my-px sm:flex" },
                 [
                   _c(
                     "jet-nav-link",
                     {
+                      staticClass: "text-green-100",
                       attrs: {
                         href: "/dashboard",
                         active: _vm.$page.currentRouteName == "dashboard"
@@ -41705,7 +41748,7 @@ var render = function() {
     "div",
     { staticClass: "min-h-screen bg-gray-100" },
     [
-      _c("nav", { staticClass: "dots border-b" }, [
+      _c("nav", { staticClass: "bg-white text-green-100 border-b" }, [
         _c("div", { staticClass: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" }, [
           _c("div", { staticClass: "flex justify-between h-16" }, [
             _c("div", { staticClass: "flex" }, [
@@ -41845,7 +41888,7 @@ var render = function() {
           [
             _c(
               "div",
-              { staticClass: "pt-2 pb-3 space-y-1 text-white" },
+              { staticClass: "pt-2 pb-3 space-y-1" },
               [
                 _c(
                   "jet-responsive-nav-link",
@@ -41881,7 +41924,7 @@ var render = function() {
             _vm._v(" "),
             _c(
               "div",
-              { staticClass: "pt-2 pb-3 space-y-1 text-white" },
+              { staticClass: "pt-2 pb-3 space-y-1 text-green-100" },
               [
                 _c(
                   "jet-nav-link",
@@ -43191,18 +43234,18 @@ var render = function() {
                 [_vm._v("\n      Dashboard\n    ")]
               ),
               _vm._v(" "),
-              _c("inertia-link", { attrs: { href: "/add-lead" } }, [
+              _c("inertia-link", { attrs: { href: "/add/supporter" } }, [
                 _c(
                   "button",
                   {
                     staticClass:
                       "dots-reverse hover:bg-green-700 text-white ml-2 font-bold py-2 px-4 float-right"
                   },
-                  [_vm._v("\n        Add Lead\n      ")]
+                  [_vm._v("\n        Add Supporter\n      ")]
                 )
               ]),
               _vm._v(" "),
-              _c("inertia-link", { attrs: { href: "/add-member" } }, [
+              _c("inertia-link", { attrs: { href: "/add/member" } }, [
                 _c(
                   "button",
                   {

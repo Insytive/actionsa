@@ -5,15 +5,15 @@
         Dashboard
       </h2>
 
-      <inertia-link href="/add-lead">
+      <inertia-link href="/add/supporter">
         <button
           class="dots-reverse hover:bg-green-700 text-white ml-2 font-bold py-2 px-4 float-right"
         >
-          Add Lead
+          Add Supporter
         </button>
       </inertia-link>
 
-      <inertia-link href="/add-member">
+      <inertia-link href="/add/member">
         <button
           class="dots hover:bg-green-700 text-white font-bold py-2 px-4 float-right"
         >
