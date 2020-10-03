@@ -12,6 +12,7 @@ class CreateLeadsTable extends Migration
             $table->bigIncrements('id');
             $table->string('first_name');
             $table->string('last_name');
+            $table->string('id_number')->unique();
             $table->date('birthdate')->nullable();
             $table->string('gender')->nullable();
             $table->string('lead_email')->nullable();
@@ -19,11 +20,10 @@ class CreateLeadsTable extends Migration
             $table->string('building')->nullable();
             $table->string('town')->nullable();
             $table->string('city')->nullable();
-            $table->string('first_time_voter')->nullable();
-            $table->string('lead_status')->nullable();
-            $table->string('interest')->nullable();
-            $table->string('id_number')->unique();
             $table->string('phone')->nullable();
+            $table->string('first_time_voter')->nullable();
+            $table->boolean('is_active')->nullable()->default(1);
+            $table->boolean('is_member')->nullable()->default(0);
             $table->timestamps();
             $table->softDeletes();
         });

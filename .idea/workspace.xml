@@ -11,9 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32c92096-46ed-4c9f-bd15-b018eacded21" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/js/Components/Registration/Volunteer.vue.bak" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Components/Registration/Volunteer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Components/Registration/Volunteer.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_20_151815_create_leads_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_20_151815_create_leads_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,7 +219,7 @@
       <workItem from="1601512075608" duration="14539000" />
       <workItem from="1601532915042" duration="10367000" />
       <workItem from="1601586373127" duration="34308000" />
-      <workItem from="1601713490448" duration="1231000" />
+      <workItem from="1601713490448" duration="2640000" />
     </task>
     <servers />
   </component>
