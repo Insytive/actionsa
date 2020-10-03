@@ -11,7 +11,7 @@ class LeadCreated extends PointType
      *
      * @var int
      */
-    public $points = 20;
+    public $points = 5;
 
     /**
      * Point constructor

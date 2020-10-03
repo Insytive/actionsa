@@ -21,7 +21,7 @@ class CreateLeadsTable extends Migration
             $table->string('town')->nullable();
             $table->string('city')->nullable();
             $table->string('phone')->nullable();
-            $table->string('first_time_voter')->nullable();
+            $table->boolean('first_time_voter')->nullable();
             $table->boolean('is_active')->nullable()->default(1);
             $table->boolean('is_member')->nullable()->default(0);
             $table->timestamps();

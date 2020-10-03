@@ -60,7 +60,7 @@ class LeadController extends Controller
 
 
         $membership = $postData['is_member'];
-      
+
 
         if ($duplicateIDnumber) {
             return redirect()->route('registration-error', ['msg' => 'A record with that ID number already exists!']);
@@ -108,23 +108,19 @@ class LeadController extends Controller
             'created_by' => $created_by,
         ]);
 
+//        $user = $request->user();
+//        $user->givePoint(new LeadCreated($lead));
+
         // var_dump($lead);
         // exit();
-
 
         if (!is_null($leadEmail)) {
             Mail::to(request('lead_email'))
                 ->send(new SupporterWelcome());
         }
 
-        
-
         if (Auth::check())
         {
-            
-            $user = Auth::user();
-            $user->givePoint(new LeadCreated($postData));
-            
             return redirect()->route('dashboard');
 
         } else {

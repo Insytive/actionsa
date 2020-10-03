@@ -47,10 +47,8 @@ class Lead extends Model
 
         '0' => 'Inactive',
         '1' => 'Active',
-    
+
     ];
-
-
 
     protected $fillable = [
         'first_name',
@@ -80,8 +78,6 @@ class Lead extends Model
         'volunteer_id',
     ];
 
-
-    
        /**
      * The attributes that should be hidden for arrays.
      *
