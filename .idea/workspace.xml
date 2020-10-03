@@ -11,37 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32c92096-46ed-4c9f-bd15-b018eacded21" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Notifications/LeadAdded.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/Herman.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/em signature.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/header.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/button.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/footer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/header.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/layout.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/message.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/panel.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/subcopy.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/table.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/themes/default.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/text/button.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/text/footer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/text/header.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/text/layout.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/text/message.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/text/panel.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/text/subcopy.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/text/table.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/Components/Registration/Volunteer.vue.bak" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LeadController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LeadController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Mail/SupporterWelcome.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/SupporterWelcome.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Mail/VolunteerWelcome.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/VolunteerWelcome.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Layouts/AppLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Layouts/AppLayout.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/emails/supporter.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/emails/supporter.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/emails/verify.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/emails/volunteer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/emails/volunteer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Components/Registration/Volunteer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Components/Registration/Volunteer.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +173,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/gull/assets/styles/sass/themes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/js/Components/Registration" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -212,19 +184,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Server\www\actionsa\resources\js\Components\Registration" />
+      <recent name="C:\Server\www\actionsa\resources\gull\assets\styles\sass\themes" />
+      <recent name="C:\Server\www\actionsa\public\assets\styles\css\themes" />
+      <recent name="C:\Server\www\actionsa\resources\js\Layouts" />
+      <recent name="C:\Server\www\actionsa\resources\js\Pages\Register" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Server\www\actionsa\resources\js\Pages\Admin" />
       <recent name="C:\Server\www\actionsa\resources\js\Components" />
       <recent name="C:\Server\www\actionsa\resources\js\Pages\Leads" />
       <recent name="C:\Server\www\actionsa\resources\js\Pages\Index" />
       <recent name="C:\Server\www\actionsa\resources\js\Pages\Profile" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Server\www\actionsa\resources\gull\assets\styles\sass\themes" />
-      <recent name="C:\Server\www\actionsa\public\assets\styles\css\themes" />
-      <recent name="C:\Server\www\actionsa\resources\js\Layouts" />
-      <recent name="C:\Server\www\actionsa\resources\js\Pages\Register" />
-      <recent name="C:\Server\www\actionsa\resources\views\admin\leads" />
     </key>
   </component>
   <component name="RunManager">
@@ -247,7 +219,8 @@
       <workItem from="1601481917128" duration="2026000" />
       <workItem from="1601512075608" duration="14539000" />
       <workItem from="1601532915042" duration="10367000" />
-      <workItem from="1601586373127" duration="33845000" />
+      <workItem from="1601586373127" duration="34308000" />
+      <workItem from="1601713490448" duration="1231000" />
     </task>
     <servers />
   </component>
@@ -270,30 +243,31 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="442" y="154" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601248927485">
+    <state x="442" y="154" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601714718403">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="442" y="154" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728/1366.0.2560.1040@0.0.1366.728" timestamp="1601248927485" />
+    <state x="442" y="154" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1601714718403" />
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601545935616">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728/1366.0.2560.1040@0.0.1366.728" timestamp="1601545935616" />
-    <state width="1323" height="172" key="GridCell.Tab.0.bottom" timestamp="1601586630077">
+    <state width="1323" height="172" key="GridCell.Tab.0.bottom" timestamp="1601666660527">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="172" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.2560.1040@0.0.1366.728" timestamp="1601586630077" />
-    <state width="1323" height="172" key="GridCell.Tab.0.center" timestamp="1601586630077">
+    <state width="1323" height="172" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.2560.1040@0.0.1366.728" timestamp="1601666660527" />
+    <state width="1323" height="172" key="GridCell.Tab.0.center" timestamp="1601666660527">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="172" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.2560.1040@0.0.1366.728" timestamp="1601586630077" />
-    <state width="1323" height="172" key="GridCell.Tab.0.left" timestamp="1601586630077">
+    <state width="1323" height="172" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.2560.1040@0.0.1366.728" timestamp="1601666660527" />
+    <state width="1323" height="172" key="GridCell.Tab.0.left" timestamp="1601666660527">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="172" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.2560.1040@0.0.1366.728" timestamp="1601586630077" />
-    <state width="1323" height="172" key="GridCell.Tab.0.right" timestamp="1601586630077">
+    <state width="1323" height="172" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.2560.1040@0.0.1366.728" timestamp="1601666660527" />
+    <state width="1323" height="172" key="GridCell.Tab.0.right" timestamp="1601666660527">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="172" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.2560.1040@0.0.1366.728" timestamp="1601586630077" />
+    <state width="1323" height="172" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.2560.1040@0.0.1366.728" timestamp="1601666660527" />
     <state x="391" y="81" width="583" height="566" key="find.popup" timestamp="1601625688747">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
