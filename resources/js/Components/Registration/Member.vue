@@ -1,17 +1,13 @@
 <template>
   <div>
     <div class="p-6 sm:px-20 bg-white border-b border-gray-200">
-      <div class="mt-6 mb-8 text-gray-500">
-        <p>Please fill in the details below</p>
-      </div>
-
       <form class="w-full" @submit.prevent="handleSubmit">
         <div class="flex flex-wrap">
           <div class="w-full lg:w-1/2 xl:w-1/2 px-4">
             <div class="flex flex-wrap -mx-3 mb-6">
               <div class="w-full px-3">
                 <label
-                  for="email"
+                  for="id_number"
                   class="block tracking-wide text-gray-700 text-sm font-bold mb-2"
                   >ID number</label
                 >
@@ -21,7 +17,7 @@
                   placeholder="ID number"
                   id="id_number"
                   name="id_number"
-                  class="appearance-none block w-full bg-gray-200 text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white"
+                  class="appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white"
                   tabindex="1"
                   :class="{
                     'border-red-500': submitted && $v.lead.id_number.$error,
@@ -56,7 +52,7 @@
                   v-model="lead.first_name"
                   id="first_name"
                   tabindex="2"
-                  class="appearance-none block w-full bg-gray-200 text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white"
+                  class="appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white"
                   name="first_name"
                   placeholder="First name"
                   :class="{
@@ -81,7 +77,7 @@
                   type="text"
                   v-model="lead.last_name"
                   id="last_name"
-                  class="appearance-none block w-full bg-gray-200 text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white"
+                  class="appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white"
                   name="last_name"
                   placeholder="Last name"
                   :class="{
@@ -111,22 +107,8 @@
                   placeholder="Email"
                   id="lead_email"
                   name="lead_email"
-                  class="appearance-none block w-full bg-gray-200 text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white"
-                  :class="{
-                    'border-red-500': submitted && $v.lead.lead_email.$error,
-                  }"
+                  class="appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white"
                 />
-                <div
-                  v-if="submitted && $v.lead.lead_email.$error"
-                  class="text-red-500 text-sm italic"
-                >
-                  <span v-if="!$v.lead.lead_email.required"
-                    >Please fill out this field</span
-                  >
-                  <span v-if="!$v.lead.lead_email.email"
-                    >Enter a valid email</span
-                  >
-                </div>
               </div>
             </div>
           </div>
@@ -146,7 +128,7 @@
                   id="phone"
                   name="phone"
                   tabindex="4"
-                  class="appearance-none block w-full bg-gray-200 text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white"
+                  class="appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white"
                   :class="{
                     'border-red-500': submitted && $v.lead.phone.$error,
                   }"
@@ -169,15 +151,48 @@
               <div class="w-full px-3">
                 <label
                   for="address"
-                  class="block tracking-wide text-gray-700 text-sm font-bold mb-2"
+                  class="block tracking-wide text-gray-700 text-md font-bold mb-2"
                   >Address
                 </label>
 
+                <div class="form-group mb-3 mt-3">
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      id="customRadio10"
+                      class="custom-control-input"
+                      value="one"
+                      v-model="custom_address_flag"
+                    />
+                    <label
+                      class="custom-control-label tracking-wide text-gray-700 text-sm font-bold mb-2"
+                      for="customRadio10"
+                      >Search for address</label
+                    >
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      id="customRadio9"
+                      class="custom-control-input"
+                      name="custom_address_flag"
+                      value="two"
+                      v-model="custom_address_flag"
+                    />
+                    <label
+                      class="custom-control-label tracking-wide text-gray-700 text-sm font-bold mb-2"
+                      for="customRadio9"
+                      >I will enter my own address</label
+                    >
+                  </div>
+                </div>
+
                 <vue-google-autocomplete
+                  v-if="custom_address_flag === 'one'"
                   ref="address"
                   id="map"
                   v-model="lead.address"
-                  classname="appearance-none block w-full bg-gray-200 text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white"
+                  classname="appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white"
                   placeholder="Please type your address"
                   v-on:placechanged="getAddressData"
                   country="za"
@@ -186,6 +201,17 @@
                   }"
                 >
                 </vue-google-autocomplete>
+
+                <input
+                  v-if="custom_address_flag === 'two'"
+                  :class="{
+                    'border-red-500': submitted && $v.lead.phone.$error,
+                  }"
+                  v-model="lead.address"
+                  name="address"
+                  placeholder="Please type your address"
+                  class="appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white"
+                />
 
                 <div
                   v-if="submitted && $v.lead.address.$error"
@@ -202,45 +228,57 @@
               <div class="w-full px-3">
                 <label
                   for="voting_station"
-                  class="block tracking-wide text-gray-700 text-sm font-bold mb-2"
+                  class="block tracking-wide text-gray-700 text-md font-bold mb-2"
                   >Voting Station
                 </label>
 
                 <div class="form-group mb-3 mt-3">
-                  <input
-                    type="radio"
-                    name="custom_voting_flag"
-                    value="two"
-                    v-model="custom_voting_flag"
-                  />
-                  <label
-                    class="tracking-wide text-gray-700 text-sm font-bold mb-2"
-                    >Custom voting station</label
-                  >
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      id="customRadio6"
+                      class="custom-control-input"
+                      name="custom_voting_flag"
+                      value="one"
+                      v-model="custom_voting_flag"
+                    />
+                    <label
+                      class="custom-control-label tracking-wide text-gray-700 text-sm font-bold mb-2"
+                      for="customRadio6"
+                      >Search for voting station</label
+                    >
+                  </div>
 
-                  <input
-                    type="radio"
-                    name="custom_voting_flag"
-                    value="one"
-                    v-model="custom_voting_flag"
-                    class="ml-8"
-                  />
-                  <label
-                    class="tracking-wide text-gray-700 text-sm font-bold mb-2"
-                    >Search address</label
-                  >
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      id="customRadio7"
+                      class="custom-control-input"
+                      name="custom_voting_flag"
+                      value="two"
+                      v-model="custom_voting_flag"
+                    />
+                    <label
+                      class="custom-control-label tracking-wide text-gray-700 text-sm font-bold mb-2"
+                      for="customRadio7"
+                      >I could not find my voting station</label
+                    >
+                  </div>
                 </div>
 
                 <vue-autosuggest
-                  v-if="custom_voting_flag === 'one'"
+                  v-show="custom_voting_flag === 'one'"
                   v-model="stationQuery"
+                  :class="{
+                    'border-red-500': submitted && $v.lead.address.$error,
+                  }"
                   :suggestions="suggestions"
                   :input-props="{
                     id: 'autosuggest__input',
                     placeholder: 'Please type your voting station address',
                     name: 'voting_station',
                     class:
-                      'appearance-none block w-full bg-gray-200 text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white',
+                      'appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white',
                   }"
                   :sectionConfigs="sectionConfigs"
                   :renderSuggestion="renderSuggestion"
@@ -255,12 +293,17 @@
                 </vue-autosuggest>
 
                 <input
-                  class="appearance-none block w-full bg-gray-200 text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white"
+                  class="appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white"
                   type="text"
                   id="voting_station"
+                  name="voting_station"
                   v-model="lead.voting_station"
                   placeholder="Enter your voting station, nearest school or town"
-                  v-if="custom_voting_flag === 'two'"
+                  v-show="custom_voting_flag === 'two'"
+                  :class="{
+                    'border-red-500':
+                      submitted && $v.lead.voting_station.$error,
+                  }"
                 />
 
                 <div
@@ -277,69 +320,73 @@
             <div class="flex flex-wrap -mx-3 mb-3">
               <div class="w-full px-3">
                 <label
-                  for="email"
-                  class="block tracking-wide text-gray-700 text-sm font-bold mb-2"
+                  for="first_time_voter"
+                  class="block tracking-wide text-gray-700 text-md font-bold mb-2"
                   >Are you a first time voter?
                 </label>
-                <div class="form-group">
+
+                <div class="custom-control custom-radio">
                   <input
                     type="radio"
+                    id="customRadio3"
+                    class="custom-control-input"
                     name="first_time_voter"
                     value="1"
                     v-model="lead.first_time_voter"
                   />
                   <label
-                    class="tracking-wide text-gray-700 text-sm font-bold mb-2"
+                    class="custom-control-label tracking-wide text-gray-700 text-sm font-bold mb-2"
+                    for="customRadio3"
                     >Yes</label
                   >
-                  <br />
-
+                </div>
+                <div class="custom-control custom-radio">
                   <input
                     type="radio"
+                    id="customRadio4"
+                    class="custom-control-input"
                     name="first_time_voter"
                     value="0"
                     v-model="lead.first_time_voter"
                   />
                   <label
-                    class="tracking-wide text-gray-700 text-sm font-bold mb-2"
+                    class="custom-control-label tracking-wide text-gray-700 text-sm font-bold mb-2"
+                    for="customRadio4"
                     >No</label
                   >
                 </div>
               </div>
             </div>
 
-            <div class="flex flex-wrap -mx-3 mb-3">
+            <div class="flex flex-wrap -mx-3">
               <div class="w-full px-3">
-                <input
-                  type="checkbox"
-                  id="terms_conditions"
-                  value="1"
-                  v-model="lead.terms_conditions"
-                  :class="{
-                    'border-red-500':
-                      submitted && $v.lead.terms_conditions.$error,
-                  }"
-                />
-                <label
-                  >I hereby consent and agree to the Interim Constitition of
-                  ActionSA</label
-                >
-                <div
-                  v-if="submitted && $v.lead.terms_conditions.$error"
-                  class="text-red-500 text-sm italic"
-                >
-                  <span v-if="!$v.lead.terms_conditions.required"
-                    >Please fill out this field</span
+                <div class="custom-control custom-checkbox mb-5">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="customCheck2"
+                    value="1"
+                    v-model="lead.terms_conditions"
+                  />
+                  <label class="custom-control-label" for="customCheck2">
+                    I hereby consent and agree to the Interim Constitition of
+                    ActionSA</label
                   >
+
+                  <div
+                    v-if="submitted && $v.lead.terms_conditions.$error"
+                    class="text-red-500 text-sm italic"
+                  >
+                    <span v-if="!$v.lead.terms_conditions.required"
+                      >Please fill out this field</span
+                    >
+                  </div>
                 </div>
               </div>
-
-              <div class="w-full px-3 mt-6">
-                <button
-                  class="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2"
-                >
-                  Register
-                </button>
+            </div>
+            <div class="flex flex-wrap -mx-3">
+              <div class="w-full px-3">
+                <button class="register-btn font-bold">Register</button>
               </div>
             </div>
           </div>
@@ -417,7 +464,6 @@
 }
 </style>
 
-
 <script>
 import JetApplicationLogo from "./../../Jetstream/ApplicationLogo";
 // import Autocomplete from "../AutoComplete";
@@ -449,9 +495,10 @@ export default {
   data() {
     return {
       lead: {
+        is_member: 1,
         first_name: "",
         last_name: "",
-        lead_email: "",
+        lead_email: "signup@actionsa.org.za",
         id_number: "",
         phone: "",
         first_time_voter: 1,
@@ -459,13 +506,14 @@ export default {
         voting_station: "",
         province: "",
         station_id: "",
-        interest: 1,
+        is_member: 1,
         terms_conditions: "",
       },
       submitted: false,
       suggestions: [],
       suggestionUrl: "/api/search-voting-stations",
       timeout: null,
+
       selected: null,
       sectionConfigs: {
         default: {
@@ -476,29 +524,27 @@ export default {
       },
       stationQuery: "",
       custom_voting_flag: "one",
+      custom_address_flag: "one",
     };
   },
   mounted() {
-    if (this.custom_voting_flag === "two") {
-      this.lead.station_id = 1010111;
+    if (this.custom_voting_flag !== "two") {
+      this.lead.station_id = 0;
     }
   },
   validations: {
     lead: {
       first_name: { required },
       last_name: { required },
-      lead_email: { required, email },
       id_number: {
         required,
         idRegex,
       },
       phone: { required, phoneRegex },
-      // first_time_voter: { required },
-      terms_conditions: { required },
       address: { required },
       station_id: { required },
       voting_station: { required },
-      // interest: { required }
+      terms_conditions: { required },
     },
   },
   watch: {
@@ -522,12 +568,14 @@ export default {
       }
 
       alert("SUCCESS!! :-)\n\n" + JSON.stringify(this.lead));
-      // let response = await this.$inertia.post("/leads/save", this.lead);
+      //   let response = await this.$inertia.post("/leads/save", this.lead);
     },
     doSearch() {
-      console.log("Searching...");
+      // console.log("Searching...");
     },
     filterResults(data, text, field) {
+      // console.log(data);
+
       return data
         .filter((item) => {
           if (item[field].toLowerCase().indexOf(text.toLowerCase()) > -1) {
@@ -537,9 +585,6 @@ export default {
         .sort(function (a, b) {
           a.name > b.name;
         });
-      // return filterData.sort(function(a, b) {
-      //     a.name - b.name
-      // });
     },
     fetchResults() {
       const query = this.stationQuery;
@@ -550,7 +595,7 @@ export default {
       clearTimeout(this.timeout);
       this.timeout = setTimeout(() => {
         axios.post(this.suggestionUrl, { query: query }).then((response) => {
-          const stations = this.filterResults(response.data, query, "name");
+          const stations = this.filterResults(response.data, query, "station");
           if (stations.length) {
             this.suggestions = [];
             let tempSuggestions = Object.keys(response.data).map((key) => {
@@ -564,13 +609,22 @@ export default {
       });
     },
     renderSuggestion(suggestion) {
-      return suggestion.item.name + " - Ward " + suggestion.item.ward_id;
+      return (
+        suggestion.item.station +
+        " - Ward " +
+        suggestion.item.ward +
+        " - " +
+        suggestion.item.province
+      );
     },
     getSuggestionValue(suggestion) {
       let { item } = suggestion;
-      this.lead.station_id = item.id;
-      this.lead.voting_station = item.name;
-      return item.name;
+      this.lead.municipality = item.municipality;
+      this.lead.ward = item.ward;
+      this.lead.province = item.province;
+      this.lead.station_id = item.stationID;
+      this.lead.voting_station = item.stationID;
+      return item.station;
     },
   },
 };

@@ -12,10 +12,6 @@
     background-repeat: no-repeat;
 }
 
-/* #custom-card:nth-child(2) {
-    background-color: red;
-} */
-
 #custom-card {
     height: 180px;
     border-radius: 16px;
@@ -50,32 +46,4 @@
     outline: none;
     background-color: #0ba718;
     color: #000;
-}
-
-.custom-radio .custom-control-label::before {
-    border: 2px solid #05b615;
-    border-radius: 50%;
-    height: 20px;
-    width: 20px;
-}
-
-.custom-radio .custom-control-input:checked ~ .custom-control-label::before,
-.custom-radio .custom-control-input:checked ~ .custom-control-label::after {
-    background-color: #05b615;
-    border-radius: 50%;
-    outline: none;
-    height: 20px;
-    width: 20px;
-}
-
-.custom-radio .custom-control-input:active ~ .custom-control-label::before {
-    color: #fff;
-    background-color: #05b615;
-    border-radius: 50%;
-    outline: none;
-    border-color: #05b615;
-}
-
-.custom-radio .custom-control-input:focus ~ .custom-control-label::before {
-    box-shadow: 0 0 0 1px #05b615, 0 0 0 0.2rem #05b61467;
 }

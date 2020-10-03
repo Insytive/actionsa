@@ -5151,6 +5151,54 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -5586,23 +5634,23 @@ var phoneRegex = vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_5__["helpers"
     VueAutosuggest: vue_autosuggest__WEBPACK_IMPORTED_MODULE_3__["VueAutosuggest"]
   },
   data: function data() {
-    var _this = this;
+    var _lead,
+        _this = this;
 
     return {
-      lead: {
+      lead: (_lead = {
+        is_member: 1,
         first_name: "",
         last_name: "",
-        lead_email: "",
+        lead_email: "signup@actionsa.org.za",
         id_number: "",
         phone: "",
         first_time_voter: 1,
         address: "",
         voting_station: "",
         province: "",
-        station_id: "",
-        interest: 1,
-        terms_conditions: ""
-      },
+        station_id: ""
+      }, _defineProperty(_lead, "is_member", 1), _defineProperty(_lead, "terms_conditions", ""), _lead),
       submitted: false,
       suggestions: [],
       suggestionUrl: "/api/search-voting-stations",
@@ -5616,12 +5664,13 @@ var phoneRegex = vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_5__["helpers"
         }
       },
       stationQuery: "",
-      custom_voting_flag: "one"
+      custom_voting_flag: "one",
+      custom_address_flag: "one"
     };
   },
   mounted: function mounted() {
-    if (this.custom_voting_flag === "two") {
-      this.lead.station_id = 1010111;
+    if (this.custom_voting_flag !== "two") {
+      this.lead.station_id = 0;
     }
   },
   validations: {
@@ -5632,10 +5681,6 @@ var phoneRegex = vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_5__["helpers"
       last_name: {
         required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_5__["required"]
       },
-      lead_email: {
-        required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_5__["required"],
-        email: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_5__["email"]
-      },
       id_number: {
         required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_5__["required"],
         idRegex: idRegex
@@ -5643,10 +5688,6 @@ var phoneRegex = vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_5__["helpers"
       phone: {
         required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_5__["required"],
         phoneRegex: phoneRegex
-      },
-      // first_time_voter: { required },
-      terms_conditions: {
-        required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_5__["required"]
       },
       address: {
         required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_5__["required"]
@@ -5656,8 +5697,10 @@ var phoneRegex = vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_5__["helpers"
       },
       voting_station: {
         required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_5__["required"]
-      } // interest: { required }
-
+      },
+      terms_conditions: {
+        required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_5__["required"]
+      }
     }
   },
   watch: {
@@ -5690,7 +5733,7 @@ var phoneRegex = vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_5__["helpers"
                 return _context.abrupt("return");
 
               case 4:
-                alert("SUCCESS!! :-)\n\n" + JSON.stringify(_this2.lead)); // let response = await this.$inertia.post("/leads/save", this.lead);
+                alert("SUCCESS!! :-)\n\n" + JSON.stringify(_this2.lead)); //   let response = await this.$inertia.post("/leads/save", this.lead);
 
               case 5:
               case "end":
@@ -5700,19 +5743,17 @@ var phoneRegex = vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_5__["helpers"
         }, _callee);
       }))();
     },
-    doSearch: function doSearch() {
-      console.log("Searching...");
+    doSearch: function doSearch() {// console.log("Searching...");
     },
     filterResults: function filterResults(data, text, field) {
+      // console.log(data);
       return data.filter(function (item) {
         if (item[field].toLowerCase().indexOf(text.toLowerCase()) > -1) {
           return item[field];
         }
       }).sort(function (a, b) {
         a.name > b.name;
-      }); // return filterData.sort(function(a, b) {
-      //     a.name - b.name
-      // });
+      });
     },
     fetchResults: function fetchResults() {
       var _this3 = this;
@@ -5729,7 +5770,7 @@ var phoneRegex = vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_5__["helpers"
         axios__WEBPACK_IMPORTED_MODULE_4___default.a.post(_this3.suggestionUrl, {
           query: query
         }).then(function (response) {
-          var stations = _this3.filterResults(response.data, query, "name");
+          var stations = _this3.filterResults(response.data, query, "station");
 
           if (stations.length) {
             _this3.suggestions = [];
@@ -5747,13 +5788,16 @@ var phoneRegex = vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_5__["helpers"
       });
     },
     renderSuggestion: function renderSuggestion(suggestion) {
-      return suggestion.item.name + " - Ward " + suggestion.item.ward_id;
+      return suggestion.item.station + " - Ward " + suggestion.item.ward + " - " + suggestion.item.province;
     },
     getSuggestionValue: function getSuggestionValue(suggestion) {
       var item = suggestion.item;
-      this.lead.station_id = item.id;
-      this.lead.voting_station = item.name;
-      return item.name;
+      this.lead.municipality = item.municipality;
+      this.lead.ward = item.ward;
+      this.lead.province = item.province;
+      this.lead.station_id = item.stationID;
+      this.lead.voting_station = item.stationID;
+      return item.station;
     }
   }
 });
@@ -6224,20 +6268,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
  // import Autocomplete from "../AutoComplete";
 
 
@@ -6257,6 +6287,7 @@ var phoneRegex = vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_5__["helpers"
 
     return {
       lead: {
+        is_member: 0,
         first_name: "",
         last_name: "",
         lead_email: "signup@actionsa.org.za",
@@ -6266,8 +6297,7 @@ var phoneRegex = vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_5__["helpers"
         address: "",
         voting_station: "",
         province: "",
-        station_id: "",
-        interest: 1
+        station_id: ""
       },
       submitted: false,
       suggestions: [],
@@ -6299,7 +6329,6 @@ var phoneRegex = vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_5__["helpers"
       last_name: {
         required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_5__["required"]
       },
-      // lead_email: { email },
       id_number: {
         required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_5__["required"],
         idRegex: idRegex
@@ -6333,7 +6362,6 @@ var phoneRegex = vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_5__["helpers"
       var _this2 = this;
 
       return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
-        var response;
         return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
@@ -6350,13 +6378,9 @@ var phoneRegex = vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_5__["helpers"
                 return _context.abrupt("return");
 
               case 4:
-                _context.next = 6;
-                return _this2.$inertia.post("/leads/save", _this2.lead);
+                alert("SUCCESS!! :-)\n\n" + JSON.stringify(_this2.lead)); //   let response = await this.$inertia.post("/leads/save", this.lead);
 
-              case 6:
-                response = _context.sent;
-
-              case 7:
+              case 5:
               case "end":
                 return _context.stop();
             }
@@ -8414,13 +8438,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -8479,6 +8496,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Jetstream_DropdownLink__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../Jetstream/DropdownLink */ "./resources/js/Jetstream/DropdownLink.vue");
 /* harmony import */ var _Jetstream_NavLink__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../Jetstream/NavLink */ "./resources/js/Jetstream/NavLink.vue");
 /* harmony import */ var _Jetstream_ResponsiveNavLink__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./../Jetstream/ResponsiveNavLink */ "./resources/js/Jetstream/ResponsiveNavLink.vue");
+//
 //
 //
 //
@@ -9327,7 +9345,6 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../Layouts/AppLayout */ "./resources/js/Layouts/AppLayout.vue");
 /* harmony import */ var _Pages_Admin_Leads_LeadsList__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../Pages/Admin/Leads/LeadsList */ "./resources/js/Pages/Admin/Leads/LeadsList.vue");
-//
 //
 //
 //
@@ -36773,8 +36790,6 @@ var render = function() {
       "div",
       { staticClass: "p-6 sm:px-20 bg-white border-b border-gray-200" },
       [
-        _vm._m(0),
-        _vm._v(" "),
         _c(
           "form",
           {
@@ -36796,7 +36811,7 @@ var render = function() {
                       {
                         staticClass:
                           "block tracking-wide text-gray-700 text-sm font-bold mb-2",
-                        attrs: { for: "email" }
+                        attrs: { for: "id_number" }
                       },
                       [_vm._v("ID number")]
                     ),
@@ -36811,7 +36826,7 @@ var render = function() {
                         }
                       ],
                       staticClass:
-                        "appearance-none block w-full bg-gray-200 text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white",
+                        "appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white",
                       class: {
                         "border-red-500":
                           _vm.submitted && _vm.$v.lead.id_number.$error
@@ -36883,7 +36898,7 @@ var render = function() {
                           }
                         ],
                         staticClass:
-                          "appearance-none block w-full bg-gray-200 text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white",
+                          "appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white",
                         class: {
                           "border-red-500":
                             _vm.submitted && _vm.$v.lead.first_name.$error
@@ -36948,7 +36963,7 @@ var render = function() {
                           }
                         ],
                         staticClass:
-                          "appearance-none block w-full bg-gray-200 text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white",
+                          "appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white",
                         class: {
                           "border-red-500":
                             _vm.submitted && _vm.$v.lead.last_name.$error
@@ -37007,11 +37022,7 @@ var render = function() {
                         }
                       ],
                       staticClass:
-                        "appearance-none block w-full bg-gray-200 text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white",
-                      class: {
-                        "border-red-500":
-                          _vm.submitted && _vm.$v.lead.lead_email.$error
-                      },
+                        "appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white",
                       attrs: {
                         type: "email",
                         tabindex: "4",
@@ -37028,25 +37039,7 @@ var render = function() {
                           _vm.$set(_vm.lead, "lead_email", $event.target.value)
                         }
                       }
-                    }),
-                    _vm._v(" "),
-                    _vm.submitted && _vm.$v.lead.lead_email.$error
-                      ? _c(
-                          "div",
-                          { staticClass: "text-red-500 text-sm italic" },
-                          [
-                            !_vm.$v.lead.lead_email.required
-                              ? _c("span", [
-                                  _vm._v("Please fill out this field")
-                                ])
-                              : _vm._e(),
-                            _vm._v(" "),
-                            !_vm.$v.lead.lead_email.email
-                              ? _c("span", [_vm._v("Enter a valid email")])
-                              : _vm._e()
-                          ]
-                        )
-                      : _vm._e()
+                    })
                   ])
                 ])
               ]),
@@ -37074,7 +37067,7 @@ var render = function() {
                         }
                       ],
                       staticClass:
-                        "appearance-none block w-full bg-gray-200 text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white",
+                        "appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white",
                       class: {
                         "border-red-500":
                           _vm.submitted && _vm.$v.lead.phone.$error
@@ -37128,34 +37121,157 @@ var render = function() {
                         "label",
                         {
                           staticClass:
-                            "block tracking-wide text-gray-700 text-sm font-bold mb-2",
+                            "block tracking-wide text-gray-700 text-md font-bold mb-2",
                           attrs: { for: "address" }
                         },
                         [_vm._v("Address\n              ")]
                       ),
                       _vm._v(" "),
-                      _c("vue-google-autocomplete", {
-                        ref: "address",
-                        class: {
-                          "border-red-500":
-                            _vm.submitted && _vm.$v.lead.address.$error
-                        },
-                        attrs: {
-                          id: "map",
-                          classname:
-                            "appearance-none block w-full bg-gray-200 text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white",
-                          placeholder: "Please type your address",
-                          country: "za"
-                        },
-                        on: { placechanged: _vm.getAddressData },
-                        model: {
-                          value: _vm.lead.address,
-                          callback: function($$v) {
-                            _vm.$set(_vm.lead, "address", $$v)
-                          },
-                          expression: "lead.address"
-                        }
-                      }),
+                      _c("div", { staticClass: "form-group mb-3 mt-3" }, [
+                        _c(
+                          "div",
+                          { staticClass: "custom-control custom-radio" },
+                          [
+                            _c("input", {
+                              directives: [
+                                {
+                                  name: "model",
+                                  rawName: "v-model",
+                                  value: _vm.custom_address_flag,
+                                  expression: "custom_address_flag"
+                                }
+                              ],
+                              staticClass: "custom-control-input",
+                              attrs: {
+                                type: "radio",
+                                id: "customRadio10",
+                                value: "one"
+                              },
+                              domProps: {
+                                checked: _vm._q(_vm.custom_address_flag, "one")
+                              },
+                              on: {
+                                change: function($event) {
+                                  _vm.custom_address_flag = "one"
+                                }
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c(
+                              "label",
+                              {
+                                staticClass:
+                                  "custom-control-label tracking-wide text-gray-700 text-sm font-bold mb-2",
+                                attrs: { for: "customRadio10" }
+                              },
+                              [_vm._v("Search for address")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "custom-control custom-radio" },
+                          [
+                            _c("input", {
+                              directives: [
+                                {
+                                  name: "model",
+                                  rawName: "v-model",
+                                  value: _vm.custom_address_flag,
+                                  expression: "custom_address_flag"
+                                }
+                              ],
+                              staticClass: "custom-control-input",
+                              attrs: {
+                                type: "radio",
+                                id: "customRadio9",
+                                name: "custom_address_flag",
+                                value: "two"
+                              },
+                              domProps: {
+                                checked: _vm._q(_vm.custom_address_flag, "two")
+                              },
+                              on: {
+                                change: function($event) {
+                                  _vm.custom_address_flag = "two"
+                                }
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c(
+                              "label",
+                              {
+                                staticClass:
+                                  "custom-control-label tracking-wide text-gray-700 text-sm font-bold mb-2",
+                                attrs: { for: "customRadio9" }
+                              },
+                              [_vm._v("I will enter my own address")]
+                            )
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _vm.custom_address_flag === "one"
+                        ? _c("vue-google-autocomplete", {
+                            ref: "address",
+                            class: {
+                              "border-red-500":
+                                _vm.submitted && _vm.$v.lead.address.$error
+                            },
+                            attrs: {
+                              id: "map",
+                              classname:
+                                "appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white",
+                              placeholder: "Please type your address",
+                              country: "za"
+                            },
+                            on: { placechanged: _vm.getAddressData },
+                            model: {
+                              value: _vm.lead.address,
+                              callback: function($$v) {
+                                _vm.$set(_vm.lead, "address", $$v)
+                              },
+                              expression: "lead.address"
+                            }
+                          })
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.custom_address_flag === "two"
+                        ? _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.lead.address,
+                                expression: "lead.address"
+                              }
+                            ],
+                            staticClass:
+                              "appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white",
+                            class: {
+                              "border-red-500":
+                                _vm.submitted && _vm.$v.lead.phone.$error
+                            },
+                            attrs: {
+                              name: "address",
+                              placeholder: "Please type your address"
+                            },
+                            domProps: { value: _vm.lead.address },
+                            on: {
+                              input: function($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.lead,
+                                  "address",
+                                  $event.target.value
+                                )
+                              }
+                            }
+                          })
+                        : _vm._e(),
                       _vm._v(" "),
                       _vm.submitted && _vm.$v.lead.address.$error
                         ? _c(
@@ -37184,161 +37300,192 @@ var render = function() {
                         "label",
                         {
                           staticClass:
-                            "block tracking-wide text-gray-700 text-sm font-bold mb-2",
+                            "block tracking-wide text-gray-700 text-md font-bold mb-2",
                           attrs: { for: "voting_station" }
                         },
                         [_vm._v("Voting Station\n              ")]
                       ),
                       _vm._v(" "),
                       _c("div", { staticClass: "form-group mb-3 mt-3" }, [
-                        _c("input", {
-                          directives: [
-                            {
-                              name: "model",
-                              rawName: "v-model",
-                              value: _vm.custom_voting_flag,
-                              expression: "custom_voting_flag"
-                            }
-                          ],
-                          attrs: {
-                            type: "radio",
-                            name: "custom_voting_flag",
-                            value: "two"
-                          },
-                          domProps: {
-                            checked: _vm._q(_vm.custom_voting_flag, "two")
-                          },
-                          on: {
-                            change: function($event) {
-                              _vm.custom_voting_flag = "two"
-                            }
-                          }
-                        }),
-                        _vm._v(" "),
                         _c(
-                          "label",
-                          {
-                            staticClass:
-                              "tracking-wide text-gray-700 text-sm font-bold mb-2"
-                          },
-                          [_vm._v("Custom voting station")]
+                          "div",
+                          { staticClass: "custom-control custom-radio" },
+                          [
+                            _c("input", {
+                              directives: [
+                                {
+                                  name: "model",
+                                  rawName: "v-model",
+                                  value: _vm.custom_voting_flag,
+                                  expression: "custom_voting_flag"
+                                }
+                              ],
+                              staticClass: "custom-control-input",
+                              attrs: {
+                                type: "radio",
+                                id: "customRadio6",
+                                name: "custom_voting_flag",
+                                value: "one"
+                              },
+                              domProps: {
+                                checked: _vm._q(_vm.custom_voting_flag, "one")
+                              },
+                              on: {
+                                change: function($event) {
+                                  _vm.custom_voting_flag = "one"
+                                }
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c(
+                              "label",
+                              {
+                                staticClass:
+                                  "custom-control-label tracking-wide text-gray-700 text-sm font-bold mb-2",
+                                attrs: { for: "customRadio6" }
+                              },
+                              [_vm._v("Search for voting station")]
+                            )
+                          ]
                         ),
                         _vm._v(" "),
-                        _c("input", {
-                          directives: [
-                            {
-                              name: "model",
-                              rawName: "v-model",
-                              value: _vm.custom_voting_flag,
-                              expression: "custom_voting_flag"
-                            }
-                          ],
-                          staticClass: "ml-8",
-                          attrs: {
-                            type: "radio",
-                            name: "custom_voting_flag",
-                            value: "one"
-                          },
-                          domProps: {
-                            checked: _vm._q(_vm.custom_voting_flag, "one")
-                          },
-                          on: {
-                            change: function($event) {
-                              _vm.custom_voting_flag = "one"
-                            }
-                          }
-                        }),
-                        _vm._v(" "),
                         _c(
-                          "label",
-                          {
-                            staticClass:
-                              "tracking-wide text-gray-700 text-sm font-bold mb-2"
-                          },
-                          [_vm._v("Search address")]
+                          "div",
+                          { staticClass: "custom-control custom-radio" },
+                          [
+                            _c("input", {
+                              directives: [
+                                {
+                                  name: "model",
+                                  rawName: "v-model",
+                                  value: _vm.custom_voting_flag,
+                                  expression: "custom_voting_flag"
+                                }
+                              ],
+                              staticClass: "custom-control-input",
+                              attrs: {
+                                type: "radio",
+                                id: "customRadio7",
+                                name: "custom_voting_flag",
+                                value: "two"
+                              },
+                              domProps: {
+                                checked: _vm._q(_vm.custom_voting_flag, "two")
+                              },
+                              on: {
+                                change: function($event) {
+                                  _vm.custom_voting_flag = "two"
+                                }
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c(
+                              "label",
+                              {
+                                staticClass:
+                                  "custom-control-label tracking-wide text-gray-700 text-sm font-bold mb-2",
+                                attrs: { for: "customRadio7" }
+                              },
+                              [_vm._v("I could not find my voting station")]
+                            )
+                          ]
                         )
                       ]),
                       _vm._v(" "),
-                      _vm.custom_voting_flag === "one"
-                        ? _c("vue-autosuggest", {
-                            attrs: {
-                              suggestions: _vm.suggestions,
-                              "input-props": {
-                                id: "autosuggest__input",
-                                placeholder:
-                                  "Please type your voting station address",
-                                name: "voting_station",
-                                class:
-                                  "appearance-none block w-full bg-gray-200 text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white"
-                              },
-                              sectionConfigs: _vm.sectionConfigs,
-                              renderSuggestion: _vm.renderSuggestion,
-                              getSuggestionValue: _vm.getSuggestionValue
-                            },
-                            on: { input: _vm.fetchResults },
-                            scopedSlots: _vm._u(
-                              [
-                                {
-                                  key: "default",
-                                  fn: function(ref) {
-                                    var suggestion = ref.suggestion
-                                    return [
-                                      _c(
-                                        "span",
-                                        { staticClass: "my-suggestion-item" },
-                                        [_vm._v(_vm._s(suggestion.item))]
-                                      )
-                                    ]
-                                  }
-                                }
-                              ],
-                              null,
-                              false,
-                              346541402
-                            ),
-                            model: {
-                              value: _vm.stationQuery,
-                              callback: function($$v) {
-                                _vm.stationQuery = $$v
-                              },
-                              expression: "stationQuery"
-                            }
-                          })
-                        : _vm._e(),
-                      _vm._v(" "),
-                      _vm.custom_voting_flag === "two"
-                        ? _c("input", {
-                            directives: [
-                              {
-                                name: "model",
-                                rawName: "v-model",
-                                value: _vm.lead.voting_station,
-                                expression: "lead.voting_station"
-                              }
-                            ],
-                            staticClass:
-                              "appearance-none block w-full bg-gray-200 text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white",
-                            attrs: {
-                              type: "text",
-                              id: "voting_station",
-                              placeholder:
-                                "Enter your voting station, nearest school or town"
-                            },
-                            domProps: { value: _vm.lead.voting_station },
-                            on: {
-                              input: function($event) {
-                                if ($event.target.composing) {
-                                  return
-                                }
-                                _vm.$set(
-                                  _vm.lead,
-                                  "voting_station",
-                                  $event.target.value
+                      _c("vue-autosuggest", {
+                        directives: [
+                          {
+                            name: "show",
+                            rawName: "v-show",
+                            value: _vm.custom_voting_flag === "one",
+                            expression: "custom_voting_flag === 'one'"
+                          }
+                        ],
+                        class: {
+                          "border-red-500":
+                            _vm.submitted && _vm.$v.lead.address.$error
+                        },
+                        attrs: {
+                          suggestions: _vm.suggestions,
+                          "input-props": {
+                            id: "autosuggest__input",
+                            placeholder:
+                              "Please type your voting station address",
+                            name: "voting_station",
+                            class:
+                              "appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white"
+                          },
+                          sectionConfigs: _vm.sectionConfigs,
+                          renderSuggestion: _vm.renderSuggestion,
+                          getSuggestionValue: _vm.getSuggestionValue
+                        },
+                        on: { input: _vm.fetchResults },
+                        scopedSlots: _vm._u([
+                          {
+                            key: "default",
+                            fn: function(ref) {
+                              var suggestion = ref.suggestion
+                              return [
+                                _c(
+                                  "span",
+                                  { staticClass: "my-suggestion-item" },
+                                  [_vm._v(_vm._s(suggestion.item))]
                                 )
-                              }
+                              ]
                             }
-                          })
-                        : _vm._e(),
+                          }
+                        ]),
+                        model: {
+                          value: _vm.stationQuery,
+                          callback: function($$v) {
+                            _vm.stationQuery = $$v
+                          },
+                          expression: "stationQuery"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.lead.voting_station,
+                            expression: "lead.voting_station"
+                          },
+                          {
+                            name: "show",
+                            rawName: "v-show",
+                            value: _vm.custom_voting_flag === "two",
+                            expression: "custom_voting_flag === 'two'"
+                          }
+                        ],
+                        staticClass:
+                          "appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white",
+                        class: {
+                          "border-red-500":
+                            _vm.submitted && _vm.$v.lead.voting_station.$error
+                        },
+                        attrs: {
+                          type: "text",
+                          id: "voting_station",
+                          name: "voting_station",
+                          placeholder:
+                            "Enter your voting station, nearest school or town"
+                        },
+                        domProps: { value: _vm.lead.voting_station },
+                        on: {
+                          input: function($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(
+                              _vm.lead,
+                              "voting_station",
+                              $event.target.value
+                            )
+                          }
+                        }
+                      }),
                       _vm._v(" "),
                       _vm.submitted && _vm.$v.lead.voting_station.$error
                         ? _c(
@@ -37364,13 +37511,13 @@ var render = function() {
                       "label",
                       {
                         staticClass:
-                          "block tracking-wide text-gray-700 text-sm font-bold mb-2",
-                        attrs: { for: "email" }
+                          "block tracking-wide text-gray-700 text-md font-bold mb-2",
+                        attrs: { for: "first_time_voter" }
                       },
                       [_vm._v("Are you a first time voter?\n              ")]
                     ),
                     _vm._v(" "),
-                    _c("div", { staticClass: "form-group" }, [
+                    _c("div", { staticClass: "custom-control custom-radio" }, [
                       _c("input", {
                         directives: [
                           {
@@ -37380,8 +37527,10 @@ var render = function() {
                             expression: "lead.first_time_voter"
                           }
                         ],
+                        staticClass: "custom-control-input",
                         attrs: {
                           type: "radio",
+                          id: "customRadio3",
                           name: "first_time_voter",
                           value: "1"
                         },
@@ -37399,13 +37548,14 @@ var render = function() {
                         "label",
                         {
                           staticClass:
-                            "tracking-wide text-gray-700 text-sm font-bold mb-2"
+                            "custom-control-label tracking-wide text-gray-700 text-sm font-bold mb-2",
+                          attrs: { for: "customRadio3" }
                         },
                         [_vm._v("Yes")]
-                      ),
-                      _vm._v(" "),
-                      _c("br"),
-                      _vm._v(" "),
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "custom-control custom-radio" }, [
                       _c("input", {
                         directives: [
                           {
@@ -37415,8 +37565,10 @@ var render = function() {
                             expression: "lead.first_time_voter"
                           }
                         ],
+                        staticClass: "custom-control-input",
                         attrs: {
                           type: "radio",
+                          id: "customRadio4",
                           name: "first_time_voter",
                           value: "0"
                         },
@@ -37434,7 +37586,8 @@ var render = function() {
                         "label",
                         {
                           staticClass:
-                            "tracking-wide text-gray-700 text-sm font-bold mb-2"
+                            "custom-control-label tracking-wide text-gray-700 text-sm font-bold mb-2",
+                          attrs: { for: "customRadio4" }
                         },
                         [_vm._v("No")]
                       )
@@ -37442,84 +37595,96 @@ var render = function() {
                   ])
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "flex flex-wrap -mx-3 mb-3" }, [
+                _c("div", { staticClass: "flex flex-wrap -mx-3" }, [
                   _c("div", { staticClass: "w-full px-3" }, [
-                    _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.lead.terms_conditions,
-                          expression: "lead.terms_conditions"
-                        }
-                      ],
-                      class: {
-                        "border-red-500":
-                          _vm.submitted && _vm.$v.lead.terms_conditions.$error
-                      },
-                      attrs: {
-                        type: "checkbox",
-                        id: "terms_conditions",
-                        value: "1"
-                      },
-                      domProps: {
-                        checked: Array.isArray(_vm.lead.terms_conditions)
-                          ? _vm._i(_vm.lead.terms_conditions, "1") > -1
-                          : _vm.lead.terms_conditions
-                      },
-                      on: {
-                        change: function($event) {
-                          var $$a = _vm.lead.terms_conditions,
-                            $$el = $event.target,
-                            $$c = $$el.checked ? true : false
-                          if (Array.isArray($$a)) {
-                            var $$v = "1",
-                              $$i = _vm._i($$a, $$v)
-                            if ($$el.checked) {
-                              $$i < 0 &&
-                                _vm.$set(
-                                  _vm.lead,
-                                  "terms_conditions",
-                                  $$a.concat([$$v])
-                                )
-                            } else {
-                              $$i > -1 &&
-                                _vm.$set(
-                                  _vm.lead,
-                                  "terms_conditions",
-                                  $$a.slice(0, $$i).concat($$a.slice($$i + 1))
-                                )
+                    _c(
+                      "div",
+                      { staticClass: "custom-control custom-checkbox mb-5" },
+                      [
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.lead.terms_conditions,
+                              expression: "lead.terms_conditions"
                             }
-                          } else {
-                            _vm.$set(_vm.lead, "terms_conditions", $$c)
+                          ],
+                          staticClass: "custom-control-input",
+                          attrs: {
+                            type: "checkbox",
+                            id: "customCheck2",
+                            value: "1"
+                          },
+                          domProps: {
+                            checked: Array.isArray(_vm.lead.terms_conditions)
+                              ? _vm._i(_vm.lead.terms_conditions, "1") > -1
+                              : _vm.lead.terms_conditions
+                          },
+                          on: {
+                            change: function($event) {
+                              var $$a = _vm.lead.terms_conditions,
+                                $$el = $event.target,
+                                $$c = $$el.checked ? true : false
+                              if (Array.isArray($$a)) {
+                                var $$v = "1",
+                                  $$i = _vm._i($$a, $$v)
+                                if ($$el.checked) {
+                                  $$i < 0 &&
+                                    _vm.$set(
+                                      _vm.lead,
+                                      "terms_conditions",
+                                      $$a.concat([$$v])
+                                    )
+                                } else {
+                                  $$i > -1 &&
+                                    _vm.$set(
+                                      _vm.lead,
+                                      "terms_conditions",
+                                      $$a
+                                        .slice(0, $$i)
+                                        .concat($$a.slice($$i + 1))
+                                    )
+                                }
+                              } else {
+                                _vm.$set(_vm.lead, "terms_conditions", $$c)
+                              }
+                            }
                           }
-                        }
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("label", [
-                      _vm._v(
-                        "I hereby consent and agree to the Interim Constitition of\n                ActionSA"
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _vm.submitted && _vm.$v.lead.terms_conditions.$error
-                      ? _c(
-                          "div",
-                          { staticClass: "text-red-500 text-sm italic" },
+                        }),
+                        _vm._v(" "),
+                        _c(
+                          "label",
+                          {
+                            staticClass: "custom-control-label",
+                            attrs: { for: "customCheck2" }
+                          },
                           [
-                            !_vm.$v.lead.terms_conditions.required
-                              ? _c("span", [
-                                  _vm._v("Please fill out this field")
-                                ])
-                              : _vm._e()
+                            _vm._v(
+                              "\n                  I hereby consent and agree to the Interim Constitition of\n                  ActionSA"
+                            )
                           ]
-                        )
-                      : _vm._e()
-                  ]),
-                  _vm._v(" "),
-                  _vm._m(1)
-                ])
+                        ),
+                        _vm._v(" "),
+                        _vm.submitted && _vm.$v.lead.terms_conditions.$error
+                          ? _c(
+                              "div",
+                              { staticClass: "text-red-500 text-sm italic" },
+                              [
+                                !_vm.$v.lead.terms_conditions.required
+                                  ? _c("span", [
+                                      _vm._v("Please fill out this field")
+                                    ])
+                                  : _vm._e()
+                              ]
+                            )
+                          : _vm._e()
+                      ]
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _vm._m(0)
               ])
             ])
           ]
@@ -37533,23 +37698,12 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "mt-6 mb-8 text-gray-500" }, [
-      _c("p", [_vm._v("Please fill in the details below")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "w-full px-3 mt-6" }, [
-      _c(
-        "button",
-        {
-          staticClass:
-            "flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2"
-        },
-        [_vm._v("\n                Register\n              ")]
-      )
+    return _c("div", { staticClass: "flex flex-wrap -mx-3" }, [
+      _c("div", { staticClass: "w-full px-3" }, [
+        _c("button", { staticClass: "register-btn font-bold" }, [
+          _vm._v("Register")
+        ])
+      ])
     ])
   }
 ]
@@ -37812,10 +37966,6 @@ var render = function() {
                       ],
                       staticClass:
                         "appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white",
-                      class: {
-                        "border-red-500":
-                          _vm.submitted && _vm.$v.lead.lead_email.$error
-                      },
                       attrs: {
                         type: "email",
                         tabindex: "4",
@@ -37832,25 +37982,7 @@ var render = function() {
                           _vm.$set(_vm.lead, "lead_email", $event.target.value)
                         }
                       }
-                    }),
-                    _vm._v(" "),
-                    _vm.submitted && _vm.$v.lead.lead_email.$error
-                      ? _c(
-                          "div",
-                          { staticClass: "text-red-500 text-sm italic" },
-                          [
-                            !_vm.$v.lead.lead_email.required
-                              ? _c("span", [
-                                  _vm._v("Please fill out this field")
-                                ])
-                              : _vm._e(),
-                            _vm._v(" "),
-                            !_vm.$v.lead.lead_email.email
-                              ? _c("span", [_vm._v("Enter a valid email")])
-                              : _vm._e()
-                          ]
-                        )
-                      : _vm._e()
+                    })
                   ])
                 ])
               ]),
@@ -38421,8 +38553,10 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "flex flex-wrap -mx-3 mb-3" }, [
-      _c("div", { staticClass: "w-full px-3 font-bold mt-6" }, [
-        _c("button", { staticClass: "register-btn" }, [_vm._v("Register")])
+      _c("div", { staticClass: "w-full px-3" }, [
+        _c("button", { staticClass: "register-btn font-bold" }, [
+          _vm._v("Register")
+        ])
       ])
     ])
   }
@@ -40988,23 +41122,10 @@ var render = function() {
     "div",
     { staticClass: "min-h-screen bg-gray-100" },
     [
-      _c("nav", { staticClass: "dots border-b" }, [
+      _c("nav", { staticClass: "bg-white border-b" }, [
         _c("div", { staticClass: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" }, [
           _c("div", { staticClass: "flex justify-between h-16" }, [
             _c("div", { staticClass: "flex" }, [
-              _c("div", { staticClass: "flex-shrink-0 flex items-center" }, [
-                _c(
-                  "a",
-                  { attrs: { href: "/" } },
-                  [
-                    _c("jet-application-mark", {
-                      staticClass: "block h-9 w-auto"
-                    })
-                  ],
-                  1
-                )
-              ]),
-              _vm._v(" "),
               _c(
                 "div",
                 { staticClass: "hidden space-x-8 sm:-my-px sm:ml-10 sm:flex" },
@@ -41017,7 +41138,7 @@ var render = function() {
                         active: _vm.$page.currentRouteName == "dashboard"
                       }
                     },
-                    [_vm._v("\n                Dashboard\n              ")]
+                    [_vm._v("\n              Dashboard\n            ")]
                   )
                 ],
                 1
@@ -41072,7 +41193,7 @@ var render = function() {
                                 },
                                 [
                                   _vm._v(
-                                    "\n                    Manage Account\n                  "
+                                    "\n                  Manage Account\n                "
                                   )
                                 ]
                               ),
@@ -41082,7 +41203,7 @@ var render = function() {
                                 { attrs: { href: "/user/profile" } },
                                 [
                                   _vm._v(
-                                    "\n                    Profile\n                  "
+                                    "\n                  Profile\n                "
                                   )
                                 ]
                               ),
@@ -41101,7 +41222,7 @@ var render = function() {
                                       },
                                       [
                                         _vm._v(
-                                          "\n                      Manage Team\n                    "
+                                          "\n                    Manage Team\n                  "
                                         )
                                       ]
                                     ),
@@ -41117,7 +41238,7 @@ var render = function() {
                                       },
                                       [
                                         _vm._v(
-                                          "\n                      Team Settings\n                    "
+                                          "\n                    Team Settings\n                  "
                                         )
                                       ]
                                     ),
@@ -41128,7 +41249,7 @@ var render = function() {
                                           { attrs: { href: "/teams/create" } },
                                           [
                                             _vm._v(
-                                              "\n                      Create New Team\n                    "
+                                              "\n                    Create New Team\n                  "
                                             )
                                           ]
                                         )
@@ -41146,7 +41267,7 @@ var render = function() {
                                       },
                                       [
                                         _vm._v(
-                                          "\n                      Switch Teams\n                    "
+                                          "\n                    Switch Teams\n                  "
                                         )
                                       ]
                                     ),
@@ -41339,7 +41460,7 @@ var render = function() {
                       active: _vm.$page.currentRouteName == "dashboard"
                     }
                   },
-                  [_vm._v("\n            Dashboard\n          ")]
+                  [_vm._v("\n          Dashboard\n        ")]
                 )
               ],
               1
@@ -41363,9 +41484,9 @@ var render = function() {
                     { staticClass: "font-medium text-base text-gray-800" },
                     [
                       _vm._v(
-                        "\n                " +
+                        "\n              " +
                           _vm._s(_vm.$page.user.username) +
-                          "\n              "
+                          "\n            "
                       )
                     ]
                   ),
@@ -41375,9 +41496,9 @@ var render = function() {
                     { staticClass: "font-medium text-sm text-gray-500" },
                     [
                       _vm._v(
-                        "\n                " +
+                        "\n              " +
                           _vm._s(_vm.$page.user.email) +
-                          "\n              "
+                          "\n            "
                       )
                     ]
                   )
@@ -41396,7 +41517,7 @@ var render = function() {
                         active: _vm.$page.currentRouteName == "profile.show"
                       }
                     },
-                    [_vm._v("\n              Profile\n            ")]
+                    [_vm._v("\n            Profile\n          ")]
                   ),
                   _vm._v(" "),
                   _c(
@@ -41414,7 +41535,7 @@ var render = function() {
                       _c(
                         "jet-responsive-nav-link",
                         { attrs: { as: "button" } },
-                        [_vm._v("\n                Logout\n              ")]
+                        [_vm._v("\n              Logout\n            ")]
                       )
                     ],
                     1
@@ -41429,11 +41550,7 @@ var render = function() {
                           {
                             staticClass: "block px-4 py-2 text-xs text-gray-400"
                           },
-                          [
-                            _vm._v(
-                              "\n                Manage Team\n              "
-                            )
-                          ]
+                          [_vm._v("\n              Manage Team\n            ")]
                         ),
                         _vm._v(" "),
                         _c(
@@ -41446,7 +41563,7 @@ var render = function() {
                           },
                           [
                             _vm._v(
-                              "\n                Team Settings\n              "
+                              "\n              Team Settings\n            "
                             )
                           ]
                         ),
@@ -41462,7 +41579,7 @@ var render = function() {
                           },
                           [
                             _vm._v(
-                              "\n                Create New Team\n              "
+                              "\n              Create New Team\n            "
                             )
                           ]
                         ),
@@ -41474,11 +41591,7 @@ var render = function() {
                           {
                             staticClass: "block px-4 py-2 text-xs text-gray-400"
                           },
-                          [
-                            _vm._v(
-                              "\n                Switch Teams\n              "
-                            )
-                          ]
+                          [_vm._v("\n              Switch Teams\n            ")]
                         ),
                         _vm._v(" "),
                         _vm._l(_vm.$page.user.all_teams, function(team) {
@@ -41631,7 +41744,7 @@ var render = function() {
                         active: _vm.$page.currentRouteName == "dashbaord"
                       }
                     },
-                    [_vm._v("\n                Dashboard\n              ")]
+                    [_vm._v("\n              Dashboard\n            ")]
                   ),
                   _vm._v(" "),
                   _c(
@@ -41643,11 +41756,7 @@ var render = function() {
                           _vm.$page.currentRouteName == "become-a-supporter"
                       }
                     },
-                    [
-                      _vm._v(
-                        "\n                Become a Supporter\n              "
-                      )
-                    ]
+                    [_vm._v("\n              Become a Supporter\n            ")]
                   ),
                   _vm._v(" "),
                   _c(
@@ -41658,11 +41767,7 @@ var render = function() {
                         active: _vm.$page.currentRouteName == "register"
                       }
                     },
-                    [
-                      _vm._v(
-                        "\n                Become a Volunteer\n              "
-                      )
-                    ]
+                    [_vm._v("\n              Become a Volunteer\n            ")]
                   )
                 ],
                 1
@@ -41750,7 +41855,7 @@ var render = function() {
                       active: _vm.$page.currentRouteName == "dashboard"
                     }
                   },
-                  [_vm._v("\n            Dashboard\n          ")]
+                  [_vm._v("\n          Dashboard\n        ")]
                 )
               ],
               1
@@ -41768,11 +41873,7 @@ var render = function() {
                       active: _vm.$page.currentRouteName == "become-a-supporter"
                     }
                   },
-                  [
-                    _vm._v(
-                      "\n                  Become a Supporter\n              "
-                    )
-                  ]
+                  [_vm._v("\n          Become a Supporter\n        ")]
                 )
               ],
               1
@@ -41790,11 +41891,7 @@ var render = function() {
                       active: _vm.$page.currentRouteName == "register"
                     }
                   },
-                  [
-                    _vm._v(
-                      "\n                  Become a Volunteer\n              "
-                    )
-                  ]
+                  [_vm._v("\n          Become a Volunteer\n        ")]
                 )
               ],
               1
@@ -41813,7 +41910,7 @@ var render = function() {
                         active: _vm.$page.currentRouteName == "profile.show"
                       }
                     },
-                    [_vm._v("\n              Profile\n            ")]
+                    [_vm._v("\n            Profile\n          ")]
                   ),
                   _vm._v(" "),
                   _c(
@@ -41831,7 +41928,7 @@ var render = function() {
                       _c(
                         "jet-responsive-nav-link",
                         { attrs: { as: "button" } },
-                        [_vm._v("\n                Logout\n              ")]
+                        [_vm._v("\n              Logout\n            ")]
                       )
                     ],
                     1
@@ -42820,16 +42917,6 @@ var render = function() {
       "div",
       { staticClass: "p-6 sm:px-20 bg-white border-b border-gray-200" },
       [
-        _c(
-          "div",
-          [_c("jet-application-logo", { staticClass: "block h-12 w-auto" })],
-          1
-        ),
-        _vm._v(" "),
-        _c("div", { staticClass: "mt-8 text-2xl" }, [
-          _vm._v("Welcome to ActionSA")
-        ]),
-        _vm._v(" "),
         _c("div", { staticClass: "mt-6 text-gray-500" }, [
           _c("table", { staticClass: "table-auto" }, [
             _vm._m(0),
@@ -43109,10 +43196,9 @@ var render = function() {
                   "button",
                   {
                     staticClass:
-                      "dots-reverse hover:bg-green-700 text-white ml-2 font-bold py-2 px-4 float-right",
-                    staticStyle: { background: "##ffb81c" }
+                      "dots-reverse hover:bg-green-700 text-white ml-2 font-bold py-2 px-4 float-right"
                   },
-                  [_vm._v("\n        Add New Lead\n      ")]
+                  [_vm._v("\n        Add Lead\n      ")]
                 )
               ]),
               _vm._v(" "),

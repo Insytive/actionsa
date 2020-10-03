@@ -7,10 +7,9 @@
 
       <inertia-link href="/add-lead">
         <button
-          style="background: ##ffb81c"
           class="dots-reverse hover:bg-green-700 text-white ml-2 font-bold py-2 px-4 float-right"
         >
-          Add New Lead
+          Add Lead
         </button>
       </inertia-link>
 

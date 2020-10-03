@@ -108,21 +108,7 @@
                   id="lead_email"
                   name="lead_email"
                   class="appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white"
-                  :class="{
-                    'border-red-500': submitted && $v.lead.lead_email.$error,
-                  }"
                 />
-                <div
-                  v-if="submitted && $v.lead.lead_email.$error"
-                  class="text-red-500 text-sm italic"
-                >
-                  <span v-if="!$v.lead.lead_email.required"
-                    >Please fill out this field</span
-                  >
-                  <span v-if="!$v.lead.lead_email.email"
-                    >Enter a valid email</span
-                  >
-                </div>
               </div>
             </div>
           </div>
@@ -373,8 +359,8 @@
             </div>
 
             <div class="flex flex-wrap -mx-3 mb-3">
-              <div class="w-full px-3 font-bold mt-6">
-                <button class="register-btn">Register</button>
+              <div class="w-full px-3">
+                <button class="register-btn font-bold">Register</button>
               </div>
             </div>
           </div>
@@ -483,6 +469,7 @@ export default {
   data() {
     return {
       lead: {
+        is_member: 0,
         first_name: "",
         last_name: "",
         lead_email: "signup@actionsa.org.za",
@@ -493,7 +480,6 @@ export default {
         voting_station: "",
         province: "",
         station_id: "",
-        interest: 1,
       },
       submitted: false,
       suggestions: [],
@@ -521,7 +507,6 @@ export default {
     lead: {
       first_name: { required },
       last_name: { required },
-      // lead_email: { email },
       id_number: {
         required,
         idRegex,
@@ -552,8 +537,8 @@ export default {
         return;
       }
 
-      // alert("SUCCESS!! :-)\n\n" + JSON.stringify(this.lead));
-      let response = await this.$inertia.post("/leads/save", this.lead);
+      alert("SUCCESS!! :-)\n\n" + JSON.stringify(this.lead));
+      //   let response = await this.$inertia.post("/leads/save", this.lead);
     },
     doSearch() {
       // console.log("Searching...");

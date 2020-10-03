@@ -7,14 +7,17 @@
           <div class="flex">
             <!-- Logo -->
             <div class="flex-shrink-0 flex items-center">
-                <jet-nav-link href="/" :active="$page.currentRouteName == 'home'">
-                    <jet-application-mark class="block h-9 w-auto" />
-                </jet-nav-link>
+              <jet-nav-link href="/" :active="$page.currentRouteName == 'home'">
+                <jet-application-mark class="block h-9 w-auto" />
+              </jet-nav-link>
             </div>
 
             <!-- Navigation Links -->
             <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-              <jet-nav-link href="/" :active="$page.currentRouteName == 'dashbaord'">
+              <jet-nav-link
+                href="/"
+                :active="$page.currentRouteName == 'dashbaord'"
+              >
                 Dashboard
               </jet-nav-link>
 
@@ -25,14 +28,12 @@
                 Become a Supporter
               </jet-nav-link>
 
-<!--              <jet-nav-link-->
-<!--                href="/become-a-member"-->
-<!--                :active="$page.currentRouteName == 'become-a-member'"-->
-<!--              >-->
-<!--                Become a Member-->
-<!--              </jet-nav-link>-->
-
-
+              <!--              <jet-nav-link-->
+              <!--                href="/become-a-member"-->
+              <!--                :active="$page.currentRouteName == 'become-a-member'"-->
+              <!--              >-->
+              <!--                Become a Member-->
+              <!--              </jet-nav-link>-->
 
               <jet-nav-link
                 href="/register"
@@ -103,23 +104,23 @@
           </jet-responsive-nav-link>
         </div>
 
-          <div class="pt-2 pb-3 space-y-1 text-white">
-              <jet-nav-link
-                  href="/become-a-supporter"
-                  :active="$page.currentRouteName == 'become-a-supporter'"
-              >
-                  Become a Supporter
-              </jet-nav-link>
+        <div class="pt-2 pb-3 space-y-1 text-white">
+          <jet-nav-link
+            href="/become-a-supporter"
+            :active="$page.currentRouteName == 'become-a-supporter'"
+          >
+            Become a Supporter
+          </jet-nav-link>
         </div>
 
-          <div class="pt-2 pb-3 space-y-1 text-white">
-              <jet-nav-link
-                  href="/register"
-                  :active="$page.currentRouteName == 'register'"
-              >
-                  Become a Volunteer
-              </jet-nav-link>
-          </div>
+        <div class="pt-2 pb-3 space-y-1 text-white">
+          <jet-nav-link
+            href="/register"
+            :active="$page.currentRouteName == 'register'"
+          >
+            Become a Volunteer
+          </jet-nav-link>
+        </div>
 
         <!-- Responsive Settings Options -->
         <div class="pt-4 pb-1 border-t border-gray-200">
