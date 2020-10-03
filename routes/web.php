@@ -78,6 +78,10 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/add-lead', function () {
     return Inertia\Inertia::render('AddLead');
 })->name('add-lead');
 
+Route::middleware(['auth:sanctum', 'verified'])->get('/add-member', function () {
+    return Inertia\Inertia::render('AddMember');
+})->name('add-member');
+
 //Route::group(['middleware' => 'auth:sanctum', 'verified'], function () {
 //    Route::post('leads/save', [LeadController::class, 'store']);
 //});

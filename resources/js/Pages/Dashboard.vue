@@ -7,9 +7,18 @@
 
       <inertia-link href="/add-lead">
         <button
-          class="dots hover:bg-green-700 text-white font-bold py-2 px-4 float-right"
+          style="background: ##ffb81c"
+          class="dots-reverse hover:bg-green-700 text-white ml-2 font-bold py-2 px-4 float-right"
         >
           Add New Lead
+        </button>
+      </inertia-link>
+
+      <inertia-link href="/add-member">
+        <button
+          class="dots hover:bg-green-700 text-white font-bold py-2 px-4 float-right"
+        >
+          Add Member
         </button>
       </inertia-link>
     </template>

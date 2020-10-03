@@ -32,6 +32,10 @@
     background-color: #05b615 !important;
     color: #fff;
 }
+.dots-reverse {
+    background-color: #ffb81c !important;
+    color: #fff;
+}
 
 .register-btn {
     background-color: #05b615;
