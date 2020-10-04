@@ -62,8 +62,8 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th:first-child:before {
   background-color: #667eea !important; /*bg-indigo-500*/
 }
 </style>
-	  
- 
+
+
 
 
 <template>
@@ -100,7 +100,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th:first-child:before {
                 <td class="border px-4 py-2">{{ lead.id_number }}</td>
                 <td class="border px-4 py-2">{{ lead.address }}</td>
                 <td class="border px-4 py-2">{{ lead.phone }}</td>
-                <td class="border px-4 py-2">{{ lead.voting_station }}</td>
+                <td class="border px-4 py-2">{{ lead.station_id }}</td>
                 <td class="border px-4 py-2">
                   <span class="svg__icon">
                     <svg class="icon icon-chevron-small-right">

@@ -24,6 +24,8 @@ class Lead extends Model
     protected $encryptable = [
         'id_number',
         'address',
+        'building',
+        'lead_email'
     ];
 
     const GENDER_SELECT = [
@@ -89,8 +91,6 @@ class Lead extends Model
      * @var array
      */
     protected $hidden = [
-        'address',
-        'building',
         'user_id',
         'member_id',
         'employee_id',
