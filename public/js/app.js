@@ -8444,18 +8444,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -41312,41 +41300,30 @@ var render = function() {
     "div",
     { staticClass: "min-h-screen bg-gray-100" },
     [
-      _c("nav", { staticClass: "bg-green-100 text-white py-3" }, [
+      _c("nav", { staticClass: "dots border-b" }, [
         _c("div", { staticClass: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" }, [
           _c("div", { staticClass: "flex justify-between h-16" }, [
             _c("div", { staticClass: "flex" }, [
-              _c(
-                "div",
-                { staticClass: "flex-shrink-0 flex items-center mr-8" },
-                [
-                  _c(
-                    "jet-nav-link",
-                    {
-                      attrs: {
-                        href: "/",
-                        active: _vm.$page.currentRouteName == "home"
-                      }
-                    },
-                    [
-                      _c("jet-application-mark", {
-                        staticClass: "block h-15 w-auto"
-                      })
-                    ],
-                    1
-                  )
-                ],
-                1
-              ),
+              _c("div", { staticClass: "flex-shrink-0 flex items-center" }, [
+                _c(
+                  "a",
+                  { attrs: { href: "/dashboard" } },
+                  [
+                    _c("jet-application-mark", {
+                      staticClass: "block h-9 w-auto"
+                    })
+                  ],
+                  1
+                )
+              ]),
               _vm._v(" "),
               _c(
                 "div",
-                { staticClass: "hidden space-x-8 sm:-my-px sm:flex" },
+                { staticClass: "hidden space-x-8 sm:-my-px sm:ml-10 sm:flex" },
                 [
                   _c(
                     "jet-nav-link",
                     {
-                      staticClass: "text-white",
                       attrs: {
                         href: "/dashboard",
                         active: _vm.$page.currentRouteName == "dashboard"
@@ -41600,7 +41577,7 @@ var render = function() {
                 "button",
                 {
                   staticClass:
-                    "inline-flex items-center justify-center p-2 rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out",
+                    "inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out",
                   on: {
                     click: function($event) {
                       _vm.showingNavigationDropdown = !_vm.showingNavigationDropdown
@@ -41733,6 +41710,20 @@ var render = function() {
                     },
                     [_vm._v("\n            Profile\n          ")]
                   ),
+                  _vm._v(" "),
+                  _vm.$page.jetstream.hasApiFeatures
+                    ? _c(
+                        "jet-responsive-nav-link",
+                        {
+                          attrs: {
+                            href: "/user/api-tokens",
+                            active:
+                              _vm.$page.currentRouteName == "api-tokens.index"
+                          }
+                        },
+                        [_vm._v("\n            API Tokens\n          ")]
+                      )
+                    : _vm._e(),
                   _vm._v(" "),
                   _c(
                     "form",
@@ -41877,48 +41868,23 @@ var render = function() {
         )
       ]),
       _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "max-w-7xl mx-auto px-4 hidden sm:px-6 lg:px-8" },
-        [_vm._t("header")],
-        2
-      ),
+      _c("header", { staticClass: "bg-white shadow" }, [
+        _c(
+          "div",
+          { staticClass: "max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8" },
+          [_vm._t("header")],
+          2
+        )
+      ]),
       _vm._v(" "),
       _c("main", [_vm._t("default")], 2),
-      _vm._v(" "),
-      _vm._m(0),
       _vm._v(" "),
       _c("portal-target", { attrs: { name: "modal", multiple: "" } })
     ],
     1
   )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("footer", { staticClass: "py-12" }, [
-      _c("div", { staticClass: "max-w-7xl mx-auto sm:px-6 lg:px-8" }, [
-        _c(
-          "div",
-          { staticClass: "overflow-hidden text-center text-gray-500 text-sm" },
-          [
-            _vm._v("\n        Powered by\n        "),
-            _c(
-              "a",
-              {
-                staticClass: "hover:text-green-100",
-                attrs: { href: "https://www.thrivebs.co.za/", target: "_blank" }
-              },
-              [_vm._v("Thrive Business Solutions\n        ")]
-            )
-          ]
-        )
-      ])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 

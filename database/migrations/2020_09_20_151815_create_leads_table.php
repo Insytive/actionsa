@@ -12,12 +12,12 @@ class CreateLeadsTable extends Migration
             $table->bigIncrements('id');
             $table->string('first_name');
             $table->string('last_name');
-            $table->string('id_number')->unique();
+            $table->string('id_number', 255)->unique();
             $table->date('birthdate')->nullable();
             $table->string('gender')->nullable();
-            $table->string('lead_email')->nullable();
-            $table->string('address')->nullable();
-            $table->string('building')->nullable();
+            $table->string('lead_email', 255)->nullable();
+            $table->string('address', 255)->nullable();
+            $table->string('building', 255)->nullable();
             $table->string('town')->nullable();
             $table->string('city')->nullable();
             $table->string('phone')->nullable();

@@ -10,6 +10,7 @@
     "require": {
         "php": "^7.3",
         "betterapp/laravel-db-encrypter": "^1.0",
+        "doctrine/dbal": "^2.11",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
         "google/recaptcha": "1.2.*",

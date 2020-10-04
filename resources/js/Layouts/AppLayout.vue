@@ -1,21 +1,21 @@
 <template>
   <div class="min-h-screen bg-gray-100">
-    <nav class="bg-green-100 text-white py-3">
+    <nav class="dots border-b">
       <!-- Primary Navigation Menu -->
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
           <div class="flex">
             <!-- Logo -->
-            <div class="flex-shrink-0 flex items-center mr-8">
-              <jet-nav-link href="/" :active="$page.currentRouteName == 'home'">
-                <jet-application-mark class="block h-15 w-auto" />
-              </jet-nav-link>
+            <div class="flex-shrink-0 flex items-center">
+              <a href="/dashboard">
+                <jet-application-mark class="block h-9 w-auto" />
+              </a>
             </div>
+
             <!-- Navigation Links -->
-            <div class="hidden space-x-8 sm:-my-px sm:flex">
+            <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
               <jet-nav-link
                 href="/dashboard"
-                class="text-white"
                 :active="$page.currentRouteName == 'dashboard'"
               >
                 Dashboard
@@ -122,7 +122,7 @@
           <div class="-mr-2 flex items-center sm:hidden">
             <button
               @click="showingNavigationDropdown = !showingNavigationDropdown"
-              class="inline-flex items-center justify-center p-2 rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
+              class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
             >
               <svg
                 class="h-6 w-6"
@@ -202,13 +202,13 @@
               Profile
             </jet-responsive-nav-link>
 
-            <!--            <jet-responsive-nav-link-->
-            <!--              href="/user/api-tokens"-->
-            <!--              :active="$page.currentRouteName == 'api-tokens.index'"-->
-            <!--              v-if="$page.jetstream.hasApiFeatures"-->
-            <!--            >-->
-            <!--              API Tokens-->
-            <!--            </jet-responsive-nav-link>-->
+            <jet-responsive-nav-link
+              href="/user/api-tokens"
+              :active="$page.currentRouteName == 'api-tokens.index'"
+              v-if="$page.jetstream.hasApiFeatures"
+            >
+              API Tokens
+            </jet-responsive-nav-link>
 
             <!-- Authentication -->
             <form method="POST" @submit.prevent="logout">
@@ -276,29 +276,17 @@
       </div>
     </nav>
 
-    <div class="max-w-7xl mx-auto px-4 hidden sm:px-6 lg:px-8">
-      <slot name="header"></slot>
-    </div>
+    <!-- Page Heading -->
+    <header class="bg-white shadow">
+      <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+        <slot name="header"></slot>
+      </div>
+    </header>
 
     <!-- Page Content -->
     <main>
       <slot></slot>
     </main>
-
-    <!-- Footer -->
-    <footer class="py-12">
-      <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-        <div class="overflow-hidden text-center text-gray-500 text-sm">
-          Powered by
-          <a
-            href="https://www.thrivebs.co.za/"
-            class="hover:text-green-100"
-            target="_blank"
-            >Thrive Business Solutions
-          </a>
-        </div>
-      </div>
-    </footer>
 
     <!-- Modal Portal -->
     <portal-target name="modal" multiple> </portal-target>
