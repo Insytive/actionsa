@@ -4,6 +4,7 @@ namespace App\Models;
 
 use App\Traits\Auditable;
 use App\Traits\MultiTenantModelTrait;
+use betterapp\LaravelDbEncrypter\Traits\EncryptableDbAttribute;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -12,13 +13,18 @@ use \DateTimeInterface;
 
 class Lead extends Model
 {
-    use SoftDeletes, Auditable, HasFactory;
+    use SoftDeletes, Auditable, EncryptableDbAttribute, HasFactory;
 
     // public $table = 'leads';
 
     public static $searchable = [
         'first_name',
         'last_name',
+    ];
+
+    protected $encryptable = [
+        'id_number',
+        'address',
     ];
 
     const GENDER_SELECT = [
@@ -84,16 +90,12 @@ class Lead extends Model
      * @var array
      */
     protected $hidden = [
-        'id_number',
-        'phone',
-        'lead_email',
-        'province_id',
-        'station_id',
+        'address',
+        'building',
         'user_id',
         'member_id',
         'employee_id',
-        'volunteer_id',
-        'building',
+        'volunteer_id'
     ];
 
     protected function serializeDate(DateTimeInterface $date)

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "44af105e9cb6fea407385a9498f77acd",
+    "content-hash": "b7ad45b796d245937b93129b7f7db557",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -108,48 +108,28 @@
             "time": "2020-07-30T16:40:58+00:00"
         },
         {
-            "name": "biscolab/laravel-recaptcha",
-            "version": "4.4.0",
+            "name": "betterapp/laravel-db-encrypter",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/biscolab/laravel-recaptcha.git",
-                "reference": "a9f5645aeac0747506cb75ccc3bb70e7fada5a7e"
+                "url": "https://github.com/betterapp/laravel-db-encrypter.git",
+                "reference": "46fda365c80afda988e0f0b0e30074db1b00c644"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/biscolab/laravel-recaptcha/zipball/a9f5645aeac0747506cb75ccc3bb70e7fada5a7e",
-                "reference": "a9f5645aeac0747506cb75ccc3bb70e7fada5a7e",
+                "url": "https://api.github.com/repos/betterapp/laravel-db-encrypter/zipball/46fda365c80afda988e0f0b0e30074db1b00c644",
+                "reference": "46fda365c80afda988e0f0b0e30074db1b00c644",
                 "shasum": ""
             },
             "require": {
-                "laravel/framework": "^5.5|^6.0|^7.0|^8.0",
-                "php": "^7.1"
-            },
-            "require-dev": {
-                "orchestra/testbench": "~3.0",
-                "phpunit/phpunit": "6.*|7.*"
-            },
-            "suggest": {
-                "biscolab/laravel-authlog": "It allows to handle logged-in users and force log-out if needed"
+                "laravel/framework": "^6.0|^7.0|^8.0",
+                "php": ">=7.1"
             },
             "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Biscolab\\ReCaptcha\\ReCaptchaServiceProvider"
-                    ],
-                    "aliases": {
-                        "ReCaptcha": "Biscolab\\ReCaptcha\\Facades\\ReCaptcha"
-                    }
-                }
-            },
             "autoload": {
                 "psr-4": {
-                    "Biscolab\\ReCaptcha\\": "src/"
-                },
-                "files": [
-                    "src/helpers.php"
-                ]
+                    "betterapp\\LaravelDbEncrypter\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -157,21 +137,36 @@
             ],
             "authors": [
                 {
-                    "name": "Roberto Belotti",
-                    "email": "roby.belotti@gmail.com",
-                    "homepage": "https://biscolab.com",
+                    "name": "Daniel Czestki",
+                    "email": "daniel@betterapp.net",
+                    "homepage": "https://github.com/betterapp",
                     "role": "Developer"
                 }
             ],
-            "description": "Simple and painless Google reCAPTCHA package for Laravel 5.5 or greater",
-            "homepage": "https://biscolab.com/laravel-recaptcha",
+            "description": "Provides database model attribute encryption/decryption",
             "keywords": [
-                "captcha",
+                "attribute",
+                "database",
+                "database encrypter",
+                "database encryption",
+                "decrypt",
+                "decrypted",
+                "decryption",
+                "eloquent",
+                "encrypt",
+                "encrypter",
+                "encryption",
                 "laravel",
-                "recaptcha",
-                "validation"
+                "laravel attribute encrypter",
+                "laravel attribute encryption",
+                "laravel database encrypter",
+                "laravel database encryption",
+                "laravel db encrypter",
+                "laravel db encryption",
+                "laravel model encrypter",
+                "laravel model encryption"
             ],
-            "time": "2020-09-30T20:13:13+00:00"
+            "time": "2020-09-12T15:24:02+00:00"
         },
         {
             "name": "brick/math",
@@ -6024,6 +6019,72 @@
                 }
             ],
             "time": "2020-09-07T19:32:39+00:00"
+        },
+        {
+            "name": "biscolab/laravel-recaptcha",
+            "version": "4.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/biscolab/laravel-recaptcha.git",
+                "reference": "a9f5645aeac0747506cb75ccc3bb70e7fada5a7e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/biscolab/laravel-recaptcha/zipball/a9f5645aeac0747506cb75ccc3bb70e7fada5a7e",
+                "reference": "a9f5645aeac0747506cb75ccc3bb70e7fada5a7e",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^5.5|^6.0|^7.0|^8.0",
+                "php": "^7.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "~3.0",
+                "phpunit/phpunit": "6.*|7.*"
+            },
+            "suggest": {
+                "biscolab/laravel-authlog": "It allows to handle logged-in users and force log-out if needed"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Biscolab\\ReCaptcha\\ReCaptchaServiceProvider"
+                    ],
+                    "aliases": {
+                        "ReCaptcha": "Biscolab\\ReCaptcha\\Facades\\ReCaptcha"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Biscolab\\ReCaptcha\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roberto Belotti",
+                    "email": "roby.belotti@gmail.com",
+                    "homepage": "https://biscolab.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Simple and painless Google reCAPTCHA package for Laravel 5.5 or greater",
+            "homepage": "https://biscolab.com/laravel-recaptcha",
+            "keywords": [
+                "captcha",
+                "laravel",
+                "recaptcha",
+                "validation"
+            ],
+            "time": "2020-09-30T20:13:13+00:00"
         },
         {
             "name": "doctrine/instantiator",
