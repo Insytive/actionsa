@@ -1,19 +1,15 @@
 <template>
-  <app-layout>
-    <template #header>
-      <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-        Dashboard
-      </h2>
-    </template>
+    <app-layout>
+        <template #header> </template>
 
-    <div class="py-12">
-      <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-        <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-          <member />
+        <div class="py-12">
+            <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+                <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
+                    <member />
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </app-layout>
+    </app-layout>
 </template>
 
 <script>
@@ -21,14 +17,14 @@ import AppLayout from "./../Layouts/AppLayout";
 import Member from "../Components/Registration/Member";
 
 export default {
-  components: {
-    AppLayout,
-    Member,
-  },
+    components: {
+        AppLayout,
+        Member
+    },
 
-  props: {
-    leads: Array,
-    msg: String,
-  },
+    props: {
+        leads: Array,
+        msg: String
+    }
 };
 </script>

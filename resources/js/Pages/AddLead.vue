@@ -1,10 +1,6 @@
 <template>
     <app-layout>
-        <template #header>
-            <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                Dashboard
-            </h2>
-        </template>
+        <template #header> </template>
 
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
@@ -17,18 +13,18 @@
 </template>
 
 <script>
-import AppLayout from './../Layouts/AppLayout'
+import AppLayout from "./../Layouts/AppLayout";
 import Supporter from "../Components/Registration/Supporter";
 
 export default {
     components: {
         AppLayout,
-        Supporter,
+        Supporter
     },
 
     props: {
         leads: Array,
         msg: String
     }
-}
+};
 </script>

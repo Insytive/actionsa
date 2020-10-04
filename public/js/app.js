@@ -5611,6 +5611,27 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
  // import Autocomplete from "../AutoComplete";
 
 
@@ -8444,6 +8465,51 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -9051,10 +9117,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -9081,10 +9143,6 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../Layouts/AppLayout */ "./resources/js/Layouts/AppLayout.vue");
 /* harmony import */ var _Components_Registration_Member__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Components/Registration/Member */ "./resources/js/Components/Registration/Member.vue");
-//
-//
-//
-//
 //
 //
 //
@@ -10616,7 +10674,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "/*Overrides for Tailwind CSS */\n\n/*Form fields*/\n.dataTables_wrapper select,\n.dataTables_wrapper .dataTables_filter input {\n  color: #4a5568; /*text-gray-700*/\n  padding-left: 1rem; /*pl-4*/\n  padding-right: 1rem; /*pl-4*/\n  padding-top: 0.5rem; /*pl-2*/\n  padding-bottom: 0.5rem; /*pl-2*/\n  line-height: 1.25; /*leading-tight*/\n  border-width: 2px; /*border-2*/\n  border-radius: 0.25rem;\n  border-color: #edf2f7; /*border-gray-200*/\n  background-color: #edf2f7; /*bg-gray-200*/\n}\n\n/*Row Hover*/\ntable.dataTable.hover tbody tr:hover,\ntable.dataTable.display tbody tr:hover {\n  background-color: #ebf4ff; /*bg-indigo-100*/\n}\n\n/*Pagination Buttons*/\n.dataTables_wrapper .dataTables_paginate .paginate_button {\n  font-weight: 700; /*font-bold*/\n  border-radius: 0.25rem; /*rounded*/\n  border: 1px solid transparent; /*border border-transparent*/\n}\n\n/*Pagination Buttons - Current selected */\n.dataTables_wrapper .dataTables_paginate .paginate_button.current {\n  color: #fff !important; /*text-white*/\n  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); /*shadow*/\n  font-weight: 700; /*font-bold*/\n  border-radius: 0.25rem; /*rounded*/\n  background: #667eea !important; /*bg-indigo-500*/\n  border: 1px solid transparent; /*border border-transparent*/\n}\n\n/*Pagination Buttons - Hover */\n.dataTables_wrapper .dataTables_paginate .paginate_button:hover {\n  color: #fff !important; /*text-white*/\n  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); /*shadow*/\n  font-weight: 700; /*font-bold*/\n  border-radius: 0.25rem; /*rounded*/\n  background: #667eea !important; /*bg-indigo-500*/\n  border: 1px solid transparent; /*border border-transparent*/\n}\n\n/*Add padding to bottom border */\ntable.dataTable.no-footer {\n  border-bottom: 1px solid #e2e8f0; /*border-b-1 border-gray-300*/\n  margin-top: 0.75em;\n  margin-bottom: 0.75em;\n}\n\n/*Change colour of responsive icon*/\ntable.dataTable.dtr-inline.collapsed > tbody > tr > td:first-child:before,\ntable.dataTable.dtr-inline.collapsed > tbody > tr > th:first-child:before {\n  background-color: #667eea !important; /*bg-indigo-500*/\n}\n", ""]);
+exports.push([module.i, "/*Overrides for Tailwind CSS */\n\n/*Form fields*/\n.dataTables_wrapper select,\r\n.dataTables_wrapper .dataTables_filter input {\n  color: #4a5568; /*text-gray-700*/\n  padding-left: 1rem; /*pl-4*/\n  padding-right: 1rem; /*pl-4*/\n  padding-top: 0.5rem; /*pl-2*/\n  padding-bottom: 0.5rem; /*pl-2*/\n  line-height: 1.25; /*leading-tight*/\n  border-width: 2px; /*border-2*/\n  border-radius: 0.25rem;\n  border-color: #edf2f7; /*border-gray-200*/\n  background-color: #edf2f7; /*bg-gray-200*/\n}\n\n/*Row Hover*/\ntable.dataTable.hover tbody tr:hover,\r\ntable.dataTable.display tbody tr:hover {\n  background-color: #ebf4ff; /*bg-indigo-100*/\n}\n\n/*Pagination Buttons*/\n.dataTables_wrapper .dataTables_paginate .paginate_button {\n  font-weight: 700; /*font-bold*/\n  border-radius: 0.25rem; /*rounded*/\n  border: 1px solid transparent; /*border border-transparent*/\n}\n\n/*Pagination Buttons - Current selected */\n.dataTables_wrapper .dataTables_paginate .paginate_button.current {\n  color: #fff !important; /*text-white*/\n  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); /*shadow*/\n  font-weight: 700; /*font-bold*/\n  border-radius: 0.25rem; /*rounded*/\n  background: #667eea !important; /*bg-indigo-500*/\n  border: 1px solid transparent; /*border border-transparent*/\n}\n\n/*Pagination Buttons - Hover */\n.dataTables_wrapper .dataTables_paginate .paginate_button:hover {\n  color: #fff !important; /*text-white*/\n  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); /*shadow*/\n  font-weight: 700; /*font-bold*/\n  border-radius: 0.25rem; /*rounded*/\n  background: #667eea !important; /*bg-indigo-500*/\n  border: 1px solid transparent; /*border border-transparent*/\n}\n\n/*Add padding to bottom border */\ntable.dataTable.no-footer {\n  border-bottom: 1px solid #e2e8f0; /*border-b-1 border-gray-300*/\n  margin-top: 0.75em;\n  margin-bottom: 0.75em;\n}\n\n/*Change colour of responsive icon*/\ntable.dataTable.dtr-inline.collapsed > tbody > tr > td:first-child:before,\r\ntable.dataTable.dtr-inline.collapsed > tbody > tr > th:first-child:before {\n  background-color: #667eea !important; /*bg-indigo-500*/\n}\r\n", ""]);
 
 // exports
 
@@ -36958,276 +37016,104 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c(
-      "div",
-      { staticClass: "p-6 sm:px-20 bg-white border-b border-gray-200" },
-      [
-        _c(
-          "form",
-          {
-            staticClass: "w-full",
-            on: {
-              submit: function($event) {
-                $event.preventDefault()
-                return _vm.handleSubmit($event)
-              }
+  return _c(
+    "div",
+    { staticClass: "p-6 sm:px-20 bg-white border-b border-gray-200" },
+    [
+      _c(
+        "form",
+        {
+          staticClass: "w-full",
+          on: {
+            submit: function($event) {
+              $event.preventDefault()
+              return _vm.handleSubmit($event)
             }
-          },
-          [
-            _c("div", { staticClass: "flex flex-wrap" }, [
-              _c("div", { staticClass: "w-full lg:w-1/2 xl:w-1/2 px-4" }, [
-                _c("div", { staticClass: "flex flex-wrap -mx-3 mb-6" }, [
-                  _c("div", { staticClass: "w-full px-3" }, [
-                    _c(
-                      "label",
-                      {
-                        staticClass:
-                          "block tracking-wide text-gray-700 text-sm font-bold mb-2",
-                        attrs: { for: "id_number" }
-                      },
-                      [_vm._v("ID number")]
-                    ),
-                    _vm._v(" "),
-                    _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.lead.id_number,
-                          expression: "lead.id_number"
-                        }
-                      ],
-                      staticClass:
-                        "appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white",
-                      class: {
-                        "border-red-500":
-                          _vm.submitted && _vm.$v.lead.id_number.$error
-                      },
-                      attrs: {
-                        type: "text",
-                        placeholder: "ID number",
-                        id: "id_number",
-                        name: "id_number",
-                        tabindex: "1"
-                      },
-                      domProps: { value: _vm.lead.id_number },
-                      on: {
-                        input: function($event) {
-                          if ($event.target.composing) {
-                            return
-                          }
-                          _vm.$set(_vm.lead, "id_number", $event.target.value)
-                        }
-                      }
-                    }),
-                    _vm._v(" "),
-                    _vm.submitted && _vm.$v.lead.id_number.$error
-                      ? _c(
-                          "div",
-                          { staticClass: "text-red-500 text-sm italic" },
-                          [
-                            !_vm.$v.lead.id_number.required
-                              ? _c("span", [
-                                  _vm._v("Please fill out this field")
-                                ])
-                              : _vm._e(),
-                            _vm._v(" "),
-                            !_vm.$v.lead.id_number.idRegex
-                              ? _c("span", [
-                                  _vm._v("Enter a valid South African ID")
-                                ])
-                              : _vm._e()
-                          ]
-                        )
-                      : _vm._e()
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("hr"),
-                _vm._v(" "),
-                _c("div", { staticClass: "flex flex-wrap -mx-3 mb-6 mt-8" }, [
+          }
+        },
+        [
+          _c("div", { staticClass: "flex flex-wrap" }, [
+            _c("div", { staticClass: "w-full lg:w-1/2 xl:w-1/2 px-4" }, [
+              _c("div", { staticClass: "flex flex-wrap -mx-3 mb-6" }, [
+                _c("div", { staticClass: "w-full px-3" }, [
                   _c(
-                    "div",
-                    { staticClass: "w-full md:w-1/2 px-3 mb-3 md:mb-0" },
-                    [
-                      _c(
-                        "label",
-                        {
-                          staticClass:
-                            "block tracking-wide text-gray-700 text-sm font-bold mb-2",
-                          attrs: { for: "first_name" }
-                        },
-                        [_vm._v("First name")]
-                      ),
-                      _vm._v(" "),
-                      _c("input", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.lead.first_name,
-                            expression: "lead.first_name"
-                          }
-                        ],
-                        staticClass:
-                          "appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white",
-                        class: {
-                          "border-red-500":
-                            _vm.submitted && _vm.$v.lead.first_name.$error
-                        },
-                        attrs: {
-                          type: "text",
-                          id: "first_name",
-                          tabindex: "2",
-                          name: "first_name",
-                          placeholder: "First name"
-                        },
-                        domProps: { value: _vm.lead.first_name },
-                        on: {
-                          input: function($event) {
-                            if ($event.target.composing) {
-                              return
-                            }
-                            _vm.$set(
-                              _vm.lead,
-                              "first_name",
-                              $event.target.value
-                            )
-                          }
-                        }
-                      }),
-                      _vm._v(" "),
-                      _vm.submitted && !_vm.$v.lead.first_name.required
-                        ? _c(
-                            "div",
-                            { staticClass: "text-red-500 text-sm italic" },
-                            [
-                              _vm._v(
-                                "\n                Please fill out this field.\n              "
-                              )
-                            ]
-                          )
-                        : _vm._e()
-                    ]
+                    "label",
+                    {
+                      staticClass:
+                        "block tracking-wide text-gray-700 text-sm font-bold mb-2",
+                      attrs: { for: "id_number" }
+                    },
+                    [_vm._v("ID number")]
                   ),
                   _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "w-full md:w-1/2 px-3 mb-3 md:mb-0" },
-                    [
-                      _c(
-                        "label",
-                        {
-                          staticClass:
-                            "block tracking-wide text-gray-700 text-sm font-bold mb-2",
-                          attrs: { for: "first_name" }
-                        },
-                        [_vm._v("Last name")]
-                      ),
-                      _vm._v(" "),
-                      _c("input", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.lead.last_name,
-                            expression: "lead.last_name"
-                          }
-                        ],
-                        staticClass:
-                          "appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white",
-                        class: {
-                          "border-red-500":
-                            _vm.submitted && _vm.$v.lead.last_name.$error
-                        },
-                        attrs: {
-                          type: "text",
-                          id: "last_name",
-                          name: "last_name",
-                          placeholder: "Last name"
-                        },
-                        domProps: { value: _vm.lead.last_name },
-                        on: {
-                          input: function($event) {
-                            if ($event.target.composing) {
-                              return
-                            }
-                            _vm.$set(_vm.lead, "last_name", $event.target.value)
-                          }
-                        }
-                      }),
-                      _vm._v(" "),
-                      _vm.submitted && !_vm.$v.lead.last_name.required
-                        ? _c(
-                            "div",
-                            { staticClass: "text-red-500 text-xs italic" },
-                            [
-                              _vm._v(
-                                "\n                Please fill out this field.\n              "
-                              )
-                            ]
-                          )
-                        : _vm._e()
-                    ]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "flex flex-wrap -mx-3 mb-3" }, [
-                  _c("div", { staticClass: "w-full px-3" }, [
-                    _c(
-                      "label",
+                  _c("input", {
+                    directives: [
                       {
-                        staticClass:
-                          "block tracking-wide text-gray-700 text-sm font-bold mb-2",
-                        attrs: { for: "email" }
-                      },
-                      [_vm._v("Email")]
-                    ),
-                    _vm._v(" "),
-                    _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.lead.lead_email,
-                          expression: "lead.lead_email"
-                        }
-                      ],
-                      staticClass:
-                        "appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white",
-                      attrs: {
-                        type: "email",
-                        tabindex: "4",
-                        placeholder: "Email",
-                        id: "lead_email",
-                        name: "lead_email"
-                      },
-                      domProps: { value: _vm.lead.lead_email },
-                      on: {
-                        input: function($event) {
-                          if ($event.target.composing) {
-                            return
-                          }
-                          _vm.$set(_vm.lead, "lead_email", $event.target.value)
-                        }
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.lead.id_number,
+                        expression: "lead.id_number"
                       }
-                    })
-                  ])
+                    ],
+                    staticClass:
+                      "appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white",
+                    class: {
+                      "border-red-500":
+                        _vm.submitted && _vm.$v.lead.id_number.$error
+                    },
+                    attrs: {
+                      type: "text",
+                      placeholder: "ID number",
+                      id: "id_number",
+                      name: "id_number",
+                      tabindex: "1"
+                    },
+                    domProps: { value: _vm.lead.id_number },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(_vm.lead, "id_number", $event.target.value)
+                      }
+                    }
+                  }),
+                  _vm._v(" "),
+                  _vm.submitted && _vm.$v.lead.id_number.$error
+                    ? _c(
+                        "div",
+                        { staticClass: "text-red-500 text-sm italic" },
+                        [
+                          !_vm.$v.lead.id_number.required
+                            ? _c("span", [_vm._v("Please fill out this field")])
+                            : _vm._e(),
+                          _vm._v(" "),
+                          !_vm.$v.lead.id_number.idRegex
+                            ? _c("span", [
+                                _vm._v("Enter a valid South African ID")
+                              ])
+                            : _vm._e()
+                        ]
+                      )
+                    : _vm._e()
                 ])
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "w-full lg:w-1/2 xl:w-1/2 px-4" }, [
-                _c("div", { staticClass: "flex flex-wrap -mx-3 mb-3" }, [
-                  _c("div", { staticClass: "w-full px-3" }, [
+              _c("hr"),
+              _vm._v(" "),
+              _c("div", { staticClass: "flex flex-wrap -mx-3 mb-6 mt-8" }, [
+                _c(
+                  "div",
+                  { staticClass: "w-full md:w-1/2 px-3 mb-3 md:mb-0" },
+                  [
                     _c(
                       "label",
                       {
                         staticClass:
                           "block tracking-wide text-gray-700 text-sm font-bold mb-2",
-                        attrs: { for: "phone" }
+                        attrs: { for: "first_name" }
                       },
-                      [_vm._v("Phone")]
+                      [_vm._v("First name")]
                     ),
                     _vm._v(" "),
                     _c("input", {
@@ -37235,636 +37121,798 @@ var render = function() {
                         {
                           name: "model",
                           rawName: "v-model",
-                          value: _vm.lead.phone,
-                          expression: "lead.phone"
+                          value: _vm.lead.first_name,
+                          expression: "lead.first_name"
                         }
                       ],
                       staticClass:
                         "appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white",
                       class: {
                         "border-red-500":
-                          _vm.submitted && _vm.$v.lead.phone.$error
+                          _vm.submitted && _vm.$v.lead.first_name.$error
                       },
                       attrs: {
                         type: "text",
-                        placeholder: "Phone number",
-                        id: "phone",
-                        name: "phone",
-                        tabindex: "4"
+                        id: "first_name",
+                        tabindex: "2",
+                        name: "first_name",
+                        placeholder: "First name"
                       },
-                      domProps: { value: _vm.lead.phone },
+                      domProps: { value: _vm.lead.first_name },
                       on: {
                         input: function($event) {
                           if ($event.target.composing) {
                             return
                           }
-                          _vm.$set(_vm.lead, "phone", $event.target.value)
+                          _vm.$set(_vm.lead, "first_name", $event.target.value)
                         }
                       }
                     }),
                     _vm._v(" "),
-                    _vm.submitted && _vm.$v.lead.phone.$error
+                    _vm.submitted && !_vm.$v.lead.first_name.required
                       ? _c(
                           "div",
                           { staticClass: "text-red-500 text-sm italic" },
                           [
-                            !_vm.$v.lead.phone.required
-                              ? _c("span", [
-                                  _vm._v("Please fill out this field")
-                                ])
-                              : _vm._e(),
-                            _vm._v(" "),
-                            !_vm.$v.lead.phone.phoneRegex
-                              ? _c("span", [
-                                  _vm._v("Enter a valid Phone number")
-                                ])
-                              : _vm._e()
+                            _vm._v(
+                              "\n                            Please fill out this field.\n                        "
+                            )
                           ]
                         )
                       : _vm._e()
-                  ])
-                ]),
+                  ]
+                ),
                 _vm._v(" "),
-                _c("div", { staticClass: "flex flex-wrap -mx-3 mb-3" }, [
-                  _c(
-                    "div",
-                    { staticClass: "w-full px-3" },
-                    [
-                      _c(
-                        "label",
-                        {
-                          staticClass:
-                            "block tracking-wide text-gray-700 text-md font-bold mb-2",
-                          attrs: { for: "address" }
-                        },
-                        [_vm._v("Address\n              ")]
-                      ),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "form-group mb-3 mt-3" }, [
-                        _c(
-                          "div",
-                          { staticClass: "custom-control custom-radio" },
-                          [
-                            _c("input", {
-                              directives: [
-                                {
-                                  name: "model",
-                                  rawName: "v-model",
-                                  value: _vm.custom_address_flag,
-                                  expression: "custom_address_flag"
-                                }
-                              ],
-                              staticClass: "custom-control-input",
-                              attrs: {
-                                type: "radio",
-                                id: "customRadio10",
-                                value: "one"
-                              },
-                              domProps: {
-                                checked: _vm._q(_vm.custom_address_flag, "one")
-                              },
-                              on: {
-                                change: function($event) {
-                                  _vm.custom_address_flag = "one"
-                                }
-                              }
-                            }),
-                            _vm._v(" "),
-                            _c(
-                              "label",
-                              {
-                                staticClass:
-                                  "custom-control-label tracking-wide text-gray-700 text-sm font-bold mb-2",
-                                attrs: { for: "customRadio10" }
-                              },
-                              [_vm._v("Search for address")]
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "custom-control custom-radio" },
-                          [
-                            _c("input", {
-                              directives: [
-                                {
-                                  name: "model",
-                                  rawName: "v-model",
-                                  value: _vm.custom_address_flag,
-                                  expression: "custom_address_flag"
-                                }
-                              ],
-                              staticClass: "custom-control-input",
-                              attrs: {
-                                type: "radio",
-                                id: "customRadio9",
-                                name: "custom_address_flag",
-                                value: "two"
-                              },
-                              domProps: {
-                                checked: _vm._q(_vm.custom_address_flag, "two")
-                              },
-                              on: {
-                                change: function($event) {
-                                  _vm.custom_address_flag = "two"
-                                }
-                              }
-                            }),
-                            _vm._v(" "),
-                            _c(
-                              "label",
-                              {
-                                staticClass:
-                                  "custom-control-label tracking-wide text-gray-700 text-sm font-bold mb-2",
-                                attrs: { for: "customRadio9" }
-                              },
-                              [_vm._v("I will enter my own address")]
-                            )
-                          ]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _vm.custom_address_flag === "one"
-                        ? _c("vue-google-autocomplete", {
-                            ref: "address",
-                            class: {
-                              "border-red-500":
-                                _vm.submitted && _vm.$v.lead.address.$error
-                            },
-                            attrs: {
-                              id: "map",
-                              classname:
-                                "appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white",
-                              placeholder: "Please type your address",
-                              country: "za"
-                            },
-                            on: { placechanged: _vm.getAddressData },
-                            model: {
-                              value: _vm.lead.address,
-                              callback: function($$v) {
-                                _vm.$set(_vm.lead, "address", $$v)
-                              },
-                              expression: "lead.address"
-                            }
-                          })
-                        : _vm._e(),
-                      _vm._v(" "),
-                      _vm.custom_address_flag === "two"
-                        ? _c("input", {
-                            directives: [
-                              {
-                                name: "model",
-                                rawName: "v-model",
-                                value: _vm.lead.address,
-                                expression: "lead.address"
-                              }
-                            ],
-                            staticClass:
-                              "appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white",
-                            class: {
-                              "border-red-500":
-                                _vm.submitted && _vm.$v.lead.phone.$error
-                            },
-                            attrs: {
-                              name: "address",
-                              placeholder: "Please type your address"
-                            },
-                            domProps: { value: _vm.lead.address },
-                            on: {
-                              input: function($event) {
-                                if ($event.target.composing) {
-                                  return
-                                }
-                                _vm.$set(
-                                  _vm.lead,
-                                  "address",
-                                  $event.target.value
-                                )
-                              }
-                            }
-                          })
-                        : _vm._e(),
-                      _vm._v(" "),
-                      _vm.submitted && _vm.$v.lead.address.$error
-                        ? _c(
-                            "div",
-                            { staticClass: "text-red-500 text-sm italic" },
-                            [
-                              !_vm.$v.lead.address.required
-                                ? _c("span", [
-                                    _vm._v("Please fill out this field")
-                                  ])
-                                : _vm._e()
-                            ]
-                          )
-                        : _vm._e()
-                    ],
-                    1
-                  )
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "flex flex-wrap -mx-3 mb-3" }, [
-                  _c(
-                    "div",
-                    { staticClass: "w-full px-3" },
-                    [
-                      _c(
-                        "label",
-                        {
-                          staticClass:
-                            "block tracking-wide text-gray-700 text-md font-bold mb-2",
-                          attrs: { for: "voting_station" }
-                        },
-                        [_vm._v("Voting Station\n              ")]
-                      ),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "form-group mb-3 mt-3" }, [
-                        _c(
-                          "div",
-                          { staticClass: "custom-control custom-radio" },
-                          [
-                            _c("input", {
-                              directives: [
-                                {
-                                  name: "model",
-                                  rawName: "v-model",
-                                  value: _vm.custom_voting_flag,
-                                  expression: "custom_voting_flag"
-                                }
-                              ],
-                              staticClass: "custom-control-input",
-                              attrs: {
-                                type: "radio",
-                                id: "customRadio6",
-                                name: "custom_voting_flag",
-                                value: "one"
-                              },
-                              domProps: {
-                                checked: _vm._q(_vm.custom_voting_flag, "one")
-                              },
-                              on: {
-                                change: function($event) {
-                                  _vm.custom_voting_flag = "one"
-                                }
-                              }
-                            }),
-                            _vm._v(" "),
-                            _c(
-                              "label",
-                              {
-                                staticClass:
-                                  "custom-control-label tracking-wide text-gray-700 text-sm font-bold mb-2",
-                                attrs: { for: "customRadio6" }
-                              },
-                              [_vm._v("Search for voting station")]
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "custom-control custom-radio" },
-                          [
-                            _c("input", {
-                              directives: [
-                                {
-                                  name: "model",
-                                  rawName: "v-model",
-                                  value: _vm.custom_voting_flag,
-                                  expression: "custom_voting_flag"
-                                }
-                              ],
-                              staticClass: "custom-control-input",
-                              attrs: {
-                                type: "radio",
-                                id: "customRadio7",
-                                name: "custom_voting_flag",
-                                value: "two"
-                              },
-                              domProps: {
-                                checked: _vm._q(_vm.custom_voting_flag, "two")
-                              },
-                              on: {
-                                change: function($event) {
-                                  _vm.custom_voting_flag = "two"
-                                }
-                              }
-                            }),
-                            _vm._v(" "),
-                            _c(
-                              "label",
-                              {
-                                staticClass:
-                                  "custom-control-label tracking-wide text-gray-700 text-sm font-bold mb-2",
-                                attrs: { for: "customRadio7" }
-                              },
-                              [_vm._v("I could not find my voting station")]
-                            )
-                          ]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("vue-autosuggest", {
-                        directives: [
-                          {
-                            name: "show",
-                            rawName: "v-show",
-                            value: _vm.custom_voting_flag === "one",
-                            expression: "custom_voting_flag === 'one'"
-                          }
-                        ],
-                        class: {
-                          "border-red-500":
-                            _vm.submitted && _vm.$v.lead.address.$error
-                        },
-                        attrs: {
-                          suggestions: _vm.suggestions,
-                          "input-props": {
-                            id: "autosuggest__input",
-                            placeholder:
-                              "Please type your voting station address",
-                            name: "voting_station",
-                            class:
-                              "appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white"
-                          },
-                          sectionConfigs: _vm.sectionConfigs,
-                          renderSuggestion: _vm.renderSuggestion,
-                          getSuggestionValue: _vm.getSuggestionValue
-                        },
-                        on: { input: _vm.fetchResults },
-                        scopedSlots: _vm._u([
-                          {
-                            key: "default",
-                            fn: function(ref) {
-                              var suggestion = ref.suggestion
-                              return [
-                                _c(
-                                  "span",
-                                  { staticClass: "my-suggestion-item" },
-                                  [_vm._v(_vm._s(suggestion.item))]
-                                )
-                              ]
-                            }
-                          }
-                        ]),
-                        model: {
-                          value: _vm.stationQuery,
-                          callback: function($$v) {
-                            _vm.stationQuery = $$v
-                          },
-                          expression: "stationQuery"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("input", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.lead.voting_station,
-                            expression: "lead.voting_station"
-                          },
-                          {
-                            name: "show",
-                            rawName: "v-show",
-                            value: _vm.custom_voting_flag === "two",
-                            expression: "custom_voting_flag === 'two'"
-                          }
-                        ],
+                _c(
+                  "div",
+                  { staticClass: "w-full md:w-1/2 px-3 mb-3 md:mb-0" },
+                  [
+                    _c(
+                      "label",
+                      {
                         staticClass:
-                          "appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white",
-                        class: {
-                          "border-red-500":
-                            _vm.submitted && _vm.$v.lead.voting_station.$error
-                        },
-                        attrs: {
-                          type: "text",
-                          id: "voting_station",
-                          name: "voting_station",
-                          placeholder:
-                            "Enter your voting station, nearest school or town"
-                        },
-                        domProps: { value: _vm.lead.voting_station },
-                        on: {
-                          input: function($event) {
-                            if ($event.target.composing) {
-                              return
-                            }
-                            _vm.$set(
-                              _vm.lead,
-                              "voting_station",
-                              $event.target.value
-                            )
-                          }
+                          "block tracking-wide text-gray-700 text-sm font-bold mb-2",
+                        attrs: { for: "first_name" }
+                      },
+                      [_vm._v("Last name")]
+                    ),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.lead.last_name,
+                          expression: "lead.last_name"
                         }
-                      }),
-                      _vm._v(" "),
-                      _vm.submitted && _vm.$v.lead.voting_station.$error
-                        ? _c(
-                            "div",
-                            { staticClass: "text-red-500 text-sm italic" },
-                            [
-                              !_vm.$v.lead.voting_station.required
-                                ? _c("span", [
-                                    _vm._v("Please fill out this field")
-                                  ])
-                                : _vm._e()
-                            ]
-                          )
-                        : _vm._e()
+                      ],
+                      staticClass:
+                        "appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white",
+                      class: {
+                        "border-red-500":
+                          _vm.submitted && _vm.$v.lead.last_name.$error
+                      },
+                      attrs: {
+                        type: "text",
+                        id: "last_name",
+                        name: "last_name",
+                        placeholder: "Last name"
+                      },
+                      domProps: { value: _vm.lead.last_name },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(_vm.lead, "last_name", $event.target.value)
+                        }
+                      }
+                    }),
+                    _vm._v(" "),
+                    _vm.submitted && !_vm.$v.lead.last_name.required
+                      ? _c(
+                          "div",
+                          { staticClass: "text-red-500 text-xs italic" },
+                          [
+                            _vm._v(
+                              "\n                            Please fill out this field.\n                        "
+                            )
+                          ]
+                        )
+                      : _vm._e()
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "flex flex-wrap -mx-3 mb-3" }, [
+                _c("div", { staticClass: "w-full px-3" }, [
+                  _c(
+                    "label",
+                    {
+                      staticClass:
+                        "block tracking-wide text-gray-700 text-sm font-bold mb-2",
+                      attrs: { for: "email" }
+                    },
+                    [_vm._v("Email")]
+                  ),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.lead.lead_email,
+                        expression: "lead.lead_email"
+                      }
                     ],
-                    1
-                  )
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "flex flex-wrap -mx-3 mb-3" }, [
-                  _c("div", { staticClass: "w-full px-3" }, [
+                    staticClass:
+                      "appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white",
+                    attrs: {
+                      type: "email",
+                      tabindex: "4",
+                      placeholder: "Email",
+                      id: "lead_email",
+                      name: "lead_email"
+                    },
+                    domProps: { value: _vm.lead.lead_email },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(_vm.lead, "lead_email", $event.target.value)
+                      }
+                    }
+                  })
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "w-full lg:w-1/2 xl:w-1/2 px-4" }, [
+              _c("div", { staticClass: "flex flex-wrap -mx-3 mb-3" }, [
+                _c("div", { staticClass: "w-full px-3" }, [
+                  _c(
+                    "label",
+                    {
+                      staticClass:
+                        "block tracking-wide text-gray-700 text-sm font-bold mb-2",
+                      attrs: { for: "phone" }
+                    },
+                    [_vm._v("Phone")]
+                  ),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.lead.phone,
+                        expression: "lead.phone"
+                      }
+                    ],
+                    staticClass:
+                      "appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white",
+                    class: {
+                      "border-red-500":
+                        _vm.submitted && _vm.$v.lead.phone.$error
+                    },
+                    attrs: {
+                      type: "text",
+                      placeholder: "Phone number",
+                      id: "phone",
+                      name: "phone",
+                      tabindex: "4"
+                    },
+                    domProps: { value: _vm.lead.phone },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(_vm.lead, "phone", $event.target.value)
+                      }
+                    }
+                  }),
+                  _vm._v(" "),
+                  _vm.submitted && _vm.$v.lead.phone.$error
+                    ? _c(
+                        "div",
+                        { staticClass: "text-red-500 text-sm italic" },
+                        [
+                          !_vm.$v.lead.phone.required
+                            ? _c("span", [_vm._v("Please fill out this field")])
+                            : _vm._e(),
+                          _vm._v(" "),
+                          !_vm.$v.lead.phone.phoneRegex
+                            ? _c("span", [_vm._v("Enter a valid Phone number")])
+                            : _vm._e()
+                        ]
+                      )
+                    : _vm._e()
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "flex flex-wrap -mx-3 mb-3" }, [
+                _c(
+                  "div",
+                  { staticClass: "w-full px-3" },
+                  [
                     _c(
                       "label",
                       {
                         staticClass:
                           "block tracking-wide text-gray-700 text-md font-bold mb-2",
-                        attrs: { for: "first_time_voter" }
+                        attrs: { for: "address" }
                       },
-                      [_vm._v("Are you a first time voter?\n              ")]
+                      [_vm._v("Address\n                        ")]
                     ),
                     _vm._v(" "),
-                    _c("div", { staticClass: "custom-control custom-radio" }, [
-                      _c("input", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.lead.first_time_voter,
-                            expression: "lead.first_time_voter"
-                          }
-                        ],
-                        staticClass: "custom-control-input",
-                        attrs: {
-                          type: "radio",
-                          id: "customRadio3",
-                          name: "first_time_voter",
-                          value: "1"
-                        },
-                        domProps: {
-                          checked: _vm._q(_vm.lead.first_time_voter, "1")
-                        },
-                        on: {
-                          change: function($event) {
-                            return _vm.$set(_vm.lead, "first_time_voter", "1")
-                          }
-                        }
-                      }),
+                    _c("div", { staticClass: "form-group mb-3 mt-3" }, [
+                      _c(
+                        "div",
+                        { staticClass: "custom-control custom-radio" },
+                        [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.custom_address_flag,
+                                expression: "custom_address_flag"
+                              }
+                            ],
+                            staticClass: "custom-control-input",
+                            attrs: {
+                              type: "radio",
+                              id: "customRadio10",
+                              value: "one"
+                            },
+                            domProps: {
+                              checked: _vm._q(_vm.custom_address_flag, "one")
+                            },
+                            on: {
+                              change: function($event) {
+                                _vm.custom_address_flag = "one"
+                              }
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c(
+                            "label",
+                            {
+                              staticClass:
+                                "custom-control-label tracking-wide text-gray-700 text-sm font-bold mb-2",
+                              attrs: { for: "customRadio10" }
+                            },
+                            [_vm._v("Search for address")]
+                          )
+                        ]
+                      ),
                       _vm._v(" "),
                       _c(
-                        "label",
-                        {
-                          staticClass:
-                            "custom-control-label tracking-wide text-gray-700 text-sm font-bold mb-2",
-                          attrs: { for: "customRadio3" }
-                        },
-                        [_vm._v("Yes")]
+                        "div",
+                        { staticClass: "custom-control custom-radio" },
+                        [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.custom_address_flag,
+                                expression: "custom_address_flag"
+                              }
+                            ],
+                            staticClass: "custom-control-input",
+                            attrs: {
+                              type: "radio",
+                              id: "customRadio9",
+                              name: "custom_address_flag",
+                              value: "two"
+                            },
+                            domProps: {
+                              checked: _vm._q(_vm.custom_address_flag, "two")
+                            },
+                            on: {
+                              change: function($event) {
+                                _vm.custom_address_flag = "two"
+                              }
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c(
+                            "label",
+                            {
+                              staticClass:
+                                "custom-control-label tracking-wide text-gray-700 text-sm font-bold mb-2",
+                              attrs: { for: "customRadio9" }
+                            },
+                            [_vm._v("I will enter my own address")]
+                          )
+                        ]
                       )
                     ]),
                     _vm._v(" "),
-                    _c("div", { staticClass: "custom-control custom-radio" }, [
-                      _c("input", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.lead.first_time_voter,
-                            expression: "lead.first_time_voter"
+                    _vm.custom_address_flag === "one"
+                      ? _c("vue-google-autocomplete", {
+                          ref: "address",
+                          class: {
+                            "border-red-500":
+                              _vm.submitted && _vm.$v.lead.address.$error
+                          },
+                          attrs: {
+                            id: "map",
+                            classname:
+                              "appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white",
+                            placeholder: "Please type your address",
+                            country: "za"
+                          },
+                          on: { placechanged: _vm.getAddressData },
+                          model: {
+                            value: _vm.lead.address,
+                            callback: function($$v) {
+                              _vm.$set(_vm.lead, "address", $$v)
+                            },
+                            expression: "lead.address"
                           }
-                        ],
-                        staticClass: "custom-control-input",
-                        attrs: {
-                          type: "radio",
-                          id: "customRadio4",
-                          name: "first_time_voter",
-                          value: "0"
-                        },
-                        domProps: {
-                          checked: _vm._q(_vm.lead.first_time_voter, "0")
-                        },
-                        on: {
-                          change: function($event) {
-                            return _vm.$set(_vm.lead, "first_time_voter", "0")
-                          }
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c(
-                        "label",
-                        {
-                          staticClass:
-                            "custom-control-label tracking-wide text-gray-700 text-sm font-bold mb-2",
-                          attrs: { for: "customRadio4" }
-                        },
-                        [_vm._v("No")]
-                      )
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "flex flex-wrap -mx-3" }, [
-                  _c("div", { staticClass: "w-full px-3" }, [
-                    _c(
-                      "div",
-                      { staticClass: "custom-control custom-checkbox mb-5" },
-                      [
-                        _c("input", {
+                        })
+                      : _vm._e(),
+                    _vm._v(" "),
+                    _vm.custom_address_flag === "two"
+                      ? _c("input", {
                           directives: [
                             {
                               name: "model",
                               rawName: "v-model",
-                              value: _vm.lead.terms_conditions,
-                              expression: "lead.terms_conditions"
+                              value: _vm.lead.address,
+                              expression: "lead.address"
                             }
                           ],
-                          staticClass: "custom-control-input",
+                          staticClass:
+                            "appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white",
+                          class: {
+                            "border-red-500":
+                              _vm.submitted && _vm.$v.lead.phone.$error
+                          },
                           attrs: {
-                            type: "checkbox",
-                            id: "customCheck2",
-                            value: "1"
+                            name: "address",
+                            placeholder: "Please type your address"
                           },
-                          domProps: {
-                            checked: Array.isArray(_vm.lead.terms_conditions)
-                              ? _vm._i(_vm.lead.terms_conditions, "1") > -1
-                              : _vm.lead.terms_conditions
-                          },
+                          domProps: { value: _vm.lead.address },
                           on: {
-                            change: function($event) {
-                              var $$a = _vm.lead.terms_conditions,
-                                $$el = $event.target,
-                                $$c = $$el.checked ? true : false
-                              if (Array.isArray($$a)) {
-                                var $$v = "1",
-                                  $$i = _vm._i($$a, $$v)
-                                if ($$el.checked) {
-                                  $$i < 0 &&
-                                    _vm.$set(
-                                      _vm.lead,
-                                      "terms_conditions",
-                                      $$a.concat([$$v])
-                                    )
-                                } else {
-                                  $$i > -1 &&
-                                    _vm.$set(
-                                      _vm.lead,
-                                      "terms_conditions",
-                                      $$a
-                                        .slice(0, $$i)
-                                        .concat($$a.slice($$i + 1))
-                                    )
-                                }
-                              } else {
-                                _vm.$set(_vm.lead, "terms_conditions", $$c)
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
                               }
+                              _vm.$set(_vm.lead, "address", $event.target.value)
                             }
                           }
-                        }),
-                        _vm._v(" "),
-                        _c(
-                          "label",
-                          {
-                            staticClass: "custom-control-label",
-                            attrs: { for: "customCheck2" }
-                          },
+                        })
+                      : _vm._e(),
+                    _vm._v(" "),
+                    _vm.submitted && _vm.$v.lead.address.$error
+                      ? _c(
+                          "div",
+                          { staticClass: "text-red-500 text-sm italic" },
                           [
-                            _vm._v(
-                              "\n                  I hereby consent and agree to the Interim Constitition of\n                  ActionSA"
-                            )
+                            !_vm.$v.lead.address.required
+                              ? _c("span", [
+                                  _vm._v("Please fill out this field")
+                                ])
+                              : _vm._e()
                           ]
-                        ),
-                        _vm._v(" "),
-                        _vm.submitted && _vm.$v.lead.terms_conditions.$error
-                          ? _c(
-                              "div",
-                              { staticClass: "text-red-500 text-sm italic" },
-                              [
-                                !_vm.$v.lead.terms_conditions.required
-                                  ? _c("span", [
-                                      _vm._v("Please fill out this field")
-                                    ])
-                                  : _vm._e()
-                              ]
-                            )
-                          : _vm._e()
-                      ]
+                        )
+                      : _vm._e()
+                  ],
+                  1
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "flex flex-wrap -mx-3 mb-3" }, [
+                _c(
+                  "div",
+                  { staticClass: "w-full px-3" },
+                  [
+                    _c(
+                      "label",
+                      {
+                        staticClass:
+                          "block tracking-wide text-gray-700 text-md font-bold mb-2",
+                        attrs: { for: "voting_station" }
+                      },
+                      [_vm._v("Voting Station\n                        ")]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "form-group mb-3 mt-3" }, [
+                      _c(
+                        "div",
+                        { staticClass: "custom-control custom-radio" },
+                        [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.custom_voting_flag,
+                                expression: "custom_voting_flag"
+                              }
+                            ],
+                            staticClass: "custom-control-input",
+                            attrs: {
+                              type: "radio",
+                              id: "customRadio6",
+                              name: "custom_voting_flag",
+                              value: "one"
+                            },
+                            domProps: {
+                              checked: _vm._q(_vm.custom_voting_flag, "one")
+                            },
+                            on: {
+                              change: function($event) {
+                                _vm.custom_voting_flag = "one"
+                              }
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c(
+                            "label",
+                            {
+                              staticClass:
+                                "custom-control-label tracking-wide text-gray-700 text-sm font-bold mb-2",
+                              attrs: { for: "customRadio6" }
+                            },
+                            [_vm._v("Search for voting station")]
+                          )
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "custom-control custom-radio" },
+                        [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.custom_voting_flag,
+                                expression: "custom_voting_flag"
+                              }
+                            ],
+                            staticClass: "custom-control-input",
+                            attrs: {
+                              type: "radio",
+                              id: "customRadio7",
+                              name: "custom_voting_flag",
+                              value: "two"
+                            },
+                            domProps: {
+                              checked: _vm._q(_vm.custom_voting_flag, "two")
+                            },
+                            on: {
+                              change: function($event) {
+                                _vm.custom_voting_flag = "two"
+                              }
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c(
+                            "label",
+                            {
+                              staticClass:
+                                "custom-control-label tracking-wide text-gray-700 text-sm font-bold mb-2",
+                              attrs: { for: "customRadio7" }
+                            },
+                            [
+                              _vm._v(
+                                "I could not find my voting\n                                    station"
+                              )
+                            ]
+                          )
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("vue-autosuggest", {
+                      directives: [
+                        {
+                          name: "show",
+                          rawName: "v-show",
+                          value: _vm.custom_voting_flag === "one",
+                          expression: "custom_voting_flag === 'one'"
+                        }
+                      ],
+                      class: {
+                        "border-red-500":
+                          _vm.submitted && _vm.$v.lead.address.$error
+                      },
+                      attrs: {
+                        suggestions: _vm.suggestions,
+                        "input-props": {
+                          id: "autosuggest__input",
+                          placeholder:
+                            "Please type your voting station address",
+                          name: "voting_station",
+                          class:
+                            "appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white"
+                        },
+                        sectionConfigs: _vm.sectionConfigs,
+                        renderSuggestion: _vm.renderSuggestion,
+                        getSuggestionValue: _vm.getSuggestionValue
+                      },
+                      on: { input: _vm.fetchResults },
+                      scopedSlots: _vm._u([
+                        {
+                          key: "default",
+                          fn: function(ref) {
+                            var suggestion = ref.suggestion
+                            return [
+                              _c(
+                                "span",
+                                { staticClass: "my-suggestion-item" },
+                                [_vm._v(_vm._s(suggestion.item))]
+                              )
+                            ]
+                          }
+                        }
+                      ]),
+                      model: {
+                        value: _vm.stationQuery,
+                        callback: function($$v) {
+                          _vm.stationQuery = $$v
+                        },
+                        expression: "stationQuery"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.lead.voting_station,
+                          expression: "lead.voting_station"
+                        },
+                        {
+                          name: "show",
+                          rawName: "v-show",
+                          value: _vm.custom_voting_flag === "two",
+                          expression: "custom_voting_flag === 'two'"
+                        }
+                      ],
+                      staticClass:
+                        "appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white",
+                      class: {
+                        "border-red-500":
+                          _vm.submitted && _vm.$v.lead.voting_station.$error
+                      },
+                      attrs: {
+                        type: "text",
+                        id: "voting_station",
+                        name: "voting_station",
+                        placeholder:
+                          "Enter your voting station, nearest school or town"
+                      },
+                      domProps: { value: _vm.lead.voting_station },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(
+                            _vm.lead,
+                            "voting_station",
+                            $event.target.value
+                          )
+                        }
+                      }
+                    }),
+                    _vm._v(" "),
+                    _vm.submitted && _vm.$v.lead.voting_station.$error
+                      ? _c(
+                          "div",
+                          { staticClass: "text-red-500 text-sm italic" },
+                          [
+                            !_vm.$v.lead.voting_station.required
+                              ? _c("span", [
+                                  _vm._v("Please fill out this field")
+                                ])
+                              : _vm._e()
+                          ]
+                        )
+                      : _vm._e()
+                  ],
+                  1
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "flex flex-wrap -mx-3 mb-3" }, [
+                _c("div", { staticClass: "w-full px-3" }, [
+                  _c(
+                    "label",
+                    {
+                      staticClass:
+                        "block tracking-wide text-gray-700 text-md font-bold mb-2",
+                      attrs: { for: "first_time_voter" }
+                    },
+                    [
+                      _vm._v(
+                        "Are you a first time voter?\n                        "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "custom-control custom-radio" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.lead.first_time_voter,
+                          expression: "lead.first_time_voter"
+                        }
+                      ],
+                      staticClass: "custom-control-input",
+                      attrs: {
+                        type: "radio",
+                        id: "customRadio3",
+                        name: "first_time_voter",
+                        value: "1"
+                      },
+                      domProps: {
+                        checked: _vm._q(_vm.lead.first_time_voter, "1")
+                      },
+                      on: {
+                        change: function($event) {
+                          return _vm.$set(_vm.lead, "first_time_voter", "1")
+                        }
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c(
+                      "label",
+                      {
+                        staticClass:
+                          "custom-control-label tracking-wide text-gray-700 text-sm font-bold mb-2",
+                        attrs: { for: "customRadio3" }
+                      },
+                      [_vm._v("Yes")]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "custom-control custom-radio" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.lead.first_time_voter,
+                          expression: "lead.first_time_voter"
+                        }
+                      ],
+                      staticClass: "custom-control-input",
+                      attrs: {
+                        type: "radio",
+                        id: "customRadio4",
+                        name: "first_time_voter",
+                        value: "0"
+                      },
+                      domProps: {
+                        checked: _vm._q(_vm.lead.first_time_voter, "0")
+                      },
+                      on: {
+                        change: function($event) {
+                          return _vm.$set(_vm.lead, "first_time_voter", "0")
+                        }
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c(
+                      "label",
+                      {
+                        staticClass:
+                          "custom-control-label tracking-wide text-gray-700 text-sm font-bold mb-2",
+                        attrs: { for: "customRadio4" }
+                      },
+                      [_vm._v("No")]
                     )
                   ])
-                ]),
-                _vm._v(" "),
-                _vm._m(0)
-              ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "flex flex-wrap -mx-3" }, [
+                _c("div", { staticClass: "w-full px-3" }, [
+                  _c(
+                    "div",
+                    { staticClass: "custom-control custom-checkbox mb-5" },
+                    [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.lead.terms_conditions,
+                            expression: "lead.terms_conditions"
+                          }
+                        ],
+                        staticClass: "custom-control-input",
+                        attrs: {
+                          type: "checkbox",
+                          id: "customCheck2",
+                          value: "1"
+                        },
+                        domProps: {
+                          checked: Array.isArray(_vm.lead.terms_conditions)
+                            ? _vm._i(_vm.lead.terms_conditions, "1") > -1
+                            : _vm.lead.terms_conditions
+                        },
+                        on: {
+                          change: function($event) {
+                            var $$a = _vm.lead.terms_conditions,
+                              $$el = $event.target,
+                              $$c = $$el.checked ? true : false
+                            if (Array.isArray($$a)) {
+                              var $$v = "1",
+                                $$i = _vm._i($$a, $$v)
+                              if ($$el.checked) {
+                                $$i < 0 &&
+                                  _vm.$set(
+                                    _vm.lead,
+                                    "terms_conditions",
+                                    $$a.concat([$$v])
+                                  )
+                              } else {
+                                $$i > -1 &&
+                                  _vm.$set(
+                                    _vm.lead,
+                                    "terms_conditions",
+                                    $$a.slice(0, $$i).concat($$a.slice($$i + 1))
+                                  )
+                              }
+                            } else {
+                              _vm.$set(_vm.lead, "terms_conditions", $$c)
+                            }
+                          }
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c(
+                        "label",
+                        {
+                          staticClass: "custom-control-label",
+                          attrs: { for: "customCheck2" }
+                        },
+                        [
+                          _vm._v(
+                            "\n                                I hereby consent and agree to the Interim\n                                Constitition of ActionSA"
+                          )
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _vm.submitted && _vm.$v.lead.terms_conditions.$error
+                        ? _c(
+                            "div",
+                            { staticClass: "text-red-500 text-sm italic" },
+                            [
+                              !_vm.$v.lead.terms_conditions.required
+                                ? _c("span", [
+                                    _vm._v("Please fill out this field")
+                                  ])
+                                : _vm._e()
+                            ]
+                          )
+                        : _vm._e()
+                    ]
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _vm._m(0)
             ])
-          ]
-        )
-      ]
-    )
-  ])
+          ])
+        ]
+      )
+    ]
+  )
 }
 var staticRenderFns = [
   function() {
@@ -37874,7 +37922,9 @@ var staticRenderFns = [
     return _c("div", { staticClass: "flex flex-wrap -mx-3" }, [
       _c("div", { staticClass: "w-full px-3" }, [
         _c("button", { staticClass: "register-btn font-bold" }, [
-          _vm._v("Register")
+          _vm._v(
+            "\n                            Register\n                        "
+          )
         ])
       ])
     ])
@@ -41300,7 +41350,7 @@ var render = function() {
     "div",
     { staticClass: "min-h-screen bg-gray-100" },
     [
-      _c("nav", { staticClass: "dots border-b" }, [
+      _c("nav", { staticClass: "bg-green-100 text-white py-3" }, [
         _c("div", { staticClass: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" }, [
           _c("div", { staticClass: "flex justify-between h-16" }, [
             _c("div", { staticClass: "flex" }, [
@@ -41310,7 +41360,7 @@ var render = function() {
                   { attrs: { href: "/dashboard" } },
                   [
                     _c("jet-application-mark", {
-                      staticClass: "block h-9 w-auto"
+                      staticClass: "block h-15 w-auto"
                     })
                   ],
                   1
@@ -41329,7 +41379,11 @@ var render = function() {
                         active: _vm.$page.currentRouteName == "dashboard"
                       }
                     },
-                    [_vm._v("\n              Dashboard\n            ")]
+                    [
+                      _vm._v(
+                        "\n                            Dashboard\n                        "
+                      )
+                    ]
                   )
                 ],
                 1
@@ -41384,7 +41438,7 @@ var render = function() {
                                 },
                                 [
                                   _vm._v(
-                                    "\n                  Manage Account\n                "
+                                    "\n                                    Manage Account\n                                "
                                   )
                                 ]
                               ),
@@ -41394,7 +41448,7 @@ var render = function() {
                                 { attrs: { href: "/user/profile" } },
                                 [
                                   _vm._v(
-                                    "\n                  Profile\n                "
+                                    "\n                                    Profile\n                                "
                                   )
                                 ]
                               ),
@@ -41413,7 +41467,7 @@ var render = function() {
                                       },
                                       [
                                         _vm._v(
-                                          "\n                    Manage Team\n                  "
+                                          "\n                                        Manage Team\n                                    "
                                         )
                                       ]
                                     ),
@@ -41429,7 +41483,7 @@ var render = function() {
                                       },
                                       [
                                         _vm._v(
-                                          "\n                    Team Settings\n                  "
+                                          "\n                                        Team Settings\n                                    "
                                         )
                                       ]
                                     ),
@@ -41440,7 +41494,7 @@ var render = function() {
                                           { attrs: { href: "/teams/create" } },
                                           [
                                             _vm._v(
-                                              "\n                    Create New Team\n                  "
+                                              "\n                                        Create New Team\n                                    "
                                             )
                                           ]
                                         )
@@ -41458,7 +41512,7 @@ var render = function() {
                                       },
                                       [
                                         _vm._v(
-                                          "\n                    Switch Teams\n                  "
+                                          "\n                                        Switch Teams\n                                    "
                                         )
                                       ]
                                     ),
@@ -41523,7 +41577,11 @@ var render = function() {
                                                       : _vm._e(),
                                                     _vm._v(" "),
                                                     _c("div", [
-                                                      _vm._v(_vm._s(team.name))
+                                                      _vm._v(
+                                                        "\n                                                        " +
+                                                          _vm._s(team.name) +
+                                                          "\n                                                    "
+                                                      )
                                                     ])
                                                   ]
                                                 )
@@ -41555,7 +41613,11 @@ var render = function() {
                                   _c(
                                     "jet-dropdown-link",
                                     { attrs: { as: "button" } },
-                                    [_vm._v(" Logout ")]
+                                    [
+                                      _vm._v(
+                                        "\n                                        Logout\n                                    "
+                                      )
+                                    ]
                                   )
                                 ],
                                 1
@@ -41651,7 +41713,7 @@ var render = function() {
                       active: _vm.$page.currentRouteName == "dashboard"
                     }
                   },
-                  [_vm._v("\n          Dashboard\n        ")]
+                  [_vm._v("\n                    Dashboard\n                ")]
                 )
               ],
               1
@@ -41675,9 +41737,9 @@ var render = function() {
                     { staticClass: "font-medium text-base text-gray-800" },
                     [
                       _vm._v(
-                        "\n              " +
+                        "\n                            " +
                           _vm._s(_vm.$page.user.username) +
-                          "\n            "
+                          "\n                        "
                       )
                     ]
                   ),
@@ -41687,9 +41749,9 @@ var render = function() {
                     { staticClass: "font-medium text-sm text-gray-500" },
                     [
                       _vm._v(
-                        "\n              " +
+                        "\n                            " +
                           _vm._s(_vm.$page.user.email) +
-                          "\n            "
+                          "\n                        "
                       )
                     ]
                   )
@@ -41708,7 +41770,11 @@ var render = function() {
                         active: _vm.$page.currentRouteName == "profile.show"
                       }
                     },
-                    [_vm._v("\n            Profile\n          ")]
+                    [
+                      _vm._v(
+                        "\n                        Profile\n                    "
+                      )
+                    ]
                   ),
                   _vm._v(" "),
                   _vm.$page.jetstream.hasApiFeatures
@@ -41721,7 +41787,11 @@ var render = function() {
                               _vm.$page.currentRouteName == "api-tokens.index"
                           }
                         },
-                        [_vm._v("\n            API Tokens\n          ")]
+                        [
+                          _vm._v(
+                            "\n                        API Tokens\n                    "
+                          )
+                        ]
                       )
                     : _vm._e(),
                   _vm._v(" "),
@@ -41740,7 +41810,11 @@ var render = function() {
                       _c(
                         "jet-responsive-nav-link",
                         { attrs: { as: "button" } },
-                        [_vm._v("\n              Logout\n            ")]
+                        [
+                          _vm._v(
+                            "\n                            Logout\n                        "
+                          )
+                        ]
                       )
                     ],
                     1
@@ -41755,7 +41829,11 @@ var render = function() {
                           {
                             staticClass: "block px-4 py-2 text-xs text-gray-400"
                           },
-                          [_vm._v("\n              Manage Team\n            ")]
+                          [
+                            _vm._v(
+                              "\n                            Manage Team\n                        "
+                            )
+                          ]
                         ),
                         _vm._v(" "),
                         _c(
@@ -41768,7 +41846,7 @@ var render = function() {
                           },
                           [
                             _vm._v(
-                              "\n              Team Settings\n            "
+                              "\n                            Team Settings\n                        "
                             )
                           ]
                         ),
@@ -41784,7 +41862,7 @@ var render = function() {
                           },
                           [
                             _vm._v(
-                              "\n              Create New Team\n            "
+                              "\n                            Create New Team\n                        "
                             )
                           ]
                         ),
@@ -41796,7 +41874,11 @@ var render = function() {
                           {
                             staticClass: "block px-4 py-2 text-xs text-gray-400"
                           },
-                          [_vm._v("\n              Switch Teams\n            ")]
+                          [
+                            _vm._v(
+                              "\n                            Switch Teams\n                        "
+                            )
+                          ]
                         ),
                         _vm._v(" "),
                         _vm._l(_vm.$page.user.all_teams, function(team) {
@@ -41868,20 +41950,13 @@ var render = function() {
         )
       ]),
       _vm._v(" "),
-      _c("header", { staticClass: "bg-white shadow" }, [
-        _c(
-          "div",
-          { staticClass: "max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8" },
-          [_vm._t("header")],
-          2
-        )
-      ]),
+      _vm._t("header"),
       _vm._v(" "),
       _c("main", [_vm._t("default")], 2),
       _vm._v(" "),
       _c("portal-target", { attrs: { name: "modal", multiple: "" } })
     ],
-    1
+    2
   )
 }
 var staticRenderFns = []
@@ -42909,16 +42984,7 @@ var render = function() {
         {
           key: "header",
           fn: function() {
-            return [
-              _c(
-                "h2",
-                {
-                  staticClass:
-                    "font-semibold text-xl text-gray-800 leading-tight"
-                },
-                [_vm._v("\n            Dashboard\n        ")]
-              )
-            ]
+            return undefined
           },
           proxy: true
         }
@@ -42968,16 +43034,7 @@ var render = function() {
         {
           key: "header",
           fn: function() {
-            return [
-              _c(
-                "h2",
-                {
-                  staticClass:
-                    "font-semibold text-xl text-gray-800 leading-tight"
-                },
-                [_vm._v("\n      Dashboard\n    ")]
-              )
-            ]
+            return undefined
           },
           proxy: true
         }
@@ -43471,7 +43528,11 @@ var render = function() {
                         staticClass:
                           "mt-8 dots-reverse hover:bg-green-700 text-white ml-2 font-bold py-2 px-4 float-right"
                       },
-                      [_vm._v("\n          Add Supporter\n        ")]
+                      [
+                        _vm._v(
+                          "\n                    Add Supporter\n                "
+                        )
+                      ]
                     )
                   ]),
                   _vm._v(" "),
@@ -43482,7 +43543,11 @@ var render = function() {
                         staticClass:
                           "mt-8 dots hover:bg-green-700 text-white font-bold py-2 px-4 float-right"
                       },
-                      [_vm._v("\n          Add Member\n        ")]
+                      [
+                        _vm._v(
+                          "\n                    Add Member\n                "
+                        )
+                      ]
                     )
                   ])
                 ],
@@ -63007,8 +63072,8 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Server\www\actionsa\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Server\www\actionsa\resources\css\app.css */"./resources/css/app.css");
+__webpack_require__(/*! C:\wamp64\www\actionsa\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\wamp64\www\actionsa\resources\css\app.css */"./resources/css/app.css");
 
 
 /***/ })
