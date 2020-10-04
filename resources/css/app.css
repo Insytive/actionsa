@@ -46,4 +46,20 @@
     outline: none;
     background-color: #0ba718;
     color: #000;
+    border: none;
+}
+
+.svg__icon svg {
+    height: 20px;
+    width: 20px;
+    fill: #6b7280;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    border: none;
+    outline: none;
+    text-decoration: none;
 }

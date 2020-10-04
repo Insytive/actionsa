@@ -358,15 +358,6 @@
               </div>
             </div>
 
-            <input
-              type="radio"
-              id="customRadio1"
-              class="custom-control-input"
-              name="interest"
-              value="0"
-              v-model="lead.is_member"
-            />
-
             <div class="flex flex-wrap -mx-3 mb-3">
               <div class="w-full px-3">
                 <button class="register-btn font-bold">Register</button>

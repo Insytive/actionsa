@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen bg-gray-100">
-    <nav class="bg-white border-b">
+    <nav class="bg-green-100 text-white">
       <!-- Primary Navigation Menu -->
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
@@ -9,7 +9,7 @@
             <div class="hidden space-x-8 sm:-my-px sm:flex">
               <jet-nav-link
                 href="/dashboard"
-                class="text-green-100"
+                class="text-white"
                 :active="$page.currentRouteName == 'dashboard'"
               >
                 Dashboard
@@ -270,12 +270,7 @@
       </div>
     </nav>
 
-    <!-- Page Heading -->
-    <header class="bg-white shadow">
-      <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-        <slot name="header"></slot>
-      </div>
-    </header>
+    <slot name="header"></slot>
 
     <!-- Page Content -->
     <main>
