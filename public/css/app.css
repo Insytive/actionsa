@@ -38647,7 +38647,7 @@ video {
           animation: bounce 1s infinite;
 }
 
-#custom-card:first-child {
+#custom-card {
   box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.4);
   color: #fff !important;
   background-image: linear-gradient(to bottom, #05b614d8, #05b615),
@@ -38655,16 +38655,38 @@ video {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  border: none;
+}
+
+.card-2 {
+  background-image: linear-gradient(to bottom, #05b614d8, #05b615),
+        url(/images/bg-card-2.jpg?108f28348b470e7f3279bf4c1ce450c0) !important;
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.4);
+  color: #fff !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+}
+
+.card-3 {
+  background-image: linear-gradient(to bottom, #05b614d8, #05b615),
+        url(/images/bg-card-3.jpg?bdd848522b0e27f18de6fa96fdfbb4e3) !important;
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.4);
+  color: #fff !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
 }
 
 #custom-card {
-  height: 180px;
+  height: 220px;
   border-radius: 16px;
 }
 
 #custom-card #card-icon {
-  stroke: #fff;
-  fill: transparent;
+  fill: #fff;
   height: 2rem;
   width: 2rem;
 }

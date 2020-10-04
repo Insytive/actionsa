@@ -103,17 +103,25 @@
       </div>
     </nav>
 
-    <!-- Page Heading -->
-    <header class="bg-white shadow">
-      <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-        <slot name="header"></slot>
-      </div>
-    </header>
-
     <!-- Page Content -->
     <main>
       <slot></slot>
     </main>
+
+    <!-- footer -->
+    <footer class="py-12">
+      <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+        <div class="overflow-hidden text-center text-gray-500 text-sm">
+          Powered by
+          <a
+            href="https://www.thrivebs.co.za/"
+            class="hover:text-green-100"
+            target="_blank"
+            >Thrive Business Solutions
+          </a>
+        </div>
+      </div>
+    </footer>
 
     <!-- Modal Portal -->
     <portal-target name="modal" multiple> </portal-target>

@@ -1,10 +1,16 @@
 <template>
   <div class="min-h-screen bg-gray-100">
-    <nav class="bg-green-100 text-white">
+    <nav class="bg-green-100 text-white py-3">
       <!-- Primary Navigation Menu -->
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
           <div class="flex">
+            <!-- Logo -->
+            <div class="flex-shrink-0 flex items-center mr-8">
+              <jet-nav-link href="/" :active="$page.currentRouteName == 'home'">
+                <jet-application-mark class="block h-15 w-auto" />
+              </jet-nav-link>
+            </div>
             <!-- Navigation Links -->
             <div class="hidden space-x-8 sm:-my-px sm:flex">
               <jet-nav-link
@@ -270,12 +276,29 @@
       </div>
     </nav>
 
-    <slot name="header"></slot>
+    <div class="max-w-7xl mx-auto px-4 hidden sm:px-6 lg:px-8">
+      <slot name="header"></slot>
+    </div>
 
     <!-- Page Content -->
     <main>
       <slot></slot>
     </main>
+
+    <!-- Footer -->
+    <footer class="py-12">
+      <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+        <div class="overflow-hidden text-center text-gray-500 text-sm">
+          Powered by
+          <a
+            href="https://www.thrivebs.co.za/"
+            class="hover:text-green-100"
+            target="_blank"
+            >Thrive Business Solutions
+          </a>
+        </div>
+      </div>
+    </footer>
 
     <!-- Modal Portal -->
     <portal-target name="modal" multiple> </portal-target>

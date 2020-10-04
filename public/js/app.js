@@ -5112,12 +5112,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -8103,6 +8097,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -8147,6 +8149,29 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Jetstream_DropdownLink__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../Jetstream/DropdownLink */ "./resources/js/Jetstream/DropdownLink.vue");
 /* harmony import */ var _Jetstream_NavLink__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../Jetstream/NavLink */ "./resources/js/Jetstream/NavLink.vue");
 /* harmony import */ var _Jetstream_ResponsiveNavLink__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./../Jetstream/ResponsiveNavLink */ "./resources/js/Jetstream/ResponsiveNavLink.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -8489,6 +8514,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Jetstream_DropdownLink__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../Jetstream/DropdownLink */ "./resources/js/Jetstream/DropdownLink.vue");
 /* harmony import */ var _Jetstream_NavLink__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../Jetstream/NavLink */ "./resources/js/Jetstream/NavLink.vue");
 /* harmony import */ var _Jetstream_ResponsiveNavLink__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./../Jetstream/ResponsiveNavLink */ "./resources/js/Jetstream/ResponsiveNavLink.vue");
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -9287,7 +9320,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 $(document).ready(function () {
   var table = $("#example").DataTable({
     responsive: true
@@ -9494,6 +9526,13 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Layouts_WebLayout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Layouts/WebLayout */ "./resources/js/Layouts/WebLayout.vue");
 /* harmony import */ var _Components_About__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Components/About */ "./resources/js/Components/About.vue");
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -36624,7 +36663,7 @@ var render = function() {
       ),
       _vm._v(" "),
       _c("div", { staticClass: "mt-8 text-4xl font-bold" }, [
-        _vm._v("\n      Welcome to ActionSA\n    ")
+        _vm._v("Welcome to ActionSA")
       ])
     ]),
     _vm._v(" "),
@@ -36710,90 +36749,98 @@ var render = function() {
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "w-full px-3 lg:w-1/3" }, [
-        _c("div", { staticClass: "p-6 mt-3", attrs: { id: "custom-card" } }, [
-          _c("div", { staticClass: "flex items-center" }, [
-            _c(
-              "svg",
-              {
-                attrs: {
-                  id: "card-icon",
-                  version: "1.1",
-                  xmlns: "http://www.w3.org/2000/svg",
-                  width: "20",
-                  height: "20",
-                  viewBox: "0 0 20 20"
-                }
-              },
-              [
-                _c("title", [_vm._v("suitcase")]),
-                _vm._v(" "),
-                _c("path", {
+        _c(
+          "div",
+          { staticClass: "p-6 mt-3 card-2", attrs: { id: "custom-card" } },
+          [
+            _c("div", { staticClass: "flex items-center" }, [
+              _c(
+                "svg",
+                {
                   attrs: {
-                    d:
-                      "M18 4h-1v15h1c1.1 0 2-0.9 2-2v-11c0-1.1-0.9-2-2-2zM0 6v11c0 1.1 0.899 2 2 2h1v-15h-1c-1.101 0-2 0.9-2 2zM13.5 1.906c-0.681-0.316-1.889-0.906-3.519-0.906-1.633 0-2.8 0.59-3.481 0.906v2.094h-2.5v15h12v-15h-2.5v-2.094zM12 4h-4v-1.336c0.534-0.23 1.078-0.465 1.981-0.465s1.486 0.234 2.019 0.465v1.336z"
+                    id: "card-icon",
+                    version: "1.1",
+                    xmlns: "http://www.w3.org/2000/svg",
+                    width: "20",
+                    height: "20",
+                    viewBox: "0 0 20 20"
                   }
-                })
-              ]
-            ),
-            _vm._v(" "),
-            _vm._m(1)
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "ml-12" }, [
-            _c("div", { staticClass: "mt-2 text-sm text-white" }, [
-              _vm._v(
-                "\n            Volunteer to become one of our Recruiters\n          "
-              )
+                },
+                [
+                  _c("title", [_vm._v("suitcase")]),
+                  _vm._v(" "),
+                  _c("path", {
+                    attrs: {
+                      d:
+                        "M18 4h-1v15h1c1.1 0 2-0.9 2-2v-11c0-1.1-0.9-2-2-2zM0 6v11c0 1.1 0.899 2 2 2h1v-15h-1c-1.101 0-2 0.9-2 2zM13.5 1.906c-0.681-0.316-1.889-0.906-3.519-0.906-1.633 0-2.8 0.59-3.481 0.906v2.094h-2.5v15h12v-15h-2.5v-2.094zM12 4h-4v-1.336c0.534-0.23 1.078-0.465 1.981-0.465s1.486 0.234 2.019 0.465v1.336z"
+                    }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _vm._m(1)
             ]),
             _vm._v(" "),
-            _c(
-              "a",
-              {
-                staticClass: "hover:no-underline",
-                attrs: { href: "/register", id: "read-more" }
-              },
-              [
-                _c(
-                  "div",
-                  {
-                    staticClass: "mt-4 flex items-center text-sm font-semibold"
-                  },
-                  [
-                    _c("div", { staticClass: "text-white" }, [
-                      _vm._v("Join Volunteers")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "ml-1 text-indigo-500" }, [
-                      _c(
-                        "svg",
-                        {
-                          staticClass: "arrow-right w-4 h-4",
-                          attrs: { viewBox: "0 0 20 20", fill: "#fff" }
-                        },
-                        [
-                          _c("path", {
-                            attrs: {
-                              "fill-rule": "evenodd",
-                              d:
-                                "M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z",
-                              "clip-rule": "evenodd"
-                            }
-                          })
-                        ]
-                      )
-                    ])
-                  ]
+            _c("div", { staticClass: "ml-12" }, [
+              _c("div", { staticClass: "mt-2 text-sm text-white" }, [
+                _vm._v(
+                  "\n            Volunteer to become one of our Recruiters\n          "
                 )
-              ]
-            )
-          ])
-        ])
+              ]),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass: "hover:no-underline",
+                  attrs: { href: "/register", id: "read-more" }
+                },
+                [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "mt-4 flex items-center text-sm font-semibold"
+                    },
+                    [
+                      _c("div", { staticClass: "text-white" }, [
+                        _vm._v("Join Volunteers")
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "ml-1 text-indigo-500" }, [
+                        _c(
+                          "svg",
+                          {
+                            staticClass: "arrow-right w-4 h-4",
+                            attrs: { viewBox: "0 0 20 20", fill: "#fff" }
+                          },
+                          [
+                            _c("path", {
+                              attrs: {
+                                "fill-rule": "evenodd",
+                                d:
+                                  "M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z",
+                                "clip-rule": "evenodd"
+                              }
+                            })
+                          ]
+                        )
+                      ])
+                    ]
+                  )
+                ]
+              )
+            ])
+          ]
+        )
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "w-full px-3 lg:w-1/3" }, [
         _c(
           "div",
-          { staticClass: "p-6 mt-3 not-allowed", attrs: { id: "custom-card" } },
+          {
+            staticClass: "p-6 mt-3 not-allowed card-3",
+            attrs: { id: "custom-card" }
+          },
           [
             _c("div", { staticClass: "flex items-center" }, [
               _c(
@@ -41195,16 +41242,9 @@ var render = function() {
         )
       ]),
       _vm._v(" "),
-      _c("header", { staticClass: "bg-white shadow" }, [
-        _c(
-          "div",
-          { staticClass: "max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8" },
-          [_vm._t("header")],
-          2
-        )
-      ]),
-      _vm._v(" "),
       _c("main", [_vm._t("default")], 2),
+      _vm._v(" "),
+      _vm._m(1),
       _vm._v(" "),
       _c("portal-target", { attrs: { name: "modal", multiple: "" } })
     ],
@@ -41221,6 +41261,30 @@ var staticRenderFns = [
       { staticClass: "hidden sm:flex sm:items-center sm:ml-6" },
       [_c("div", { staticClass: "ml-3 relative" })]
     )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("footer", { staticClass: "py-12" }, [
+      _c("div", { staticClass: "max-w-7xl mx-auto sm:px-6 lg:px-8" }, [
+        _c(
+          "div",
+          { staticClass: "overflow-hidden text-center text-gray-500 text-sm" },
+          [
+            _vm._v("\n        Powered by\n        "),
+            _c(
+              "a",
+              {
+                staticClass: "hover:text-green-100",
+                attrs: { href: "https://www.thrivebs.co.za/", target: "_blank" }
+              },
+              [_vm._v("Thrive Business Solutions\n        ")]
+            )
+          ]
+        )
+      ])
+    ])
   }
 ]
 render._withStripped = true
@@ -41248,10 +41312,33 @@ var render = function() {
     "div",
     { staticClass: "min-h-screen bg-gray-100" },
     [
-      _c("nav", { staticClass: "bg-green-100 text-white" }, [
+      _c("nav", { staticClass: "bg-green-100 text-white py-3" }, [
         _c("div", { staticClass: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" }, [
           _c("div", { staticClass: "flex justify-between h-16" }, [
             _c("div", { staticClass: "flex" }, [
+              _c(
+                "div",
+                { staticClass: "flex-shrink-0 flex items-center mr-8" },
+                [
+                  _c(
+                    "jet-nav-link",
+                    {
+                      attrs: {
+                        href: "/",
+                        active: _vm.$page.currentRouteName == "home"
+                      }
+                    },
+                    [
+                      _c("jet-application-mark", {
+                        staticClass: "block h-15 w-auto"
+                      })
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
               _c(
                 "div",
                 { staticClass: "hidden space-x-8 sm:-my-px sm:flex" },
@@ -41790,16 +41877,48 @@ var render = function() {
         )
       ]),
       _vm._v(" "),
-      _vm._t("header"),
+      _c(
+        "div",
+        { staticClass: "max-w-7xl mx-auto px-4 hidden sm:px-6 lg:px-8" },
+        [_vm._t("header")],
+        2
+      ),
       _vm._v(" "),
       _c("main", [_vm._t("default")], 2),
       _vm._v(" "),
+      _vm._m(0),
+      _vm._v(" "),
       _c("portal-target", { attrs: { name: "modal", multiple: "" } })
     ],
-    2
+    1
   )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("footer", { staticClass: "py-12" }, [
+      _c("div", { staticClass: "max-w-7xl mx-auto sm:px-6 lg:px-8" }, [
+        _c(
+          "div",
+          { staticClass: "overflow-hidden text-center text-gray-500 text-sm" },
+          [
+            _vm._v("\n        Powered by\n        "),
+            _c(
+              "a",
+              {
+                staticClass: "hover:text-green-100",
+                attrs: { href: "https://www.thrivebs.co.za/", target: "_blank" }
+              },
+              [_vm._v("Thrive Business Solutions\n        ")]
+            )
+          ]
+        )
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -41825,7 +41944,7 @@ var render = function() {
     "div",
     { staticClass: "min-h-screen bg-gray-100" },
     [
-      _c("nav", { staticClass: "bg-green-100 text-white" }, [
+      _c("nav", { staticClass: "bg-green-100 text-white py-3" }, [
         _c("div", { staticClass: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" }, [
           _c("div", { staticClass: "flex justify-between h-16" }, [
             _c("div", { staticClass: "flex" }, [
@@ -41843,7 +41962,7 @@ var render = function() {
                     },
                     [
                       _c("jet-application-mark", {
-                        staticClass: "block h-9 w-auto"
+                        staticClass: "block h-15 w-auto"
                       })
                     ],
                     1
@@ -42061,16 +42180,9 @@ var render = function() {
         )
       ]),
       _vm._v(" "),
-      _c("header", { staticClass: "bg-white shadow" }, [
-        _c(
-          "div",
-          { staticClass: "max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8" },
-          [_vm._t("header")],
-          2
-        )
-      ]),
-      _vm._v(" "),
       _c("main", [_vm._t("default")], 2),
+      _vm._v(" "),
+      _vm._m(1),
       _vm._v(" "),
       _c("portal-target", { attrs: { name: "modal", multiple: "" } })
     ],
@@ -42087,6 +42199,30 @@ var staticRenderFns = [
       { staticClass: "hidden sm:flex sm:items-center sm:ml-6" },
       [_c("div", { staticClass: "ml-3 relative" })]
     )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("footer", { staticClass: "py-12" }, [
+      _c("div", { staticClass: "max-w-7xl mx-auto sm:px-6 lg:px-8" }, [
+        _c(
+          "div",
+          { staticClass: "overflow-hidden text-center text-gray-500 text-sm" },
+          [
+            _vm._v("\n        Powered by\n        "),
+            _c(
+              "a",
+              {
+                staticClass: "hover:text-green-100",
+                attrs: { href: "https://www.thrivebs.co.za/", target: "_blank" }
+              },
+              [_vm._v("Thrive Business Solutions\n        ")]
+            )
+          ]
+        )
+      ])
+    ])
   }
 ]
 render._withStripped = true
@@ -43448,11 +43584,18 @@ var staticRenderFns = [
       _c("div", { staticClass: "max-w-7xl mx-auto sm:px-6 lg:px-8" }, [
         _c(
           "div",
-          {
-            staticClass:
-              "bg-white overflow-hidden text-center text-gray-500 text-sm"
-          },
-          [_vm._v("\n        Powered by Thrive Business Solutions\n      ")]
+          { staticClass: "overflow-hidden text-center text-gray-500 text-sm" },
+          [
+            _vm._v("\n        Powered by\n        "),
+            _c(
+              "a",
+              {
+                staticClass: "hover:text-green-100",
+                attrs: { href: "https://www.thrivebs.co.za/", target: "_blank" }
+              },
+              [_vm._v("Thrive Business Solutions\n        ")]
+            )
+          ]
         )
       ])
     ])

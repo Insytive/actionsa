@@ -7,10 +7,17 @@
         </div>
       </div>
     </div>
+    <!-- Footer -->
     <footer class="py-12">
       <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-        <div class="bg-white overflow-hidden text-center text-gray-500 text-sm">
-          Powered by Thrive Business Solutions
+        <div class="overflow-hidden text-center text-gray-500 text-sm">
+          Powered by
+          <a
+            href="https://www.thrivebs.co.za/"
+            class="hover:text-green-100"
+            target="_blank"
+            >Thrive Business Solutions
+          </a>
         </div>
       </div>
     </footer>
