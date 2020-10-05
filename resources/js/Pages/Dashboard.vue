@@ -4,7 +4,7 @@
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <inertia-link href="/add/supporter">
                     <button
-                        class="mt-8 dots-reverse hover:bg-green-700 text-white ml-2 font-bold py-2 px-4 float-right"
+                        class="add-user mt-4 dots-reverse hover:bg-green-700 text-white ml-2 font-bold py-2 px-4 float-right"
                     >
                         Add Supporter
                     </button>
@@ -12,7 +12,7 @@
 
                 <inertia-link href="/add/member">
                     <button
-                        class="mt-8 dots hover:bg-green-700 text-white font-bold py-2 px-4 float-right"
+                        class="add-user mt-4 dots hover:bg-green-700 text-white font-bold py-2 px-4 float-right"
                     >
                         Add Member
                     </button>
