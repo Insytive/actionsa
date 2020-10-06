@@ -1,33 +1,33 @@
-@import 'functions/functions';
-@import 'mixins/mixins';
-@import 'colors';
-@import 'palette';
+@import "functions/functions";
+@import "mixins/mixins";
+@import "colors";
+@import "palette";
 @import "../../vendor/animate.scss/animate.scss";
-@import 'animations';
-@import 'typography';
-@import 'height-width';
-@import 'box-shadow';
-@import 'layouts/layouts';
-@import 'components/components';
-@import 'header';
-@import 'header-top';
-@import 'footer';
-@import 'utilities/utilities';
-@import 'views/views';
-@import 'newLayout/newLayout';
+@import "animations";
+@import "typography";
+@import "height-width";
+@import "box-shadow";
+@import "layouts/layouts";
+@import "components/components";
+@import "header";
+@import "header-top";
+@import "footer";
+@import "utilities/utilities";
+@import "views/views";
+@import "newLayout/newLayout";
 html {
     font-size: 16px;
 }
 
 body {
-    letter-spacing: .3px;
+    letter-spacing: 0.3px;
     line-height: 1.6;
     background: $background;
     overflow-x: hidden;
     overflow-y: scroll;
 }
 
-[tabindex='-1']:focus {
+[tabindex="-1"]:focus {
     outline: none;
 }
 
@@ -52,18 +52,18 @@ div {
 
 html,
 body {
-    &[dir=rtl],
-    &[dir=ltr] {
-        unicode-bidi: embed
+    &[dir="rtl"],
+    &[dir="ltr"] {
+        unicode-bidi: embed;
     }
 }
 
-bdo[dir=rtl] {
+bdo[dir="rtl"] {
     direction: rtl;
     unicode-bidi: bidi-override;
 }
 
-bdo[dir=ltr] {
+bdo[dir="ltr"] {
     direction: ltr;
     unicode-bidi: bidi-override;
 }
@@ -198,7 +198,7 @@ blockquote {
         line-height: 1;
         color: #000;
         text-shadow: 0 1px 0 #fff;
-        opacity: .5;
+        opacity: 0.5;
         position: absolute;
         top: 0;
         right: 5px;

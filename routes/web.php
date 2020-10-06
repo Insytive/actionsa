@@ -94,6 +94,12 @@ Route::get('vertical/dashboard/dashboard1', function () {
     return view('dashboard.dashboardv1');
 })->name('vertical');
 
+Route::view('admin/leads/create', 'leads.create')->name('adminCreate');
+Route::view('admin/leads/edit', 'leads.edit')->name('adminEdit');
+Route::view('admin/leads/show', 'leads.show')->name('adminShow');
+
+Route::view('admin/leads', 'leads.index')->name('adminLeads');
+
 
 Route::view('dashboard/dashboard1', 'dashboard.dashboardv1')->name('dashboard_version_1');
 Route::view('dashboard/dashboard2', 'dashboard.dashboardv2')->name('dashboard_version_2');

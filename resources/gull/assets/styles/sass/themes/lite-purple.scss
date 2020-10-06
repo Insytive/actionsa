@@ -11,7 +11,8 @@ $yellow: map-get($solid-colors, "yellow") !default;
 $green: map-get($solid-colors, "green") !default;
 $teal: map-get($solid-colors, "teal") !default;
 $cyan: map-get($solid-colors, "cyan") !default;
-$primary-base: $purple;
+$brand: map-get($solid-colors, "brand-green") !default;
+$primary-base: $brand;
 $white: #fff !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #eee !default;
@@ -73,7 +74,7 @@ $theme-colors: (
 ) !default;
 // @import "../../../fonts/iconsmind/iconsmind.css";
 // @import "../../vendor/bootstrap/bootstrap.scss";
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
 @import "../bootstrap-rtl.scss";
 @import "../globals/globals.scss";
 
