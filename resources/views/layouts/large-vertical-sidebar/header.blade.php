@@ -165,7 +165,7 @@
                     </div>
                     <a class="dropdown-item">Account settings</a>
                     <a class="dropdown-item">Billing history</a>
-                    <a class="dropdown-item" href="#">Sign out</a>
+                    <a class="dropdown-item" href="{{route('signIn')}}">Sign out</a>
                 </div>
             </div>
         </div>

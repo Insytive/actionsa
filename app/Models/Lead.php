@@ -22,9 +22,9 @@ class Lead extends Model
     ];
 
     protected $encryptable = [
-        'address',
-        'building',
-        'lead_email'
+//        'address',
+//        'building',
+//        'lead_email'
     ];
 
     const GENDER_SELECT = [
