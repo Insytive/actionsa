@@ -1,10 +1,10 @@
 @extends('layouts.master')
 @section('main-content')
            <div class="breadcrumb">
-                <h1>Version 1</h1>
+                <h1>Persona</h1>
                 <ul>
-                    <li><a href="">Dashboard</a></li>
-                    <li>Version 1</li>
+                    <!-- <li><a href="">App</a></li> -->
+                    <li>Dashboard</li>
                 </ul>
             </div>
 

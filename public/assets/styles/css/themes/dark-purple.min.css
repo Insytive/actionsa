@@ -20267,6 +20267,17 @@ ul.metismenu {
   fill: #26222a;
 }
 
+.app-footer__cite a {
+  color: #26222a;
+  transition: all 0.2s ease;
+}
+
+.app-footer__cite a:hover,
+.app-footer__cite a:active,
+.app-footer__cite a:focus {
+  color: #eee;
+}
+
 .sidebar-left-secondary .childNav li.nav-item.open > a {
   background: #403946;
 }
@@ -26220,6 +26231,10 @@ span.fa.fa-chevron-right:before {
   background-color: #ffb81c;
   color: #26222a;
   border-radius: 0.25rem;
+}
+
+.auth-logo svg {
+  height: 40px;
 }
 
 .layout-horizontal-bar .header-topnav {

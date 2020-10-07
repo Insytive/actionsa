@@ -191,3 +191,9 @@
     color: $white;
     border-radius: 0.25rem;
 }
+
+.auth-logo {
+    svg {
+        height: 40px;
+    }
+}
