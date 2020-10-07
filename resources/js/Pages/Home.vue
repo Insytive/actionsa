@@ -16,8 +16,10 @@
             href="https://www.thrivebs.co.za/"
             class="hover:text-green-100"
             target="_blank"
-            >Thrive Business Solutions
+            >Thrive Business Solutions <br />
           </a>
+
+          <small> 1.0 Beta version </small>
         </div>
       </div>
     </footer>

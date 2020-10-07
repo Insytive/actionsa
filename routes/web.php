@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\LeadController;
+// use App\Http\Controllers\LeadController;
+use App\Http\Controllers\Admin\LeadController;
 
 /*
 |--------------------------------------------------------------------------
@@ -66,9 +67,9 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/add/member', function () 
 
 Route::post('leads/save', [LeadController::class, 'store']);
 
-Route::get('/', function () {
-    return view('dashboard.dashboardv1');
-});
+// Route::get('/', function () {
+//     return view('dashboard.dashboardv1');
+// });
 // Route::view('/', 'starter')->name('starter');
 Route::get('large-compact-sidebar/dashboard/dashboard1', function () {
     // set layout sesion(key)
@@ -98,7 +99,7 @@ Route::view('admin/leads/create', 'leads.create')->name('adminCreate');
 Route::view('admin/leads/edit', 'leads.edit')->name('adminEdit');
 Route::view('admin/leads/show', 'leads.show')->name('adminShow');
 
-Route::view('admin/leads', 'leads.index')->name('adminLeads');
+// Route::view('admin/leads', 'leads.index')->name('adminLeads');
 
 
 Route::view('dashboard/dashboard1', 'dashboard.dashboardv1')->name('dashboard_version_1');
@@ -210,6 +211,7 @@ Route::view('others/search-result', 'others.search-result')->name('search-result
 // Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/admin/leads', 'Admin/LeadController@index')->name('leads');
 
 
 

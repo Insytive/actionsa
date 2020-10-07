@@ -5095,23 +5095,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -8126,6 +8109,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 
 
@@ -8568,6 +8553,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Jetstream_DropdownLink__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../Jetstream/DropdownLink */ "./resources/js/Jetstream/DropdownLink.vue");
 /* harmony import */ var _Jetstream_NavLink__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../Jetstream/NavLink */ "./resources/js/Jetstream/NavLink.vue");
 /* harmony import */ var _Jetstream_ResponsiveNavLink__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./../Jetstream/ResponsiveNavLink */ "./resources/js/Jetstream/ResponsiveNavLink.vue");
+//
+//
 //
 //
 //
@@ -9598,6 +9585,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -10463,12 +10452,38 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
     WebLayout: _Layouts_WebLayout__WEBPACK_IMPORTED_MODULE_0__["default"]
   }
 });
+window.setTimeout(function () {
+  window.location.href = "https://www.actionsa.org.za/";
+}, 5000);
 
 /***/ }),
 
@@ -36813,12 +36828,12 @@ var render = function() {
                   }
                 },
                 [
-                  _c("title", [_vm._v("suitcase")]),
+                  _c("title", [_vm._v("v-card")]),
                   _vm._v(" "),
                   _c("path", {
                     attrs: {
                       d:
-                        "M18 4h-1v15h1c1.1 0 2-0.9 2-2v-11c0-1.1-0.9-2-2-2zM0 6v11c0 1.1 0.899 2 2 2h1v-15h-1c-1.101 0-2 0.9-2 2zM13.5 1.906c-0.681-0.316-1.889-0.906-3.519-0.906-1.633 0-2.8 0.59-3.481 0.906v2.094h-2.5v15h12v-15h-2.5v-2.094zM12 4h-4v-1.336c0.534-0.23 1.078-0.465 1.981-0.465s1.486 0.234 2.019 0.465v1.336z"
+                        "M19 3h-18c-0.553 0-1 0.447-1 1v12c0 0.552 0.447 1 1 1h18c0.553 0 1-0.448 1-1v-12c0-0.552-0.447-1-1-1zM13 7h4v1h-4v-1zM11 14.803c-0.129-0.102-0.293-0.201-0.529-0.303-1.18-0.508-2.961-1.26-2.961-2.176 0-0.551 0.359-0.371 0.518-1.379 0.066-0.418 0.385-0.007 0.445-0.961 0-0.38-0.174-0.475-0.174-0.475s0.088-0.562 0.123-0.996c0.036-0.453-0.221-1.8-1.277-2.097-0.186-0.188-0.311-0.111 0.258-0.412-1.244-0.059-1.534 0.592-2.196 1.071-0.564 0.42-0.717 1.085-0.689 1.439 0.037 0.433 0.125 0.996 0.125 0.996s-0.175 0.094-0.175 0.474c0.061 0.954 0.38 0.543 0.445 0.961 0.158 1.008 0.519 0.828 0.519 1.379 0 0.916-1.781 1.668-2.961 2.176-0.203 0.088-0.349 0.173-0.471 0.26v-9.76h9v9.803zM18 11h-5v-1h5v1z"
                     }
                   })
                 ]
@@ -36827,55 +36842,7 @@ var render = function() {
               _vm._m(1)
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "ml-12" }, [
-              _c("div", { staticClass: "mt-2 text-sm text-white" }, [
-                _vm._v(
-                  "\n            Volunteer to become one of our Recruiters\n          "
-                )
-              ]),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  staticClass: "hover:no-underline",
-                  attrs: { href: "/register", id: "read-more" }
-                },
-                [
-                  _c(
-                    "div",
-                    {
-                      staticClass:
-                        "mt-4 flex items-center text-sm font-semibold"
-                    },
-                    [
-                      _c("div", { staticClass: "text-white" }, [
-                        _vm._v("Join Volunteers")
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "ml-1 text-indigo-500" }, [
-                        _c(
-                          "svg",
-                          {
-                            staticClass: "arrow-right w-4 h-4",
-                            attrs: { viewBox: "0 0 20 20", fill: "#fff" }
-                          },
-                          [
-                            _c("path", {
-                              attrs: {
-                                "fill-rule": "evenodd",
-                                d:
-                                  "M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z",
-                                "clip-rule": "evenodd"
-                              }
-                            })
-                          ]
-                        )
-                      ])
-                    ]
-                  )
-                ]
-              )
-            ])
+            _vm._m(2)
           ]
         )
       ]),
@@ -36892,31 +36859,25 @@ var render = function() {
               _c(
                 "svg",
                 {
-                  attrs: {
-                    id: "card-icon",
-                    version: "1.1",
-                    xmlns: "http://www.w3.org/2000/svg",
-                    width: "20",
-                    height: "20",
-                    viewBox: "0 0 20 20"
-                  }
+                  staticClass: "arrow-right w-4 h-4",
+                  attrs: { viewBox: "0 0 20 20", fill: "#fff" }
                 },
                 [
-                  _c("title", [_vm._v("v-card")]),
-                  _vm._v(" "),
                   _c("path", {
                     attrs: {
+                      "fill-rule": "evenodd",
                       d:
-                        "M19 3h-18c-0.553 0-1 0.447-1 1v12c0 0.552 0.447 1 1 1h18c0.553 0 1-0.448 1-1v-12c0-0.552-0.447-1-1-1zM13 7h4v1h-4v-1zM11 14.803c-0.129-0.102-0.293-0.201-0.529-0.303-1.18-0.508-2.961-1.26-2.961-2.176 0-0.551 0.359-0.371 0.518-1.379 0.066-0.418 0.385-0.007 0.445-0.961 0-0.38-0.174-0.475-0.174-0.475s0.088-0.562 0.123-0.996c0.036-0.453-0.221-1.8-1.277-2.097-0.186-0.188-0.311-0.111 0.258-0.412-1.244-0.059-1.534 0.592-2.196 1.071-0.564 0.42-0.717 1.085-0.689 1.439 0.037 0.433 0.125 0.996 0.125 0.996s-0.175 0.094-0.175 0.474c0.061 0.954 0.38 0.543 0.445 0.961 0.158 1.008 0.519 0.828 0.519 1.379 0 0.916-1.781 1.668-2.961 2.176-0.203 0.088-0.349 0.173-0.471 0.26v-9.76h9v9.803zM18 11h-5v-1h5v1z"
+                        "M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z",
+                      "clip-rule": "evenodd"
                     }
                   })
                 ]
               ),
               _vm._v(" "),
-              _vm._m(2)
+              _vm._m(3)
             ]),
             _vm._v(" "),
-            _vm._m(3)
+            _vm._m(4)
           ]
         )
       ])
@@ -36955,12 +36916,43 @@ var staticRenderFns = [
           "a",
           {
             staticClass: "hover:text-white hover:no-underline",
-            attrs: { href: "/become-a-volunteer" }
+            attrs: { href: "/become-a-member" }
           },
-          [_vm._v("Become a volunteer")]
+          [_vm._v("Become a Member")]
         )
       ]
     )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "ml-12" }, [
+      _c("div", { staticClass: "mt-2 text-sm text-white" }, [
+        _vm._v("Become a member")
+      ]),
+      _vm._v(" "),
+      _c(
+        "a",
+        {
+          staticClass: "hover:no-underline",
+          attrs: { href: "/become-a-member", id: "read-more" }
+        },
+        [
+          _c(
+            "div",
+            { staticClass: "mt-4 flex items-center text-sm font-semibold" },
+            [
+              _c("div", { staticClass: "text-white" }, [
+                _vm._v("Join Volunteers")
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "ml-1 text-indigo-500" })
+            ]
+          )
+        ]
+      )
+    ])
   },
   function() {
     var _vm = this
@@ -36979,7 +36971,7 @@ var staticRenderFns = [
               "cursor-not-allowed hover:text-white hover:no-underline",
             attrs: { href: "javascript:;" }
           },
-          [_vm._v("\n              Become a member\n            ")]
+          [_vm._v("\n              Become a Volunteer\n            ")]
         )
       ]
     )
@@ -41317,8 +41309,10 @@ var staticRenderFns = [
                 staticClass: "hover:text-green-100",
                 attrs: { href: "https://www.thrivebs.co.za/", target: "_blank" }
               },
-              [_vm._v("Thrive Business Solutions\n        ")]
-            )
+              [_vm._v("Thrive Business Solutions "), _c("br")]
+            ),
+            _vm._v(" "),
+            _c("small", [_vm._v(" 1.0 Beta version ")])
           ]
         )
       ])
@@ -42258,8 +42252,10 @@ var staticRenderFns = [
                 staticClass: "hover:text-green-100",
                 attrs: { href: "https://www.thrivebs.co.za/", target: "_blank" }
               },
-              [_vm._v("Thrive Business Solutions\n        ")]
-            )
+              [_vm._v("Thrive Business Solutions "), _c("br")]
+            ),
+            _vm._v(" "),
+            _c("small", [_vm._v(" 1.0 Beta version ")])
           ]
         )
       ])
@@ -43624,8 +43620,10 @@ var staticRenderFns = [
                 staticClass: "hover:text-green-100",
                 attrs: { href: "https://www.thrivebs.co.za/", target: "_blank" }
               },
-              [_vm._v("Thrive Business Solutions\n        ")]
-            )
+              [_vm._v("Thrive Business Solutions "), _c("br")]
+            ),
+            _vm._v(" "),
+            _c("small", [_vm._v(" 1.0 Beta version ")])
           ]
         )
       ])
@@ -44979,7 +44977,7 @@ var render = function() {
                   staticClass:
                     "font-semibold text-xl text-gray-800 leading-tight"
                 },
-                [_vm._v("\n            Thank you!\n        ")]
+                [_vm._v("\n      Thank you!\n    ")]
               )
             ]
           },
@@ -44989,13 +44987,56 @@ var render = function() {
     },
     [
       _vm._v(" "),
-      _c("div", { staticClass: "py-12" }, [
-        _c("div", { staticClass: "max-w-7xl mx-auto sm:px-6 lg:px-8" }, [
-          _c(
-            "div",
-            { staticClass: "bg-white overflow-hidden shadow-xl sm:rounded-lg" },
-            [_c("h1", [_vm._v("You have been successfully registered!")])]
-          )
+      _c("section", { staticClass: "registered" }, [
+        _c("div", { staticClass: "container" }, [
+          _c("span", [
+            _c(
+              "svg",
+              {
+                staticClass: "bi bi-bookmark-check",
+                attrs: {
+                  width: "1em",
+                  height: "1em",
+                  viewBox: "0 0 16 16",
+                  fill: "currentColor",
+                  xmlns: "http://www.w3.org/2000/svg"
+                }
+              },
+              [
+                _c("path", {
+                  attrs: {
+                    "fill-rule": "evenodd",
+                    d:
+                      "M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+                  }
+                }),
+                _vm._v(" "),
+                _c("path", {
+                  attrs: {
+                    "fill-rule": "evenodd",
+                    d:
+                      "M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"
+                  }
+                })
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("h2", { staticClass: "registered__title" }, [
+            _vm._v("Thank you!")
+          ]),
+          _vm._v(" "),
+          _c("h4", [
+            _vm._v(
+              "We have received your submission and appreciate your support."
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "\n        You will receive your digital membership card and further\n        communication via email\n      "
+            )
+          ])
         ])
       ])
     ]
