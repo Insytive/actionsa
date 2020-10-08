@@ -12,12 +12,8 @@
   <component name="ChangeListManager">
     <list default="true" id="32c92096-46ed-4c9f-bd15-b018eacded21" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Components/About.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Components/About.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Layouts/WebLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Layouts/WebLayout.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/RegistrationError.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/RegistrationError.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Success.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Success.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Layouts/AdminLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Layouts/AdminLayout.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Home.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,7 +228,7 @@
       <workItem from="1601818514264" duration="7709000" />
       <workItem from="1601902823767" duration="2863000" />
       <workItem from="1601987212883" duration="11487000" />
-      <workItem from="1602065133893" duration="11584000" />
+      <workItem from="1602065133893" duration="12473000" />
     </task>
     <servers />
   </component>
@@ -288,10 +284,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="502" y="71" key="NewPhpClassDialog/0.0.1366.728/1366.0.2560.1040@0.0.1366.728" timestamp="1601988942062" />
-    <state x="391" y="81" width="583" height="566" key="find.popup" timestamp="1602144504743">
+    <state x="391" y="81" width="583" height="566" key="find.popup" timestamp="1602156277433">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="391" y="81" width="583" height="566" key="find.popup/0.0.1366.728/1366.0.2560.1040@0.0.1366.728" timestamp="1602086501292" />
-    <state x="391" y="81" width="583" height="566" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1602144504743" />
+    <state x="391" y="81" width="583" height="566" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1602156277433" />
   </component>
 </project>

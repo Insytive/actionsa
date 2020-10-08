@@ -41603,7 +41603,9 @@ var staticRenderFns = [
               [_vm._v("Thrive Business Solutions "), _c("br")]
             ),
             _vm._v(" "),
-            _c("small", [_vm._v(" 1.0 Beta version ")])
+            _c("small", { staticClass: "mt-10" }, [
+              _vm._v("Version (0.5.0 Beta) ")
+            ])
           ]
         )
       ])
