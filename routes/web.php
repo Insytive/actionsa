@@ -1,8 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-// use App\Http\Controllers\LeadController;
-use App\Http\Controllers\Admin\LeadController;
+use App\Http\Controllers\LeadController;
 
 /*
 |--------------------------------------------------------------------------
