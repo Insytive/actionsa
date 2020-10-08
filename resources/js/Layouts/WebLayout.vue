@@ -54,9 +54,9 @@
           <div class="-mr-2 hidden lg:flex items-center">
             <button class="font-bold py-2 px-4">
               <a
-                href="https://actionsa.thrivebs.co.za/"
+                href="https://www.actionsa.org.za/"
                 class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-bold leading-5 text-white hover:text-red-100 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out hover:no-underline hover:text-red-100"
-                >&larr; Main website</a
+                >&larr; Back to Main Website</a
               >
             </button>
 
@@ -207,7 +207,7 @@
             >Thrive Business Solutions <br />
           </a>
 
-          <small> 1.0 Beta version </small>
+          <small class="mt-10">Version (0.5.0 Beta) </small>
         </div>
       </div>
     </footer>

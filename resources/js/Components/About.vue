@@ -30,7 +30,7 @@
               <a
                 href="/become-a-supporter"
                 class="text-white hover:text-white hover:no-underline"
-                >Become a supporter</a
+                >Become a Supporter</a
               >
             </div>
           </div>
@@ -90,14 +90,14 @@
               <a
                 href="/become-a-member"
                 class="text-white hover:text-white hover:no-underline"
-                >Become a member</a
+                >Become a Member</a
               >
             </div>
           </div>
 
           <div class="ml-12">
             <div class="mt-4 text-sm text-white">
-              Become one of our members.
+              Become one of our Members.
             </div>
 
             <a
@@ -108,7 +108,7 @@
               <div
                 class="mt-4 flex items-center text-sm font-semibold text-indigo-700"
               >
-                <div class="text-white">Join member</div>
+                <div class="text-white">Join Members</div>
 
                 <div class="ml-1 text-indigo-500">
                   <svg

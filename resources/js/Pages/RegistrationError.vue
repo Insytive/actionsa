@@ -2,17 +2,18 @@
     <web-layout>
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                Registration Error!
+                Registration Failed
             </h2>
         </template>
 
-        <div class="py-12">
-            <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                    <h1>That ID already exists.</h1>
-                </div>
+        <section class="registered">
+            <div class="container mb-10">
+                <h2 class="registered__title">Sorry!</h2>
+                <h4>That ID number has already been registered.</h4>
             </div>
-        </div>
+
+            <inertia-link href="/">Back</inertia-link>
+        </section>
     </web-layout>
 </template>
 
