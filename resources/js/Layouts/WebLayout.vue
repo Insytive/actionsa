@@ -28,12 +28,12 @@
                 Become a Supporter
               </jet-nav-link>
 
-              <!--              <jet-nav-link-->
-              <!--                href="/become-a-member"-->
-              <!--                :active="$page.currentRouteName == 'become-a-member'"-->
-              <!--              >-->
-              <!--                Become a Member-->
-              <!--              </jet-nav-link>-->
+              <jet-nav-link
+                href="/become-a-member"
+                :active="$page.currentRouteName == 'become-a-member'"
+              >
+                Become a Member
+              </jet-nav-link>
 
               <jet-nav-link
                 href="/register"
@@ -47,6 +47,27 @@
           <!-- Settings Dropdown -->
           <div class="hidden sm:flex sm:items-center sm:ml-6">
             <div class="ml-3 relative"></div>
+          </div>
+
+          <!-- Register -->
+
+          <div class="-mr-2 hidden lg:flex items-center">
+            <button class="font-bold py-2 px-4">
+              <a
+                href="https://actionsa.thrivebs.co.za/"
+                class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-bold leading-5 text-white hover:text-red-100 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out hover:no-underline hover:text-red-100"
+                >&larr; Main website</a
+              >
+            </button>
+
+            <button class="ml-2 top-btn font-bold bg-orange-100 rounded-full">
+              <jet-nav-link
+                href="/login"
+                :active="$page.currentRouteName == 'login'"
+              >
+                Login
+              </jet-nav-link>
+            </button>
           </div>
 
           <!-- Hamburger -->
@@ -95,21 +116,30 @@
         }"
         class="sm:hidden"
       >
-        <div class="pt-2 pb-3 space-y-1">
+        <!-- <div class="pt-2 pb-3 space-y-1 text-white">
           <jet-responsive-nav-link
             href="/dashboard"
             :active="$page.currentRouteName == 'dashboard'"
           >
             Dashboard
           </jet-responsive-nav-link>
-        </div>
+        </div> -->
 
-        <div class="pt-2 pb-3 space-y-1 text-white">
+        <div class="pt-5 pb-3 space-y-1 text-white">
           <jet-nav-link
             href="/become-a-supporter"
             :active="$page.currentRouteName == 'become-a-supporter'"
           >
             Become a Supporter
+          </jet-nav-link>
+        </div>
+
+        <div class="pt-2 pb-3 space-y-1 text-white">
+          <jet-nav-link
+            href="/become-a-member"
+            :active="$page.currentRouteName == 'become-a-member'"
+          >
+            Become a Member
           </jet-nav-link>
         </div>
 
@@ -125,19 +155,36 @@
         <!-- Responsive Settings Options -->
         <div class="pt-4 pb-1 border-t border-gray-200">
           <div class="mt-3 space-y-1">
-            <jet-responsive-nav-link
+            <!-- <jet-responsive-nav-link
               href="#"
               :active="$page.currentRouteName == 'profile.show'"
             >
               Profile
-            </jet-responsive-nav-link>
+            </jet-responsive-nav-link> -->
+
+            <button class="font-bold py-2 px-4">
+              <a
+                href="https://actionsa.thrivebs.co.za/"
+                class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-bold leading-5 text-white hover:text-red-100 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out hover:no-underline hover:text-red-100"
+                >&larr; Main website</a
+              >
+            </button>
+
+            <button class="ml-2 top-btn font-bold bg-orange-100 rounded-full">
+              <jet-nav-link
+                href="/login"
+                :active="$page.currentRouteName == 'login'"
+              >
+                Login
+              </jet-nav-link>
+            </button>
 
             <!-- Authentication -->
-            <form method="POST" @submit.prevent="logout">
+            <!-- <form method="POST" @submit.prevent="logout">
               <jet-responsive-nav-link as="button">
                 Logout
               </jet-responsive-nav-link>
-            </form>
+            </form> -->
           </div>
         </div>
       </div>

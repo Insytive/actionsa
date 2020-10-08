@@ -5095,6 +5095,22 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -8725,6 +8741,53 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -10689,7 +10752,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "/*Overrides for Tailwind CSS */\n\n/*Form fields*/\n.dataTables_wrapper select,\n.dataTables_wrapper .dataTables_filter input {\n  color: #4a5568; /*text-gray-700*/\n  padding-left: 1rem; /*pl-4*/\n  padding-right: 1rem; /*pl-4*/\n  padding-top: 0.5rem; /*pl-2*/\n  padding-bottom: 0.5rem; /*pl-2*/\n  line-height: 1.25; /*leading-tight*/\n  border-width: 2px; /*border-2*/\n  border-radius: 0.25rem;\n  border-color: #edf2f7; /*border-gray-200*/\n  background-color: #edf2f7; /*bg-gray-200*/\n}\n\n/*Row Hover*/\ntable.dataTable.hover tbody tr:hover,\ntable.dataTable.display tbody tr:hover {\n  background-color: #ebf4ff; /*bg-indigo-100*/\n}\n\n/*Pagination Buttons*/\n.dataTables_wrapper .dataTables_paginate .paginate_button {\n  font-weight: 700; /*font-bold*/\n  border-radius: 0.25rem; /*rounded*/\n  border: 1px solid transparent; /*border border-transparent*/\n}\n\n/*Pagination Buttons - Current selected */\n.dataTables_wrapper .dataTables_paginate .paginate_button.current {\n  color: #fff !important; /*text-white*/\n  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); /*shadow*/\n  font-weight: 700; /*font-bold*/\n  border-radius: 0.25rem; /*rounded*/\n  background: #667eea !important; /*bg-indigo-500*/\n  border: 1px solid transparent; /*border border-transparent*/\n}\n\n/*Pagination Buttons - Hover */\n.dataTables_wrapper .dataTables_paginate .paginate_button:hover {\n  color: #fff !important; /*text-white*/\n  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); /*shadow*/\n  font-weight: 700; /*font-bold*/\n  border-radius: 0.25rem; /*rounded*/\n  background: #667eea !important; /*bg-indigo-500*/\n  border: 1px solid transparent; /*border border-transparent*/\n}\n\n/*Add padding to bottom border */\ntable.dataTable.no-footer {\n  border-bottom: 1px solid #e2e8f0; /*border-b-1 border-gray-300*/\n  margin-top: 0.75em;\n  margin-bottom: 0.75em;\n}\n\n/*Change colour of responsive icon*/\ntable.dataTable.dtr-inline.collapsed > tbody > tr > td:first-child:before,\ntable.dataTable.dtr-inline.collapsed > tbody > tr > th:first-child:before {\n  background-color: #667eea !important; /*bg-indigo-500*/\n}\n", ""]);
+exports.push([module.i, "/*Overrides for Tailwind CSS */\n\n/*Form fields*/\n.dataTables_wrapper select,\r\n.dataTables_wrapper .dataTables_filter input {\n  color: #4a5568; /*text-gray-700*/\n  padding-left: 1rem; /*pl-4*/\n  padding-right: 1rem; /*pl-4*/\n  padding-top: 0.5rem; /*pl-2*/\n  padding-bottom: 0.5rem; /*pl-2*/\n  line-height: 1.25; /*leading-tight*/\n  border-width: 2px; /*border-2*/\n  border-radius: 0.25rem;\n  border-color: #edf2f7; /*border-gray-200*/\n  background-color: #edf2f7; /*bg-gray-200*/\n}\n\n/*Row Hover*/\ntable.dataTable.hover tbody tr:hover,\r\ntable.dataTable.display tbody tr:hover {\n  background-color: #ebf4ff; /*bg-indigo-100*/\n}\n\n/*Pagination Buttons*/\n.dataTables_wrapper .dataTables_paginate .paginate_button {\n  font-weight: 700; /*font-bold*/\n  border-radius: 0.25rem; /*rounded*/\n  border: 1px solid transparent; /*border border-transparent*/\n}\n\n/*Pagination Buttons - Current selected */\n.dataTables_wrapper .dataTables_paginate .paginate_button.current {\n  color: #fff !important; /*text-white*/\n  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); /*shadow*/\n  font-weight: 700; /*font-bold*/\n  border-radius: 0.25rem; /*rounded*/\n  background: #667eea !important; /*bg-indigo-500*/\n  border: 1px solid transparent; /*border border-transparent*/\n}\n\n/*Pagination Buttons - Hover */\n.dataTables_wrapper .dataTables_paginate .paginate_button:hover {\n  color: #fff !important; /*text-white*/\n  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); /*shadow*/\n  font-weight: 700; /*font-bold*/\n  border-radius: 0.25rem; /*rounded*/\n  background: #667eea !important; /*bg-indigo-500*/\n  border: 1px solid transparent; /*border border-transparent*/\n}\n\n/*Add padding to bottom border */\ntable.dataTable.no-footer {\n  border-bottom: 1px solid #e2e8f0; /*border-b-1 border-gray-300*/\n  margin-top: 0.75em;\n  margin-bottom: 0.75em;\n}\n\n/*Change colour of responsive icon*/\ntable.dataTable.dtr-inline.collapsed > tbody > tr > td:first-child:before,\r\ntable.dataTable.dtr-inline.collapsed > tbody > tr > th:first-child:before {\n  background-color: #667eea !important; /*bg-indigo-500*/\n}\r\n", ""]);
 
 // exports
 
@@ -36809,7 +36872,7 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "w-full px-3 lg:w-1/3" }, [
+      _c("div", { staticClass: "px-3 w-full lg:w-1/3" }, [
         _c(
           "div",
           { staticClass: "p-6 mt-3 card-2", attrs: { id: "custom-card" } },
@@ -36842,7 +36905,53 @@ var render = function() {
               _vm._m(1)
             ]),
             _vm._v(" "),
-            _vm._m(2)
+            _c("div", { staticClass: "ml-12" }, [
+              _c("div", { staticClass: "mt-4 text-sm text-white" }, [
+                _vm._v("\n            Become one of our members.\n          ")
+              ]),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass: "hover:no-underline",
+                  attrs: { href: "/become-a-member", id: "read-more" }
+                },
+                [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "mt-4 flex items-center text-sm font-semibold text-indigo-700"
+                    },
+                    [
+                      _c("div", { staticClass: "text-white" }, [
+                        _vm._v("Join member")
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "ml-1 text-indigo-500" }, [
+                        _c(
+                          "svg",
+                          {
+                            staticClass: "arrow-right w-4 h-4",
+                            attrs: { viewBox: "0 0 20 20", fill: "#fff" }
+                          },
+                          [
+                            _c("path", {
+                              attrs: {
+                                "fill-rule": "evenodd",
+                                d:
+                                  "M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z",
+                                "clip-rule": "evenodd"
+                              }
+                            })
+                          ]
+                        )
+                      ])
+                    ]
+                  )
+                ]
+              )
+            ])
           ]
         )
       ]),
@@ -36874,10 +36983,10 @@ var render = function() {
                 ]
               ),
               _vm._v(" "),
-              _vm._m(3)
+              _vm._m(2)
             ]),
             _vm._v(" "),
-            _vm._m(4)
+            _vm._m(3)
           ]
         )
       ])
@@ -36910,49 +37019,18 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticClass: "ml-4 text-sm white leading-7 uppercase font-semibold" },
+      { staticClass: "ml-4 text-md uppercase leading-7 font-semibold" },
       [
         _c(
           "a",
           {
-            staticClass: "hover:text-white hover:no-underline",
+            staticClass: "text-white hover:text-white hover:no-underline",
             attrs: { href: "/become-a-member" }
           },
-          [_vm._v("Become a Member")]
+          [_vm._v("Become a member")]
         )
       ]
     )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "ml-12" }, [
-      _c("div", { staticClass: "mt-2 text-sm text-white" }, [
-        _vm._v("Become a member")
-      ]),
-      _vm._v(" "),
-      _c(
-        "a",
-        {
-          staticClass: "hover:no-underline",
-          attrs: { href: "/become-a-member", id: "read-more" }
-        },
-        [
-          _c(
-            "div",
-            { staticClass: "mt-4 flex items-center text-sm font-semibold" },
-            [
-              _c("div", { staticClass: "text-white" }, [
-                _vm._v("Join Volunteers")
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "ml-1 text-indigo-500" })
-            ]
-          )
-        ]
-      )
-    ])
   },
   function() {
     var _vm = this
@@ -42037,6 +42115,17 @@ var render = function() {
                     "jet-nav-link",
                     {
                       attrs: {
+                        href: "/become-a-member",
+                        active: _vm.$page.currentRouteName == "become-a-member"
+                      }
+                    },
+                    [_vm._v("\n              Become a Member\n            ")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "jet-nav-link",
+                    {
+                      attrs: {
                         href: "/register",
                         active: _vm.$page.currentRouteName == "register"
                       }
@@ -42049,6 +42138,31 @@ var render = function() {
             ]),
             _vm._v(" "),
             _vm._m(0),
+            _vm._v(" "),
+            _c("div", { staticClass: "-mr-2 hidden lg:flex items-center" }, [
+              _vm._m(1),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass:
+                    "ml-2 top-btn font-bold bg-orange-100 rounded-full"
+                },
+                [
+                  _c(
+                    "jet-nav-link",
+                    {
+                      attrs: {
+                        href: "/login",
+                        active: _vm.$page.currentRouteName == "login"
+                      }
+                    },
+                    [_vm._v("\n              Login\n            ")]
+                  )
+                ],
+                1
+              )
+            ]),
             _vm._v(" "),
             _c("div", { staticClass: "-mr-2 flex items-center sm:hidden" }, [
               _c(
@@ -42119,17 +42233,17 @@ var render = function() {
           [
             _c(
               "div",
-              { staticClass: "pt-2 pb-3 space-y-1" },
+              { staticClass: "pt-5 pb-3 space-y-1 text-white" },
               [
                 _c(
-                  "jet-responsive-nav-link",
+                  "jet-nav-link",
                   {
                     attrs: {
-                      href: "/dashboard",
-                      active: _vm.$page.currentRouteName == "dashboard"
+                      href: "/become-a-supporter",
+                      active: _vm.$page.currentRouteName == "become-a-supporter"
                     }
                   },
-                  [_vm._v("\n          Dashboard\n        ")]
+                  [_vm._v("\n          Become a Supporter\n        ")]
                 )
               ],
               1
@@ -42143,11 +42257,11 @@ var render = function() {
                   "jet-nav-link",
                   {
                     attrs: {
-                      href: "/become-a-supporter",
-                      active: _vm.$page.currentRouteName == "become-a-supporter"
+                      href: "/become-a-member",
+                      active: _vm.$page.currentRouteName == "become-a-member"
                     }
                   },
-                  [_vm._v("\n          Become a Supporter\n        ")]
+                  [_vm._v("\n          Become a Member\n        ")]
                 )
               ],
               1
@@ -42172,44 +42286,30 @@ var render = function() {
             ),
             _vm._v(" "),
             _c("div", { staticClass: "pt-4 pb-1 border-t border-gray-200" }, [
-              _c(
-                "div",
-                { staticClass: "mt-3 space-y-1" },
-                [
-                  _c(
-                    "jet-responsive-nav-link",
-                    {
-                      attrs: {
-                        href: "#",
-                        active: _vm.$page.currentRouteName == "profile.show"
-                      }
-                    },
-                    [_vm._v("\n            Profile\n          ")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "form",
-                    {
-                      attrs: { method: "POST" },
-                      on: {
-                        submit: function($event) {
-                          $event.preventDefault()
-                          return _vm.logout($event)
+              _c("div", { staticClass: "mt-3 space-y-1" }, [
+                _vm._m(2),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass:
+                      "ml-2 top-btn font-bold bg-orange-100 rounded-full"
+                  },
+                  [
+                    _c(
+                      "jet-nav-link",
+                      {
+                        attrs: {
+                          href: "/login",
+                          active: _vm.$page.currentRouteName == "login"
                         }
-                      }
-                    },
-                    [
-                      _c(
-                        "jet-responsive-nav-link",
-                        { attrs: { as: "button" } },
-                        [_vm._v("\n              Logout\n            ")]
-                      )
-                    ],
-                    1
-                  )
-                ],
-                1
-              )
+                      },
+                      [_vm._v("\n              Login\n            ")]
+                    )
+                  ],
+                  1
+                )
+              ])
             ])
           ]
         )
@@ -42217,7 +42317,7 @@ var render = function() {
       _vm._v(" "),
       _c("main", [_vm._t("default")], 2),
       _vm._v(" "),
-      _vm._m(1),
+      _vm._m(3),
       _vm._v(" "),
       _c("portal-target", { attrs: { name: "modal", multiple: "" } })
     ],
@@ -42234,6 +42334,38 @@ var staticRenderFns = [
       { staticClass: "hidden sm:flex sm:items-center sm:ml-6" },
       [_c("div", { staticClass: "ml-3 relative" })]
     )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("button", { staticClass: "font-bold py-2 px-4" }, [
+      _c(
+        "a",
+        {
+          staticClass:
+            "inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-bold leading-5 text-white hover:text-red-100 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out hover:no-underline hover:text-red-100",
+          attrs: { href: "https://actionsa.thrivebs.co.za/" }
+        },
+        [_vm._v("← Main website")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("button", { staticClass: "font-bold py-2 px-4" }, [
+      _c(
+        "a",
+        {
+          staticClass:
+            "inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-bold leading-5 text-white hover:text-red-100 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out hover:no-underline hover:text-red-100",
+          attrs: { href: "https://actionsa.thrivebs.co.za/" }
+        },
+        [_vm._v("← Main website")]
+      )
+    ])
   },
   function() {
     var _vm = this
@@ -63146,11 +63278,11 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Server\www\actionsa\resources\js\app.js */"./resources/js/app.js");
-__webpack_require__(/*! C:\Server\www\actionsa\resources\gull\assets\styles\sass\themes\lite-purple.scss */"./resources/gull/assets/styles/sass/themes/lite-purple.scss");
-__webpack_require__(/*! C:\Server\www\actionsa\resources\gull\assets\styles\sass\themes\lite-blue.scss */"./resources/gull/assets/styles/sass/themes/lite-blue.scss");
-__webpack_require__(/*! C:\Server\www\actionsa\resources\gull\assets\styles\sass\themes\dark-purple.scss */"./resources/gull/assets/styles/sass/themes/dark-purple.scss");
-module.exports = __webpack_require__(/*! C:\Server\www\actionsa\resources\css\app.css */"./resources/css/app.css");
+__webpack_require__(/*! C:\wamp64\www\actionsa\resources\js\app.js */"./resources/js/app.js");
+__webpack_require__(/*! C:\wamp64\www\actionsa\resources\gull\assets\styles\sass\themes\lite-purple.scss */"./resources/gull/assets/styles/sass/themes/lite-purple.scss");
+__webpack_require__(/*! C:\wamp64\www\actionsa\resources\gull\assets\styles\sass\themes\lite-blue.scss */"./resources/gull/assets/styles/sass/themes/lite-blue.scss");
+__webpack_require__(/*! C:\wamp64\www\actionsa\resources\gull\assets\styles\sass\themes\dark-purple.scss */"./resources/gull/assets/styles/sass/themes/dark-purple.scss");
+module.exports = __webpack_require__(/*! C:\wamp64\www\actionsa\resources\css\app.css */"./resources/css/app.css");
 
 
 /***/ })

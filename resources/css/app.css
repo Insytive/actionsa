@@ -58,16 +58,23 @@
     color: #fff;
 }
 
-.register-btn {
-    background-color: #05b615;
+.register-btn,
+.top-btn {
     padding: 0.6em 2em;
     color: #fff;
     transition: all 0.2s ease;
 }
 
-.register-btn:hover,
-.register-btn:focus,
-.register-btn:active {
+.register-btn {
+    background-color: #05b615;
+}
+
+.register-btn,
+.top-btn:hover,
+.register-btn,
+.top-btn:focus,
+.register-btn,
+.top-btn:active {
     outline: none;
     background-color: #0ba718;
     color: #000;
