@@ -4948,6 +4948,7 @@ module.exports = {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Jetstream_ApplicationLogo__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../Jetstream/ApplicationLogo */ "./resources/js/Jetstream/ApplicationLogo.vue");
+/* harmony import */ var _Jetstream_NavLink__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../Jetstream/NavLink */ "./resources/js/Jetstream/NavLink.vue");
 //
 //
 //
@@ -5112,9 +5113,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
-    JetApplicationLogo: _Jetstream_ApplicationLogo__WEBPACK_IMPORTED_MODULE_0__["default"]
+    JetApplicationLogo: _Jetstream_ApplicationLogo__WEBPACK_IMPORTED_MODULE_0__["default"],
+    JetNavLink: _Jetstream_NavLink__WEBPACK_IMPORTED_MODULE_1__["default"]
   }
 });
 
@@ -36819,56 +36822,78 @@ var render = function() {
               ]
             ),
             _vm._v(" "),
-            _vm._m(0)
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "ml-12" }, [
-            _c("div", { staticClass: "mt-4 text-sm text-white" }, [
-              _vm._v("\n            Become one of our Supporters.\n          ")
-            ]),
-            _vm._v(" "),
             _c(
-              "a",
-              {
-                staticClass: "hover:no-underline",
-                attrs: { href: "/become-a-supporter", id: "read-more" }
-              },
+              "div",
+              { staticClass: "ml-3 text-md uppercase leading-7 font-semibold" },
               [
                 _c(
-                  "div",
+                  "jet-nav-link",
                   {
                     staticClass:
-                      "mt-4 flex items-center text-sm font-semibold text-indigo-700"
+                      "text-white hover:text-white hover:no-underline",
+                    attrs: { href: "/become-a-supporter" }
                   },
-                  [
-                    _c("div", { staticClass: "text-white" }, [
-                      _vm._v("Join Supporters")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "ml-1 text-indigo-500" }, [
-                      _c(
-                        "svg",
-                        {
-                          staticClass: "arrow-right w-4 h-4",
-                          attrs: { viewBox: "0 0 20 20", fill: "#fff" }
-                        },
-                        [
-                          _c("path", {
-                            attrs: {
-                              "fill-rule": "evenodd",
-                              d:
-                                "M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z",
-                              "clip-rule": "evenodd"
-                            }
-                          })
-                        ]
-                      )
-                    ])
-                  ]
+                  [_vm._v("Become a supporter")]
                 )
-              ]
+              ],
+              1
             )
-          ])
+          ]),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "ml-12" },
+            [
+              _c("div", { staticClass: "mt-4 ml-2 text-sm text-white" }, [
+                _vm._v(
+                  "\n            Become one of our Supporters.\n          "
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "jet-nav-link",
+                {
+                  staticClass: "hover:no-underline",
+                  attrs: { href: "/become-a-supporter", id: "read-more" }
+                },
+                [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "mt-4 flex items-center text-sm font-semibold text-indigo-700"
+                    },
+                    [
+                      _c("div", { staticClass: "text-white" }, [
+                        _vm._v("Join Supporters")
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "ml-1 text-indigo-500" }, [
+                        _c(
+                          "svg",
+                          {
+                            staticClass: "arrow-right w-4 h-4",
+                            attrs: { viewBox: "0 0 20 20", fill: "#fff" }
+                          },
+                          [
+                            _c("path", {
+                              attrs: {
+                                "fill-rule": "evenodd",
+                                d:
+                                  "M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z",
+                                "clip-rule": "evenodd"
+                              }
+                            })
+                          ]
+                        )
+                      ])
+                    ]
+                  )
+                ]
+              )
+            ],
+            1
+          )
         ])
       ]),
       _vm._v(" "),
@@ -36902,56 +36927,78 @@ var render = function() {
                 ]
               ),
               _vm._v(" "),
-              _vm._m(1)
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "ml-12" }, [
-              _c("div", { staticClass: "mt-4 text-sm text-white" }, [
-                _vm._v("\n            Become one of our members.\n          ")
-              ]),
-              _vm._v(" "),
               _c(
-                "a",
+                "div",
                 {
-                  staticClass: "hover:no-underline",
-                  attrs: { href: "/become-a-member", id: "read-more" }
+                  staticClass: "ml-3 text-md uppercase leading-7 font-semibold"
                 },
                 [
                   _c(
-                    "div",
+                    "jet-nav-link",
                     {
                       staticClass:
-                        "mt-4 flex items-center text-sm font-semibold text-indigo-700"
+                        "text-white hover:text-white hover:no-underline",
+                      attrs: { href: "/become-a-member" }
                     },
-                    [
-                      _c("div", { staticClass: "text-white" }, [
-                        _vm._v("Join member")
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "ml-1 text-indigo-500" }, [
-                        _c(
-                          "svg",
-                          {
-                            staticClass: "arrow-right w-4 h-4",
-                            attrs: { viewBox: "0 0 20 20", fill: "#fff" }
-                          },
-                          [
-                            _c("path", {
-                              attrs: {
-                                "fill-rule": "evenodd",
-                                d:
-                                  "M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z",
-                                "clip-rule": "evenodd"
-                              }
-                            })
-                          ]
-                        )
-                      ])
-                    ]
+                    [_vm._v("Become a member")]
                   )
-                ]
+                ],
+                1
               )
-            ])
+            ]),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "ml-12" },
+              [
+                _c("div", { staticClass: "mt-4 ml-2 text-sm text-white" }, [
+                  _vm._v("\n            Become one of our members.\n          ")
+                ]),
+                _vm._v(" "),
+                _c(
+                  "jet-nav-link",
+                  {
+                    staticClass: "hover:no-underline",
+                    attrs: { href: "/become-a-member", id: "read-more" }
+                  },
+                  [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "mt-4 ml-2 flex items-center text-sm font-semibold text-indigo-700"
+                      },
+                      [
+                        _c("div", { staticClass: "text-white" }, [
+                          _vm._v("Join members")
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "ml-1 text-indigo-500" }, [
+                          _c(
+                            "svg",
+                            {
+                              staticClass: "arrow-right w-4 h-4",
+                              attrs: { viewBox: "0 0 20 20", fill: "#fff" }
+                            },
+                            [
+                              _c("path", {
+                                attrs: {
+                                  "fill-rule": "evenodd",
+                                  d:
+                                    "M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z",
+                                  "clip-rule": "evenodd"
+                                }
+                              })
+                            ]
+                          )
+                        ])
+                      ]
+                    )
+                  ]
+                )
+              ],
+              1
+            )
           ]
         )
       ]),
@@ -36983,10 +37030,28 @@ var render = function() {
                 ]
               ),
               _vm._v(" "),
-              _vm._m(2)
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "ml-4 text-sm uppercase text-white leading-7 font-semibold"
+                },
+                [
+                  _c(
+                    "jet-nav-link",
+                    {
+                      staticClass:
+                        "cursor-not-allowed hover:text-white hover:no-underline",
+                      attrs: { href: "javascript:;" }
+                    },
+                    [_vm._v("\n              Become a Volunteer\n            ")]
+                  )
+                ],
+                1
+              )
             ]),
             _vm._v(" "),
-            _vm._m(3)
+            _vm._m(0)
           ]
         )
       ])
@@ -36994,66 +37059,6 @@ var render = function() {
   ])
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "ml-4 text-md uppercase leading-7 font-semibold" },
-      [
-        _c(
-          "a",
-          {
-            staticClass: "text-white hover:text-white hover:no-underline",
-            attrs: { href: "/become-a-supporter" }
-          },
-          [_vm._v("Become a supporter")]
-        )
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "ml-4 text-md uppercase leading-7 font-semibold" },
-      [
-        _c(
-          "a",
-          {
-            staticClass: "text-white hover:text-white hover:no-underline",
-            attrs: { href: "/become-a-member" }
-          },
-          [_vm._v("Become a member")]
-        )
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass: "ml-4 text-sm uppercase text-white leading-7 font-semibold"
-      },
-      [
-        _c(
-          "a",
-          {
-            staticClass:
-              "cursor-not-allowed hover:text-white hover:no-underline",
-            attrs: { href: "javascript:;" }
-          },
-          [_vm._v("\n              Become a Volunteer\n            ")]
-        )
-      ]
-    )
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
