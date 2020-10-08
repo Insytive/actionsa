@@ -19,7 +19,7 @@
             >Thrive Business Solutions <br />
           </a>
 
-          <small> 1.0 Beta version </small>
+            <small class="mt-10">Version (0.5.0 Beta) </small>
         </div>
       </div>
     </footer>
