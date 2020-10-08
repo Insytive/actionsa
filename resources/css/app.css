@@ -136,3 +136,7 @@ a:active {
     margin-left: 0.45em;
     margin-top: 0.45em;
 }
+
+#autosuggest__input {
+    border: 2px solid #05b615 !important;
+}

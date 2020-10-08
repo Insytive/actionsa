@@ -16,16 +16,16 @@
                                 placeholder="ID number"
                                 id="id_number"
                                 name="id_number"
-                                class="appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white"
+                                class="rounded-md appearance-none block w-full text-gray-700 border-solid border-2 border-green-100 py-3 px-4 leading-tight mb-3 focus:outline-none focus:border-green-500 focus:bg-white"
                                 tabindex="1"
                                 :class="{
-                                    'border-red-500':
+                                    'border-red-100':
                                         submitted && $v.lead.id_number.$error
                                 }"
                             />
                             <div
                                 v-if="submitted && $v.lead.id_number.$error"
-                                class="text-red-500 text-sm italic"
+                                class="text-red-100 text-sm italic"
                             >
                                 <span v-if="!$v.lead.id_number.required"
                                     >Please fill out this field</span
@@ -38,10 +38,8 @@
                         </div>
                     </div>
 
-                    <hr />
-
-                    <div class="flex flex-wrap -mx-3 mb-6 mt-8">
-                        <div class="w-full md:w-1/2 px-3 mb-3 md:mb-0">
+                    <div class="flex flex-wrap -mx-3">
+                        <div class="w-full md:w-1/2 px-3 md:mb-0">
                             <label
                                 for="first_name"
                                 class="block tracking-wide text-gray-700 text-sm font-bold mb-2"
@@ -52,23 +50,23 @@
                                 v-model="lead.first_name"
                                 id="first_name"
                                 tabindex="2"
-                                class="appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white"
+                                class="rounded-md appearance-none block w-full text-gray-700 border-solid border-2 border-green-100 py-3 px-4 leading-tight mb-2 focus:outline-none focus:border-green-500 focus:bg-white"
                                 name="first_name"
                                 placeholder="First name"
                                 :class="{
-                                    'border-red-500':
+                                    'border-red-100':
                                         submitted && $v.lead.first_name.$error
                                 }"
                             />
                             <div
                                 v-if="submitted && !$v.lead.first_name.required"
-                                class="text-red-500 text-sm italic"
+                                class="text-red-100 text-sm italic"
                             >
                                 Please fill out this field.
                             </div>
                         </div>
 
-                        <div class="w-full md:w-1/2 px-3 mb-3 md:mb-0">
+                        <div class="w-full md:w-1/2 px-3 md:mb-0">
                             <label
                                 for="first_name"
                                 class="block tracking-wide text-gray-700 text-sm font-bold mb-2"
@@ -78,24 +76,24 @@
                                 type="text"
                                 v-model="lead.last_name"
                                 id="last_name"
-                                class="appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white"
+                                class="rounded-md appearance-none block w-full text-gray-700 border-solid border-2 border-green-100 py-3 px-4 leading-tight mb-2 focus:outline-none focus:border-green-500 focus:bg-white"
                                 name="last_name"
                                 placeholder="Last name"
                                 :class="{
-                                    'border-red-500':
+                                    'border-red-100':
                                         submitted && $v.lead.last_name.$error
                                 }"
                             />
                             <div
                                 v-if="submitted && !$v.lead.last_name.required"
-                                class="text-red-500 text-xs italic"
+                                class="text-red-100 text-sm italic"
                             >
                                 Please fill out this field.
                             </div>
                         </div>
                     </div>
 
-                    <div class="flex flex-wrap -mx-3 mb-3">
+                    <div class="flex flex-wrap -mx-3 mt-3">
                         <div class="w-full px-3">
                             <label
                                 for="email"
@@ -109,7 +107,7 @@
                                 placeholder="Email"
                                 id="lead_email"
                                 name="lead_email"
-                                class="appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white"
+                                class="rounded-md appearance-none block w-full text-gray-700 border-solid border-2 border-green-100 py-3 px-4 leading-tight mb-2 focus:outline-none focus:border-green-500 focus:bg-white"
                             />
                         </div>
                     </div>
@@ -130,15 +128,15 @@
                                 id="phone"
                                 name="phone"
                                 tabindex="4"
-                                class="appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white"
+                                class="rounded-md appearance-none block w-full text-gray-700 border-solid border-2 border-green-100 py-3 px-4 leading-tight mb-2 focus:outline-none focus:border-green-500 focus:bg-white"
                                 :class="{
-                                    'border-red-500':
+                                    'border-red-100':
                                         submitted && $v.lead.phone.$error
                                 }"
                             />
                             <div
                                 v-if="submitted && $v.lead.phone.$error"
-                                class="text-red-500 text-sm italic"
+                                class="text-red-100 text-sm italic"
                             >
                                 <span v-if="!$v.lead.phone.required"
                                     >Please fill out this field</span
@@ -150,7 +148,7 @@
                         </div>
                     </div>
 
-                    <div class="flex flex-wrap -mx-3 mb-3">
+                    <div class="flex flex-wrap -mx-3">
                         <div class="w-full px-3">
                             <label
                                 for="address"
@@ -195,12 +193,12 @@
                                 ref="address"
                                 id="map"
                                 v-model="lead.address"
-                                classname="appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white"
+                                classname="rounded-md appearance-none block w-full text-gray-700 border-solid border-2 border-green-100 py-3 px-4 leading-tight focus:outline-none focus:border-green-500 focus:bg-whites:bg-white"
                                 placeholder="Please type your address"
                                 v-on:placechanged="getAddressData"
                                 country="za"
                                 :class="{
-                                    'border-red-500':
+                                    'border-red-100':
                                         submitted && $v.lead.address.$error
                                 }"
                             >
@@ -209,18 +207,18 @@
                             <input
                                 v-if="custom_address_flag === 'two'"
                                 :class="{
-                                    'border-red-500':
+                                    'border-red-100':
                                         submitted && $v.lead.phone.$error
                                 }"
                                 v-model="lead.address"
                                 name="address"
                                 placeholder="Please type your address"
-                                class="appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white"
+                                class="rounded-md appearance-none block w-full text-gray-700 border-solid border-2 border-green-100 py-3 px-4 leading-tight focus:outline-none focus:border-green-500 focus:bg-white"
                             />
 
                             <div
                                 v-if="submitted && $v.lead.address.$error"
-                                class="text-red-500 text-sm italic"
+                                class="text-red-100 text-sm italic"
                             >
                                 <span v-if="!$v.lead.address.required"
                                     >Please fill out this field</span
@@ -229,7 +227,7 @@
                         </div>
                     </div>
 
-                    <div class="flex flex-wrap -mx-3 mb-3">
+                    <div class="flex flex-wrap -mx-3 mt-3">
                         <div class="w-full px-3">
                             <label
                                 for="voting_station"
@@ -237,7 +235,7 @@
                                 >Voting Station
                             </label>
 
-                            <div class="form-group mb-3 mt-3">
+                            <div class="form-group  mt-3">
                                 <div class="custom-control custom-radio">
                                     <input
                                         type="radio"
@@ -276,7 +274,7 @@
                                 v-show="custom_voting_flag === 'one'"
                                 v-model="stationQuery"
                                 :class="{
-                                    'border-red-500':
+                                    'border-red-100':
                                         submitted && $v.lead.address.$error
                                 }"
                                 :suggestions="suggestions"
@@ -286,7 +284,7 @@
                                         'Please type your voting station address',
                                     name: 'voting_station',
                                     class:
-                                        'appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white'
+                                        'rounded-md appearance-none block w-full text-gray-700 border-solid border-2 border-green-100 py-3 px-4 leading-tight mb-3 focus:outline-none focus:border-green-500 focus:bg-whitel-500 focus:bg-white'
                                 }"
                                 :sectionConfigs="sectionConfigs"
                                 :renderSuggestion="renderSuggestion"
@@ -301,7 +299,7 @@
                             </vue-autosuggest>
 
                             <input
-                                class="appearance-none block w-full text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-teal-500 focus:bg-white"
+                                class="rounded-md appearance-none block w-full text-gray-700 border-solid border-2 border-green-100 py-3 px-4 leading-tight mb-3 focus:outline-none focus:border-green-500 focus:bg-white"
                                 type="text"
                                 id="voting_station"
                                 name="voting_station"
@@ -309,7 +307,7 @@
                                 placeholder="Enter your voting station, nearest school or town"
                                 v-show="custom_voting_flag === 'two'"
                                 :class="{
-                                    'border-red-500':
+                                    'border-red-100':
                                         submitted &&
                                         $v.lead.voting_station.$error
                                 }"
@@ -319,7 +317,7 @@
                                 v-if="
                                     submitted && $v.lead.voting_station.$error
                                 "
-                                class="text-red-500 text-sm italic"
+                                class="text-red-100 text-sm italic"
                             >
                                 <span v-if="!$v.lead.voting_station.required"
                                     >Please fill out this field</span
@@ -392,7 +390,7 @@
                                         submitted &&
                                             $v.lead.terms_conditions.$error
                                     "
-                                    class="text-red-500 text-sm italic"
+                                    class="text-red-100 text-sm italic"
                                 >
                                     <span
                                         v-if="
@@ -406,7 +404,9 @@
                     </div>
                     <div class="flex flex-wrap -mx-3">
                         <div class="w-full px-3">
-                            <button class="register-btn font-bold">
+                            <button
+                                class="register-btn font-bold rounded-full text-white"
+                            >
                                 Register
                             </button>
                         </div>
@@ -501,7 +501,7 @@ import {
 } from "vuelidate/lib/validators";
 const idRegex = helpers.regex(
     "id_number",
-    /^(((\d{2}((0[13578]|1[02])(0[1-9]|[12]\d|3[01])|(0[13456789]|1[012])(0[1-9]|[12]\d|30)|02(0[1-9]|1\d|2[0-8])))|([02468][048]|[13579][26])0229))(( |-)(\d{4})( |-)(\d{3})|(\d{7}))$/
+    /^(((\d{2}((0[13578]|1[02])(0[1-9]|[12]\d|3[01])|(0[13456789]|1[012])(0[1-9]|[12]\d|30)|02(0[1-9]])))|([02468][048]|[13579][26])0229))(( |-)(\d{4})( |-)(\d{3})|(\d{7}))$/
 );
 const phoneRegex = helpers.regex(
     "phone",
