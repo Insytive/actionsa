@@ -10481,6 +10481,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -42350,9 +42351,9 @@ var staticRenderFns = [
         {
           staticClass:
             "inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-bold leading-5 text-white hover:text-red-100 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out hover:no-underline hover:text-red-100",
-          attrs: { href: "https://actionsa.thrivebs.co.za/" }
+          attrs: { href: "https://www.actionsa.org.za/" }
         },
-        [_vm._v("← Main website")]
+        [_vm._v("← Back to Main Website")]
       )
     ])
   },
@@ -42392,7 +42393,9 @@ var staticRenderFns = [
               [_vm._v("Thrive Business Solutions "), _c("br")]
             ),
             _vm._v(" "),
-            _c("small", [_vm._v(" 1.0 Beta version ")])
+            _c("small", { staticClass: "mt-10" }, [
+              _vm._v("Version (0.5.0 Beta) ")
+            ])
           ]
         )
       ])
@@ -45056,7 +45059,7 @@ var render = function() {
                   staticClass:
                     "font-semibold text-xl text-gray-800 leading-tight"
                 },
-                [_vm._v("\n            Registration Error!\n        ")]
+                [_vm._v("\n            Registration Failed\n        ")]
               )
             ]
           },
@@ -45066,15 +45069,20 @@ var render = function() {
     },
     [
       _vm._v(" "),
-      _c("div", { staticClass: "py-12" }, [
-        _c("div", { staticClass: "max-w-7xl mx-auto sm:px-6 lg:px-8" }, [
-          _c(
-            "div",
-            { staticClass: "bg-white overflow-hidden shadow-xl sm:rounded-lg" },
-            [_c("h1", [_vm._v("That ID already exists.")])]
-          )
-        ])
-      ])
+      _c(
+        "section",
+        { staticClass: "registered" },
+        [
+          _c("div", { staticClass: "container mb-10" }, [
+            _c("h2", { staticClass: "registered__title" }, [_vm._v("Sorry!")]),
+            _vm._v(" "),
+            _c("h4", [_vm._v("That ID number has already been registered.")])
+          ]),
+          _vm._v(" "),
+          _c("inertia-link", { attrs: { href: "/" } }, [_vm._v("Back")])
+        ],
+        1
+      )
     ]
   )
 }
@@ -45169,7 +45177,7 @@ var render = function() {
             )
           ]),
           _vm._v(" "),
-          _c("p", [
+          _c("p", { staticClass: "mt-20" }, [
             _vm._v(
               "\n        You will receive your digital membership card and further\n        communication via email\n      "
             )

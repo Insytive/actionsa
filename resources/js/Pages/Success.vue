@@ -30,7 +30,7 @@
         <h2 class="registered__title">Thank you!</h2>
         <h4>We have received your submission and appreciate your support.</h4>
 
-        <p>
+        <p class="mt-20">
           You will receive your digital membership card and further
           communication via email
         </p>
