@@ -23,7 +23,7 @@
                         >
                             <jet-nav-link
                                 href="/"
-                                :active="$page.currentRouteName == 'dashbaord'"
+                                :active="$page.currentRouteName == 'dashboard'"
                             >
                                 Dashboard
                             </jet-nav-link>

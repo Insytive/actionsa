@@ -63718,11 +63718,11 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\wamp64\www\actionsa\resources\js\app.js */"./resources/js/app.js");
-__webpack_require__(/*! C:\wamp64\www\actionsa\resources\gull\assets\styles\sass\themes\lite-purple.scss */"./resources/gull/assets/styles/sass/themes/lite-purple.scss");
-__webpack_require__(/*! C:\wamp64\www\actionsa\resources\gull\assets\styles\sass\themes\lite-blue.scss */"./resources/gull/assets/styles/sass/themes/lite-blue.scss");
-__webpack_require__(/*! C:\wamp64\www\actionsa\resources\gull\assets\styles\sass\themes\dark-purple.scss */"./resources/gull/assets/styles/sass/themes/dark-purple.scss");
-module.exports = __webpack_require__(/*! C:\wamp64\www\actionsa\resources\css\app.css */"./resources/css/app.css");
+__webpack_require__(/*! C:\Server\www\actionsa\resources\js\app.js */"./resources/js/app.js");
+__webpack_require__(/*! C:\Server\www\actionsa\resources\gull\assets\styles\sass\themes\lite-purple.scss */"./resources/gull/assets/styles/sass/themes/lite-purple.scss");
+__webpack_require__(/*! C:\Server\www\actionsa\resources\gull\assets\styles\sass\themes\lite-blue.scss */"./resources/gull/assets/styles/sass/themes/lite-blue.scss");
+__webpack_require__(/*! C:\Server\www\actionsa\resources\gull\assets\styles\sass\themes\dark-purple.scss */"./resources/gull/assets/styles/sass/themes/dark-purple.scss");
+module.exports = __webpack_require__(/*! C:\Server\www\actionsa\resources\css\app.css */"./resources/css/app.css");
 
 
 /***/ })
