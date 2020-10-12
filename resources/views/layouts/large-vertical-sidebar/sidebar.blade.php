@@ -1,8 +1,8 @@
 <div class="side-content-wrap">
     <div class="sidebar-left open rtl-ps-none" data-perfect-scrollbar data-suppress-scroll-x="true">
         <ul class="navigation-left">
-            <li class="nav-item {{ request()->is('dashboard/*') ? 'active' : '' }}" data-item="dashboard">
-                <a class="nav-item-hold" href="#">
+            <li class="nav-item " >
+                <a class="nav-item-hold" href="{{route('dashboard_version_1')}}">
                     <i class="nav-icon i-Bar-Chart"></i>
                     <span class="nav-text">Dashboard</span>
                 </a>
@@ -86,7 +86,7 @@
 
     <div class="sidebar-left-secondary rtl-ps-none" data-perfect-scrollbar data-suppress-scroll-x="true">
         <!-- Submenu Dashboards -->
-        <ul class="childNav" data-parent="dashboard">
+        <!-- <ul class="childNav" data-parent="dashboard">
             <li class="nav-item ">
                 <a class="{{ Route::currentRouteName()=='dashboard_version_1' ? 'open' : '' }}"
                     href="{{route('dashboard_version_1')}}">
@@ -114,8 +114,8 @@
                     <i class="nav-icon i-Clock"></i>
                     <span class="item-name">Version 4</span>
                 </a>
-            </li>
-        </ul>
+            </li> 
+        </ul> -->
         <ul class="childNav" data-parent="forms">
 
             <li class="nav-item">
