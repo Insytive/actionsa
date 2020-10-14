@@ -210,7 +210,7 @@ Route::view('others/search-result', 'others.search-result')->name('search-result
 // Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/admin/leads', 'Admin/LeadController@index')->name('leads');
+Route::get('/admin/leads', 'LeadController@index')->name('leads');
 
 
 

@@ -14,7 +14,7 @@ class Lead extends Model
 {
     use SoftDeletes, Auditable, EncryptableDbAttribute, HasFactory;
 
-    // public $table = 'leads';
+    public $table = 'leads';
 
     public static $searchable = [
         'first_name',
@@ -96,7 +96,7 @@ class Lead extends Model
         'employee_id',
         'volunteer_id'
     ];
-
+    
     protected function serializeDate(DateTimeInterface $date)
     {
         return $date->format('Y-m-d H:i:s');
