@@ -140,7 +140,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th:first-child:before {
 </style>
 
 <script>
-import JetApplicationLogo from "./../../../Jetstream/ApplicationLogo";
+import JetApplicationLogo from "../../../Jetstream/ApplicationLogo";
 
 export default {
     mounted() {

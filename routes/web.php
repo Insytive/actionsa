@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LeadController;
+use App\Http\Controllers\Admin\AdminLeadsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -101,7 +102,7 @@ Route::view('admin/leads/show', 'leads.show')->name('adminShow');
 // Route::view('admin/leads', 'leads.index')->name('adminLeads');
 
 
-Route::view('dashboard/dashboard1', 'dashboard.dashboardv1')->name('dashboard_version_1');
+Route::view('admin', 'dashboard.dashboardv1')->name('dashboard_version_1');
 Route::view('dashboard/dashboard2', 'dashboard.dashboardv2')->name('dashboard_version_2');
 Route::view('dashboard/dashboard3', 'dashboard.dashboardv3')->name('dashboard_version_3');
 Route::view('dashboard/dashboard4', 'dashboard.dashboardv4')->name('dashboard_version_4');
@@ -210,7 +211,8 @@ Route::view('others/search-result', 'others.search-result')->name('search-result
 // Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/admin/leads', 'LeadController@index')->name('leads');
-
+Route::get('/admin/leads/add', [AdminLeadsController::class, 'create']);
+Route::get('/admin/leads', [AdminLeadsController::class, 'index']);
+Route::view('/membership/card', 'membership.card')->name('membership-card');
 
 

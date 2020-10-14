@@ -1,405 +1,158 @@
 @extends('layouts.master')
 @section('page-css')
-<link rel="stylesheet" href="{{ asset('assets/styles/vendor/datatables.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/styles/vendor/datatables.min.css') }}">
 
 @endsection
 
 @section('main-content')
 
-<div class="breadcrumb">
-    <h1>Admin</h1>
-    <ul>
-        <li><a href="">Leads</a></li>
-        <li>Leads List</li>
-    </ul>
-</div>
-<div class="separator-breadcrumb border-top"></div>
+    <div class="breadcrumb">
+        <h1>Leads</h1>
+        <ul>
+            <li><a href="">List</a></li>
+            <li>Captured</li>
+        </ul>
+    </div>
+    <div class="separator-breadcrumb border-top"></div>
 
 
- <!-- content goes here -->
-
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="card">
-                            <div class="card-header  gradient-purple-indigo  0-hidden pb-80">
-                               <div class="pt-4">
-                                <div class="row">
-                                    <h4 class="col-md-4 text-white">Leads Table </h4>
-                                    <input type="text" class="form-control form-control-rounded col-md-4 ml-3 mr-3"
-                                        id="exampleFormControlInput1" placeholder="Search suporters...">
-                                </div>
-                               </div>
-                            </div>
-                            <div class="card-body">
-                                <div class="ul-contact-list-body">
-                                    <div class="ul-contact-main-content">
-                                        <div class="ul-contact-left-side">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <div class="ul-contact-list">
-                                                        <div class="contact-close-mobile-icon float-right mb-2">
-                                                            <i class="i-Close-Window text-15 font-weight-600"></i>
+    <section class="contact-list">
+        <div class="row">
+            <div class="col-md-12 mb-4">
+                <div class="card text-left">
+                    <div class="card-header text-right bg-transparent">
+                        <button type="button" data-toggle="modal" data-target=".bd-example-modal-lg" class="btn btn-primary btn-md m-1"><i class="i-Add-User text-white mr-2"></i> Add Supporter</button>
+                        <button type="button" data-toggle="modal" data-target=".bd-example-modal-lg" class="btn btn-danger btn-md m-1"><i class="i-Add-User text-white mr-2"></i> Add Member</button>
+                    </div>
+                    <!-- begin::modal -->
+                    <div class="ul-card-list__modal">
+                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-group row">
+                                                <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+                                                <div class="col-sm-10">
+                                                    <input type="email" class="form-control" id="inputName" placeholder="Name">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                                                <div class="col-sm-10">
+                                                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="" class="col-sm-2 col-form-label">Phone</label>
+                                                <div class="col-sm-10">
+                                                    <input type="number" class="form-control" id="" placeholder="number....">
+                                                </div>
+                                            </div>
+                                            <fieldset class="form-group">
+                                                <div class="row">
+                                                    <div class="col-form-label col-sm-2 pt-0">Radios</div>
+                                                    <div class="col-sm-10">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked="">
+                                                            <label class="form-check-label ml-3" for="gridRadios1">
+                                                                First radio
+                                                            </label>
                                                         </div>
-                                                 
-
-
-                                                        <div class="list-group" id="list-tab" role="tablist">
-                                                            <a class="list-group-item list-group-item-action border-0 active"
-                                                                id="list-home-list" data-toggle="list" href="#list-home"
-                                                                role="tab" aria-controls="home">
-                                                                <i class="nav-icon i-Business-Mens"></i>
-                                                                Add Supporter</a>
-                                                            <a class="list-group-item list-group-item-action border-0 mt-3"
-                                                                id="list-profile-list" data-toggle="list"
-                                                                href="#list-profile" role="tab" aria-controls="profile">
-                                                                <i class="nav-icon i-Conference"></i>
-                                                                Add Member </a>
-
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                                            <label class="form-check-label ml-3" for="gridRadios2">
+                                                                Second radio
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check disabled ">
+                                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled="">
+                                                            <label class="form-check-label ml-3" for="gridRadios3">
+                                                                Third disabled radio
+                                                            </label>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal fade" id="exampleModal" tabindex="-1"
-                                                            role="dialog" aria-labelledby="exampleModalLabel"
-                                                            aria-hidden="true">
-                                                            <div class="modal-dialog modal-dialog-centered" role="document">
-                                                                <div class="modal-content">
-                                                                    <div class="modal-header">
-                                                                        <h5 class="modal-title" id="exampleModalLabel">
-                                                                            New Contact</h5>
-                                                                        <button type="button" class="close"
-                                                                            data-dismiss="modal" aria-label="Close">
-                                                                            <span aria-hidden="true">&times;</span>
-                                                                        </button>
-                                                                    </div>
-                                                                    <div class="modal-body">
-                                                                        <form>
-                                                                            <div class="form-group">
-
-                                                                                <input type="text" class="form-control"
-                                                                                    placeholder="Name....">
-                                                                            </div>
-                                                                            <div class="form-group">
-
-                                                                                <input type="email" class="form-control"
-                                                                                    id="exampleInputEmail1"
-                                                                                    aria-describedby="emailHelp"
-                                                                                    placeholder="Enter email....">
-
-                                                                            </div>
-
-                                                                            <div class="form-group">
-
-                                                                                <input type="text" class="form-control"
-                                                                                    id="exampleInputPassword1"
-                                                                                    placeholder="phone....">
-                                                                            </div>
-                                                                            <div class="form-group">
-
-                                                                                <textarea class="form-control"
-                                                                                    id="exampleFormControlTextarea1"
-                                                                                    rows="3"
-                                                                                    placeholder="notes...."></textarea>
-                                                                            </div>
-
-
-                                                                        </form>
-                                                                    </div>
-                                                                    <div class="modal-footer">
-                                                                        <button type="button" class="btn btn-secondary"
-                                                                            data-dismiss="modal">Close</button>
-                                                                        <button type="button"
-                                                                            class="btn btn-primary">Save
-                                                                            changes</button>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                        <div class="ul-contact-content">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <div class="float-left">
-                                                        <i class="nav-icon i-Align-Justify-All text-25 ul-contact-mobile-icon"></i>
-                                                    </div>
-                                                    <div class="tab-content ul-contact-list-table--label" id="nav-tabContent">
-
-                                                        <!-- all-contact  -->
-                                                        <div class="tab-pane fade show active" id="list-home"
-                                                            role="tabpanel" aria-labelledby="list-home-list">
-                                                            
-                                                                    <div class=" text-left ">
-                                                                            <div class="table-responsive">
-                                                                                <table id="contact_list_table" class="display table  table-borderless ul-contact-list-table" style="width:100%">
-                                                                                    <thead>
-                                                                                        <tr class="border-bottom">
-                                                                                            <th>Name</th>
-                                                                                            <th>Email</th>
-                                                                                            <th>Phone</th>
-                                                                                            <th>Action</th>
-                                                                                            
-                                                                                        </tr>
-                                                                                    </thead>
-                                                                                    <tbody>
-                                                                                        
-                                                                                        <tr>
-                                                                                            <td>
-                                                                                                <img class="rounded-circle m-0 avatar-sm-table " src="/assets/images/faces/1.jpg" alt="">
-                                                                                                Carl Clarkson
-                                                                                            </td>
-                                                                                            <td>carl_657@gmail.com</td>
-                                                                                            <td>+88 0172-323-233</td>
-                                                                                            <td>
-                                                                                                <button type="button" class="btn bg-transparent _r_btn border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                                                    <span class="_dot _r_block-dot bg-dark"></span>
-                                                                                                    <span class="_dot _r_block-dot bg-dark"></span>
-                                                                                                    <span class="_dot _r_block-dot bg-dark"></span>
-                                                                                                </button>
-                                                                                                <div class="dropdown-menu" x-placement="bottom-start">
-                                                                                                    <a class="dropdown-item" href="#"><i class="nav-icon i-Pen-2 text-success font-weight-bold mr-2"></i>Edit Contact</a>
-                                                                                                    <a class="dropdown-item" href="#"><i class="nav-icon i-Close-Window text-danger font-weight-bold mr-2"></i>Delete Contact</a>
-                                                                                                   
-                                                                                                </div>
-                                                                                            </td>
-                                                                                            
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>
-                                                                                                <img class="rounded-circle m-0 avatar-sm-table " src="/assets/images/faces/1.jpg" alt="">
-                                                                                                Carl Clarkson
-                                                                                            </td>
-                                                                                            <td>carl_657@gmail.com</td>
-                                                                                            <td>+88 0172-323-233</td>
-                                                                                            <td>
-                                                                                                <button type="button" class="btn bg-transparent _r_btn border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                                                    <span class="_dot _r_block-dot bg-dark"></span>
-                                                                                                    <span class="_dot _r_block-dot bg-dark"></span>
-                                                                                                    <span class="_dot _r_block-dot bg-dark"></span>
-                                                                                                </button>
-                                                                                                <div class="dropdown-menu" x-placement="bottom-start">
-                                                                                                    <a class="dropdown-item" href="#"><i class="nav-icon i-Pen-2 text-success font-weight-bold mr-2"></i>Edit Contact</a>
-                                                                                                    <a class="dropdown-item" href="#"><i class="nav-icon i-Close-Window text-danger font-weight-bold mr-2"></i>Delete Contact</a>
-                                                                                                   
-                                                                                                </div>
-                                                                                            </td>
-                                                                                            
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>
-                                                                                                <img class="rounded-circle m-0 avatar-sm-table " src="/assets/images/faces/1.jpg" alt="">
-                                                                                                Carl Clarkson
-                                                                                            </td>
-                                                                                            <td>carl_657@gmail.com</td>
-                                                                                            <td>+88 0172-323-233</td>
-                                                                                            <td>
-                                                                                                <button type="button" class="btn bg-transparent _r_btn border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                                                    <span class="_dot _r_block-dot bg-dark"></span>
-                                                                                                    <span class="_dot _r_block-dot bg-dark"></span>
-                                                                                                    <span class="_dot _r_block-dot bg-dark"></span>
-                                                                                                </button>
-                                                                                                <div class="dropdown-menu" x-placement="bottom-start">
-                                                                                                    <a class="dropdown-item" href="#"><i class="nav-icon i-Pen-2 text-success font-weight-bold mr-2"></i>Edit Contact</a>
-                                                                                                    <a class="dropdown-item" href="#"><i class="nav-icon i-Close-Window text-danger font-weight-bold mr-2"></i>Delete Contact</a>
-                                                                                                   
-                                                                                                </div>
-                                                                                            </td>
-                                                                                            
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>
-                                                                                                <img class="rounded-circle m-0 avatar-sm-table " src="/assets/images/faces/1.jpg" alt="">
-                                                                                                Carl Clarkson
-                                                                                            </td>
-                                                                                            <td>carl_657@gmail.com</td>
-                                                                                            <td>+88 0172-323-233</td>
-                                                                                            <td>
-                                                                                                <button type="button" class="btn bg-transparent _r_btn border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                                                    <span class="_dot _r_block-dot bg-dark"></span>
-                                                                                                    <span class="_dot _r_block-dot bg-dark"></span>
-                                                                                                    <span class="_dot _r_block-dot bg-dark"></span>
-                                                                                                </button>
-                                                                                                <div class="dropdown-menu" x-placement="bottom-start">
-                                                                                                    <a class="dropdown-item" href="#"><i class="nav-icon i-Pen-2 text-success font-weight-bold mr-2"></i>Edit Contact</a>
-                                                                                                    <a class="dropdown-item" href="#"><i class="nav-icon i-Close-Window text-danger font-weight-bold mr-2"></i>Delete Contact</a>
-                                                                                                   
-                                                                                                </div>
-                                                                                            </td>
-                                                                                            
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>
-                                                                                                <img class="rounded-circle m-0 avatar-sm-table " src="/assets/images/faces/1.jpg" alt="">
-                                                                                                Carl Clarkson
-                                                                                            </td>
-                                                                                            <td>carl_657@gmail.com</td>
-                                                                                            <td>+88 0172-323-233</td>
-                                                                                            <td>
-                                                                                                <button type="button" class="btn bg-transparent _r_btn border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                                                    <span class="_dot _r_block-dot bg-dark"></span>
-                                                                                                    <span class="_dot _r_block-dot bg-dark"></span>
-                                                                                                    <span class="_dot _r_block-dot bg-dark"></span>
-                                                                                                </button>
-                                                                                                <div class="dropdown-menu" x-placement="bottom-start">
-                                                                                                    <a class="dropdown-item" href="#"><i class="nav-icon i-Pen-2 text-success font-weight-bold mr-2"></i>Edit Contact</a>
-                                                                                                    <a class="dropdown-item" href="#"><i class="nav-icon i-Close-Window text-danger font-weight-bold mr-2"></i>Delete Contact</a>
-                                                                                                   
-                                                                                                </div>
-                                                                                            </td>
-                                                                                            
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>
-                                                                                                <img class="rounded-circle m-0 avatar-sm-table " src="/assets/images/faces/1.jpg" alt="">
-                                                                                                Carl Clarkson
-                                                                                            </td>
-                                                                                            <td>carl_657@gmail.com</td>
-                                                                                            <td>+88 0172-323-233</td>
-                                                                                            <td>
-                                                                                                <button type="button" class="btn bg-transparent _r_btn border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                                                    <span class="_dot _r_block-dot bg-dark"></span>
-                                                                                                    <span class="_dot _r_block-dot bg-dark"></span>
-                                                                                                    <span class="_dot _r_block-dot bg-dark"></span>
-                                                                                                </button>
-                                                                                                <div class="dropdown-menu" x-placement="bottom-start">
-                                                                                                    <a class="dropdown-item" href="#"><i class="nav-icon i-Pen-2 text-success font-weight-bold mr-2"></i>Edit Contact</a>
-                                                                                                    <a class="dropdown-item" href="#"><i class="nav-icon i-Close-Window text-danger font-weight-bold mr-2"></i>Delete Contact</a>
-                                                                                                   
-                                                                                                </div>
-                                                                                            </td>
-                                                                                            
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>
-                                                                                                <img class="rounded-circle m-0 avatar-sm-table " src="/assets/images/faces/1.jpg" alt="">
-                                                                                                Carl Clarkson
-                                                                                            </td>
-                                                                                            <td>carl_657@gmail.com</td>
-                                                                                            <td>+88 0172-323-233</td>
-                                                                                            <td>
-                                                                                                <button type="button" class="btn bg-transparent _r_btn border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                                                    <span class="_dot _r_block-dot bg-dark"></span>
-                                                                                                    <span class="_dot _r_block-dot bg-dark"></span>
-                                                                                                    <span class="_dot _r_block-dot bg-dark"></span>
-                                                                                                </button>
-                                                                                                <div class="dropdown-menu" x-placement="bottom-start">
-                                                                                                    <a class="dropdown-item" href="#"><i class="nav-icon i-Pen-2 text-success font-weight-bold mr-2"></i>Edit Contact</a>
-                                                                                                    <a class="dropdown-item" href="#"><i class="nav-icon i-Close-Window text-danger font-weight-bold mr-2"></i>Delete Contact</a>
-                                                                                                   
-                                                                                                </div>
-                                                                                            </td>
-                                                                                            
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>
-                                                                                                <img class="rounded-circle m-0 avatar-sm-table " src="/assets/images/faces/1.jpg" alt="">
-                                                                                                Carl Clarkson
-                                                                                            </td>
-                                                                                            <td>carl_657@gmail.com</td>
-                                                                                            <td>+88 0172-323-233</td>
-                                                                                            <td>
-                                                                                                <button type="button" class="btn bg-transparent _r_btn border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                                                    <span class="_dot _r_block-dot bg-dark"></span>
-                                                                                                    <span class="_dot _r_block-dot bg-dark"></span>
-                                                                                                    <span class="_dot _r_block-dot bg-dark"></span>
-                                                                                                </button>
-                                                                                                <div class="dropdown-menu" x-placement="bottom-start">
-                                                                                                    <a class="dropdown-item" href="#"><i class="nav-icon i-Pen-2 text-success font-weight-bold mr-2"></i>Edit Contact</a>
-                                                                                                    <a class="dropdown-item" href="#"><i class="nav-icon i-Close-Window text-danger font-weight-bold mr-2"></i>Delete Contact</a>
-                                                                                                   
-                                                                                                </div>
-                                                                                            </td>
-                                                                                            
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>
-                                                                                                <img class="rounded-circle m-0 avatar-sm-table " src="/assets/images/faces/1.jpg" alt="">
-                                                                                                Carl Clarkson
-                                                                                            </td>
-                                                                                            <td>carl_657@gmail.com</td>
-                                                                                            <td>+88 0172-323-233</td>
-                                                                                            <td>
-                                                                                                <button type="button" class="btn bg-transparent _r_btn border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                                                    <span class="_dot _r_block-dot bg-dark"></span>
-                                                                                                    <span class="_dot _r_block-dot bg-dark"></span>
-                                                                                                    <span class="_dot _r_block-dot bg-dark"></span>
-                                                                                                </button>
-                                                                                                <div class="dropdown-menu" x-placement="bottom-start">
-                                                                                                    <a class="dropdown-item" href="#"><i class="nav-icon i-Pen-2 text-success font-weight-bold mr-2"></i>Edit Contact</a>
-                                                                                                    <a class="dropdown-item" href="#"><i class="nav-icon i-Close-Window text-danger font-weight-bold mr-2"></i>Delete Contact</a>
-                                                                                                   
-                                                                                                </div>
-                                                                                            </td>
-                                                                                            
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>
-                                                                                                <img class="rounded-circle m-0 avatar-sm-table " src="/assets/images/faces/1.jpg" alt="">
-                                                                                                Carl Clarkson
-                                                                                            </td>
-                                                                                            <td>carl_657@gmail.com</td>
-                                                                                            <td>+88 0172-323-233</td>
-                                                                                            <td>
-                                                                                                <button type="button" class="btn bg-transparent _r_btn border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                                                    <span class="_dot _r_block-dot bg-dark"></span>
-                                                                                                    <span class="_dot _r_block-dot bg-dark"></span>
-                                                                                                    <span class="_dot _r_block-dot bg-dark"></span>
-                                                                                                </button>
-                                                                                                <div class="dropdown-menu" x-placement="bottom-start">
-                                                                                                    <a class="dropdown-item" href="#"><i class="nav-icon i-Pen-2 text-success font-weight-bold mr-2"></i>Edit Contact</a>
-                                                                                                    <a class="dropdown-item" href="#"><i class="nav-icon i-Close-Window text-danger font-weight-bold mr-2"></i>Delete Contact</a>
-                                                                                                   
-                                                                                                </div>
-                                                                                            </td>
-                                                                                            
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>
-                                                                                                <img class="rounded-circle m-0 avatar-sm-table " src="/assets/images/faces/1.jpg" alt="">
-                                                                                                Carl Clarkson
-                                                                                            </td>
-                                                                                            <td>carl_657@gmail.com</td>
-                                                                                            <td>+88 0172-323-233</td>
-                                                                                            <td>
-                                                                                                <button type="button" class="btn bg-transparent _r_btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                                                    <span class="_dot _r_block-dot bg-dark"></span>
-                                                                                                    <span class="_dot _r_block-dot bg-dark"></span>
-                                                                                                    <span class="_dot _r_block-dot bg-dark"></span>
-                                                                                                </button>
-                                                                                                <div class="dropdown-menu" x-placement="bottom-start">
-                                                                                                    <a class="dropdown-item" href="#"><i class="nav-icon i-Pen-2 text-success font-weight-bold mr-2"></i>Edit Contact</a>
-                                                                                                    <a class="dropdown-item" href="#"><i class="nav-icon i-Close-Window text-danger font-weight-bold mr-2"></i>Delete Contact</a>
-                                                                                                   
-                                                                                                </div>
-                                                                                            </td>
-                                                                                            
-                                                                                        </tr>
-                                                                                        
-                                                                                    </tbody>
-                                                                                    
-                                                                                </table>
-                                                                            </div>
-                                                
-                                                                        </div>
-                                                                    
-                                                                </div>
-
-                                                        
-                                                        <!-- <div class="tab-pane fade" id="list-profile" role="tabpanel"
-                                                            aria-labelledby="list-profile-list">...</div>
-                                                        <div class="tab-pane fade" id="list-messages" role="tabpanel"
-                                                            aria-labelledby="list-messages-list">...</div>
-                                                        <div class="tab-pane fade" id="list-settings" role="tabpanel"
-                                                            aria-labelledby="list-settings-list">...</div> -->
+                                            </fieldset>
+                                            <div class="form-group row">
+                                                <div class="col-sm-2">Checkbox</div>
+                                                <div class="col-sm-10">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                                        <label class="form-check-label ml-3" for="gridCheck1">
+                                                            Example checkbox
+                                                        </label>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                            <div class="form-group row">
+                                                <div class="col-sm-10">
+
+                                                    <button type="submit" class="btn btn-success">Update</button>
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- end::modal -->
+
+                    <div class="card-body">
+
+                        <div class="table-responsive">
+                            <table id="ul-contact-list" class="display table " style="width:100%">
+                                <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Surname</th>
+                                    <th>Phone</th>
+                                    <th>Type</th>
+                                    <th>Joining Date</th>
+                                    <th>Voting Station</th>
+                                    <th>Action</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                @foreach($leads as $lead)
+
+                                <tr>
+                                    <td>
+                                        <a href="">
+                                            <div class="ul-widget-app__profile-pic">
+                                                <img class="profile-picture avatar-sm mb-2 rounded-circle img-fluid" src="{{ asset('assets/images/faces/1.jpg') }}" alt="">
+                                                {{ $lead->first_name }}
+                                            </div>
+
+                                        </a>
+                                    </td>
+                                    <td>{{ $lead->last_name }}</td>
+                                    <td>{{ $lead->phone }}</td>
+                                    <td><a href="#" class="badge badge-primary m-2 p-2">{{ $lead->is_member }}</a></td>
+                                    <td>{{ $lead->created_at->format('Y.m.d') }}</td>
+                                    <td>{{ $lead->station->name }}</td>
+                                    <td>
+                                        <a href="" class="ul-link-action text-success"  data-toggle="tooltip" data-placement="top" title="Edit">
+                                            <i class="i-Edit"></i>
+                                        </a>
+                                        <a href="" class="ul-link-action text-danger mr-1"  data-toggle="tooltip" data-placement="top" title="Want To Delete !!!">
+                                            <i class="i-Eraser-2"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                @endforeach
+                                </tbody>
+
+                            </table>
+                        </div>
+
+                    </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -408,15 +161,11 @@
 @section('page-js')
 
 
-<script src="{{ asset('assets/js/vendor/datatables.min.js') }}"></script>
-<!-- page script -->
-<script src="{{ asset('assets/js/contact-list-table.js') }}"></script>
-<script src="{{ asset('assets/js/datatables.script.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/datatables.min.js') }}"></script>
+    <!-- page script -->
+    <script src="{{ asset('assets/js/tooltip.script.js') }}"></script>
 
-
-
-
-<script>
-// $('#ul-contact-list').DataTable();
-</script>
+    <script>
+        $('#ul-contact-list').DataTable();
+    </script>
 @endsection

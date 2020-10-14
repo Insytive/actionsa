@@ -32,7 +32,7 @@
 
 <script>
 import AppLayout from "./../Layouts/AppLayout";
-import LeadsList from "./../Pages/Admin/Leads/LeadsList";
+import LeadsList from "./Admin/Leads/LeadsList";
 
 export default {
     components: {

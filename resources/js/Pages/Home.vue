@@ -134,7 +134,7 @@
         <div>
             <div class="max-w-7xl mx-auto sm:px-6">
                 <div class="bg-white overflow-hidden">
-                    <about />
+                    <splash />
                 </div>
             </div>
         </div>
@@ -159,7 +159,7 @@
 
 <script>
 import WebLayout from "../Layouts/WebLayout";
-import About from "../Components/About";
+import Splash from "../Components/Splash";
 import JetApplicationLogo from "./../Jetstream/ApplicationLogo";
 import JetResponsiveNavLink from "./../Jetstream/ResponsiveNavLink";
 import JetDropdownLink from "./../Jetstream/DropdownLink";
@@ -168,7 +168,7 @@ import JetDropdown from "./../Jetstream/Dropdown";
 export default {
     components: {
         WebLayout,
-        About,
+        Splash,
         JetApplicationLogo,
         JetResponsiveNavLink,
         JetDropdownLink,
