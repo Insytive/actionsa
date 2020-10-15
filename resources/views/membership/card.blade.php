@@ -42,8 +42,8 @@
     </div>
 
     <div class="pCard_back">
-        <p>Plan - Bronze</p>
-        <small>Bronze</small>
+        <p>Plan</p>
+        <small>Bronze - Free</small>
         <hr>
         <p>Email</p>
         <small>sales@thrivebs.co.za</small>
