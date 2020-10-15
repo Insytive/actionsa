@@ -11,32 +11,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32c92096-46ed-4c9f-bd15-b018eacded21" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminDashboardController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/1forgot-password.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/1login.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/1register.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/Image_Profile.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminLeadsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminLeadsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LeadController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LeadController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Lead.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Lead.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/es5/echarts.script.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/es5/echarts.script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/common-bundle-script.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/common-bundle-script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/styles/css/themes/dark-purple.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/styles/css/themes/dark-purple.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/styles/css/themes/lite-blue.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/styles/css/themes/lite-blue.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/styles/css/themes/lite-purple.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/styles/css/themes/lite-purple.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/Image_Profile.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/Image_Profile.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/auth/forgot-password.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/forgot-password.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/dashboardv1.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/dashboardv1.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/common/customizer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/common/customizer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/large-vertical-sidebar/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/large-vertical-sidebar/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/large-vertical-sidebar/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/large-vertical-sidebar/sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/leads/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/leads/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/membership/card.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/membership/card.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -256,7 +244,7 @@
       <workItem from="1602189390256" duration="8370000" />
       <workItem from="1602520616049" duration="1565000" />
       <workItem from="1602672818535" duration="24353000" />
-      <workItem from="1602733682553" duration="19403000" />
+      <workItem from="1602733682553" duration="21256000" />
     </task>
     <servers />
   </component>

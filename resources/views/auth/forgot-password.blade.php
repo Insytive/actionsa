@@ -32,13 +32,13 @@
 
                             </form>
                             <div class="mt-3 text-center">
-                                <a class="text-muted" href="signin.html"><u>Sign in</u></a>
+                                <a class="text-muted" href="/login"><u>Sign in</u></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 text-center " style="background-size: cover;background-image: linear-gradient(rgba(0,0,0,.85),rgba(0,0,0,.85) ), url({{asset('assets/images/photo-long-5.jpg')}}">
                         <div class="pr-3 auth-right">
-                            <a class="btn btn-primary btn-email btn-block btn-icon-text btn-rounded" href="signup.html">
+                            <a class="btn btn-primary btn-email btn-block btn-icon-text btn-rounded" href="/register">
                                 <i class="i-Mail-with-At-Sign"></i> Sign up with Email
                             </a>
                             <a class="btn  btn-google btn-block btn-icon-text btn-rounded">

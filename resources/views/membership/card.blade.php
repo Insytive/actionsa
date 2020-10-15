@@ -29,11 +29,11 @@
     <div class="pCard_down">
         <div>
             <p>Joined</p>
-            <p>10/22</p>
+            <p>09/20</p>
         </div>
         <div>
             <p>Expiry</p>
-            <p>10/2021</p>
+            <p>09/2021</p>
         </div>
         <div>
             <p>Province</p>
@@ -43,9 +43,16 @@
 
     <div class="pCard_back">
         <p>Plan - Bronze</p>
-        <p>Email - sales@thrivebs.co.za</p>
-        <p>Phone - 081 493 8640</p>
-        <p>Voting Station - Mosaledi Primary School</p>
+        <small>Bronze</small>
+        <hr>
+        <p>Email/p>
+        <small>sales@thrivebs.co.za<</small>
+        <hr>
+        <p>Phone</p>
+        <small>081 493 8640</small>
+        <hr>
+        <p>Voting Station</p>
+        <small>Mosaledi Primary School</small>
     </div>
 
 </div>

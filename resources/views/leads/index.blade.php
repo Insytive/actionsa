@@ -115,7 +115,7 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                @foreach($leads ?? '' as $lead)
+                                @foreach($leads as $lead)
 
                                 <tr>
                                     <td>
