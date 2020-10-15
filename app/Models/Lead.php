@@ -7,12 +7,12 @@ use betterapp\LaravelDbEncrypter\Traits\EncryptableDbAttribute;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
 use \DateTimeInterface;
+use Illuminate\Support\Facades\DB;
 
 class Lead extends Model
 {
-    use SoftDeletes, Auditable, EncryptableDbAttribute, HasFactory;
+    use Auditable, EncryptableDbAttribute, HasFactory;
 
     public $table = 'leads';
 
@@ -96,7 +96,46 @@ class Lead extends Model
         'employee_id',
         'volunteer_id'
     ];
-    
+
+    public static function totalLeadsByProvince()
+    {
+        return DB::table('leads')
+            ->select(DB::raw('count(*) as lead_count, provinces.name, provinces.id' ))
+            ->join('stations', 'stations.id', '=', 'leads.station_id')
+            ->join('wards', 'wards.id', '=', 'stations.ward_id')
+            ->join('areas', 'areas.id', '=', 'wards.area_id')
+            ->join('municipalities', 'municipalities.id', '=', 'areas.municipality_id')
+            ->join('provinces', 'provinces.id', '=', 'municipalities.province_id')
+            ->groupBy('provinces.id')
+            ->get();
+    }
+
+    public static function totalSelfRegistered()
+    {
+        return DB::table('leads')
+            ->select(DB::raw('count(*) as lead_count' ))
+            ->whereNull('created_by')
+            ->get();
+    }
+
+    public static function totalRecruited()
+    {
+        return DB::table('leads')
+            ->select(DB::raw('count(*) as lead_count' ))
+            ->whereNotNull('created_by')
+            ->get();
+    }
+
+    public static function totalRecruitedByPeriod($period_start, $period_end)
+    {
+        return DB::table('leads')
+            ->select(DB::raw('count(*) as lead_count' ))
+            ->whereNotNull('created_by')
+            ->where('created_at', '>', $period_start)
+            ->where('created_at', '<', $period_end)
+            ->get();
+    }
+
     protected function serializeDate(DateTimeInterface $date)
     {
         return $date->format('Y-m-d H:i:s');

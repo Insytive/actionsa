@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Lead;
+use Illuminate\Support\Carbon;
 use Illuminate\Validation\Rules\In;
 use Inertia\Inertia;
 
@@ -60,9 +61,9 @@ class AdminLeadsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Lead $lead)
     {
-        //
+        return view('leads.edit', compact('lead'));
     }
 
     /**
@@ -72,9 +73,17 @@ class AdminLeadsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Lead $lead)
     {
-        //
+        $request->validate([
+            'first_name' => 'required',
+            'last_name' => 'required'
+        ]);
+
+        $lead->update($request->all());
+
+        return redirect()->route('admin.leads.index')
+            ->with('success', 'Lead successfully updated');
     }
 
     /**
@@ -85,6 +94,9 @@ class AdminLeadsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Lead::where('id', $id)->delete();
+
+        return redirect()->route('admin.leads.index')
+            ->with('success', 'Lead deleted successfully');
     }
 }

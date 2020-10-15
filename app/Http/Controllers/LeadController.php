@@ -8,6 +8,7 @@ use App\Models\Lead;
 use App\Models\Station;
 use App\Notifications\LeadAdded;
 use Illuminate\Http\Request;
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Notification;
 use Inertia\Inertia;
@@ -53,6 +54,9 @@ class LeadController extends Controller
             'is_member' => 'boolean|nullable',
             'station_id' => 'required'
         ]);
+
+        $birthdate = Carbon::parse($postData['birthdate']);
+        $age = $birthdate->age;
 
         $duplicateIDnumber = Lead::where('id_number', $postData['id_number'])->first();
 
@@ -133,6 +137,21 @@ class LeadController extends Controller
 
     {
         return $lead;
+    }
+
+    public function update(Request $request)
+    {
+        $rules = $this->validate;
+        $rules['id'] = 'required|exists:leads';
+
+        $postData = $this->validate($request, $rules);
+        $postData['age'] = Carbon::parse($postData['birthdate'])->age;
+
+        $lead = Lead::where('id', $postData['id'])
+            ->update($postData);
+
+        return redirect()
+            ->route('lead.view', ['lead' => $postData['id']]);
     }
 
     public function customStation($name)

@@ -19,8 +19,8 @@
 
     <div class="pCard_up">
         <div class="pCard_text">
-            <h2>Eslam Adel</h2>
-            <p>UI/UX Designer &amp; UI Developer</p>
+            <h2>Tshidiso Gumbo</h2>
+            <p>ASA-20102305487</p>
         </div>
 
         <div class="pCard_add"><i class="fa fa-plus"></i></div>
@@ -28,67 +28,24 @@
 
     <div class="pCard_down">
         <div>
-            <p>Projects</p>
-            <p>26</p>
+            <p>Joined</p>
+            <p>10/22</p>
         </div>
         <div>
-            <p>Views</p>
-            <p>21579</p>
+            <p>Expiry</p>
+            <p>10/2021</p>
         </div>
         <div>
-            <p>Likes</p>
-            <p>976</p>
+            <p>Province</p>
+            <p>GP</p>
         </div>
     </div>
 
     <div class="pCard_back">
-        <p>See My Latest Work Here</p>
-        <a href="#"><i class="fa fa-facebook fa-2x fa-fw"></i></a>
-        <a href="#"><i class="fa fa-linkedin fa-2x fa-fw"></i></a>
-        <a href="#"><i class="fa fa-behance fa-2x fa-fw"></i></a> <br>
-        <a href="#"><i class="fa fa-codepen fa-2x fa-fw"></i></a>
-        <a href="#"><i class="fa fa-dribbble fa-2x fa-fw"></i></a>
-        <a href="#"><i class="fa fa-instagram fa-2x fa-fw"></i></a>
-        <p>Follow Me...</p>
-    </div>
-
-</div>
-
-<div class="pCard_card">
-
-    <div class="pCard_up">
-        <div class="pCard_text">
-            <h2>Eslam Adel</h2>
-            <p>UI/UX Designer &amp; UI Developer</p>
-        </div>
-
-        <div class="pCard_add"><i class="fa fa-plus"></i></div>
-    </div>
-
-    <div class="pCard_down">
-        <div>
-            <p>Projects</p>
-            <p>26</p>
-        </div>
-        <div>
-            <p>Views</p>
-            <p>21579</p>
-        </div>
-        <div>
-            <p>Likes</p>
-            <p>976</p>
-        </div>
-    </div>
-
-    <div class="pCard_back">
-        <p>See My Latest Work Here</p>
-        <a href="#"><i class="fa fa-facebook fa-2x fa-fw"></i></a>
-        <a href="#"><i class="fa fa-linkedin fa-2x fa-fw"></i></a>
-        <a href="#"><i class="fa fa-behance fa-2x fa-fw"></i></a> <br>
-        <a href="#"><i class="fa fa-codepen fa-2x fa-fw"></i></a>
-        <a href="#"><i class="fa fa-dribbble fa-2x fa-fw"></i></a>
-        <a href="#"><i class="fa fa-instagram fa-2x fa-fw"></i></a>
-        <p>Follow Me...</p>
+        <p>Plan - Bronze</p>
+        <p>Email - sales@thrivebs.co.za</p>
+        <p>Phone - 081 493 8640</p>
+        <p>Voting Station - Mosaledi Primary School</p>
     </div>
 
 </div>

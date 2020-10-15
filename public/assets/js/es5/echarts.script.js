@@ -54,7 +54,7 @@ $(document).ready(function () {
             }],
 
             series: [{
-                name: 'Online',
+                name: 'Self Registered',
                 data: [35000, 69000, 22500, 60000, 50000, 50000, 30000, 80000, 70000, 60000, 20000, 30005],
                 label: { show: false, color: '#0168c1' },
                 type: 'bar',
@@ -70,7 +70,7 @@ $(document).ready(function () {
                     }
                 }
             }, {
-                name: 'Offline',
+                name: 'Recruited',
                 data: [45000, 82000, 35000, 93000, 71000, 89000, 49000, 91000, 80200, 86000, 35000, 40050],
                 label: { show: false, color: '#639' },
                 type: 'bar',
@@ -105,11 +105,11 @@ $(document).ready(function () {
             },
 
             series: [{
-                name: 'Leads by province',
+                name: 'Leads by Province',
                 type: 'pie',
                 radius: '60%',
                 center: ['50%', '50%'],
-                data: [{ value: 535, name: 'KZN' }, { value: 310, name: 'WC' }, { value: 234, name: 'Gauteng' }, { value: 155, name: 'Free State' }, { value: 130, name: 'NC' }, { value: 348, name: 'EC' }],
+                data: [{ value: 535, name: 'EC' }, { value: 310, name: 'FS' }, { value: 234, name: 'GP' }, { value: 155, name: 'KZN' }, { value: 130, name: 'LP' }, { value: 348, name: 'MP' }, { value: 348, name: 'NC' }, { value: 348, name: 'NW' }, { value: 348, name: 'WC' }],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -399,7 +399,7 @@ $(document).ready(function () {
             yAxis: [{
                 type: 'value',
                 axisLabel: {
-                    formatter: '${value}'
+                    formatter: '{value}'
                 },
                 min: 0,
                 max: 100000,
@@ -1412,7 +1412,7 @@ $(document).ready(function () {
             }],
 
             series: [{
-                name: 'Sales by Countries',
+                name: 'Leads by Province',
                 type: 'pie',
                 radius: '75%',
                 center: ['50%', '50%'],

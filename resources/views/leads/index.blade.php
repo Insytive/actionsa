@@ -115,7 +115,7 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                @foreach($leads as $lead)
+                                @foreach($leads ?? '' as $lead)
 
                                 <tr>
                                     <td>
@@ -136,7 +136,7 @@
                                         <a href="" class="ul-link-action text-success"  data-toggle="tooltip" data-placement="top" title="Edit">
                                             <i class="i-Edit"></i>
                                         </a>
-                                        <a href="" class="ul-link-action text-danger mr-1"  data-toggle="tooltip" data-placement="top" title="Want To Delete !!!">
+                                        <a href="/admin/leads/delete/{{$lead->id}}" class="ul-link-action text-danger mr-1"  data-toggle="tooltip" data-placement="top" title="Want To Delete !!!">
                                             <i class="i-Eraser-2"></i>
                                         </a>
                                     </td>

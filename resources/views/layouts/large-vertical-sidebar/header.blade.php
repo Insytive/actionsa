@@ -12,7 +12,7 @@
     </div>
 
     <!-- <div class="d-flex align-items-center">
-    
+
         <div class="search-bar">
             <input type="text" placeholder="Search">
             <i class="search-icon text-muted i-Magnifi-Glass1"></i>
@@ -25,7 +25,7 @@
         <!-- Full screen toggle -->
         <!-- <i class="i-Full-Screen header-icon d-none d-sm-inline-block" data-fullscreen></i> -->
         <!-- Grid menu Dropdown -->
-      
+
         <!-- Notificaiton -->
         <div class="dropdown">
             <div class="badge-top-container" role="button" id="dropdownNotification" data-toggle="dropdown"
@@ -107,7 +107,7 @@
                         <i class="i-Lock-User mr-1"></i> Andzie Mabaso
                     </div>
                     <a class="dropdown-item">Account settings</a>
-                    <a class="dropdown-item" href="{{route('signIn')}}">Sign out</a>
+                    <a class="dropdown-item" href="/logout">Sign out</a>
                 </div>
             </div>
         </div>

@@ -17,7 +17,7 @@
                         <div class="card-body text-center">
                             <i class="i-Add-User"></i>
                             <div class="content">
-                                <p class="text-muted mt-2 mb-0">New Leads</p>
+                                <p class="text-muted mt-2 mb-0 text-left">Total Leads Registered</p>
                                 <p class="text-primary text-24 line-height-1 mb-2">205</p>
                             </div>
                         </div>
@@ -29,7 +29,7 @@
                         <div class="card-body text-center">
                             <i class="i-Map2"></i>
                             <div class="content">
-                                <p class="text-muted mt-2 mb-0">Locations</p>
+                                <p class="text-muted mt-2 mb-0 text-left">Unknown Stations</p>
                                 <p class="text-primary text-24 line-height-1 mb-2">4221</p>
                             </div>
                         </div>
@@ -41,7 +41,7 @@
                         <div class="card-body text-center">
                             <i class="i-Statistic"></i>
                             <div class="content">
-                                <p class="text-muted mt-2 mb-0">Reports</p>
+                                <p class="text-muted mt-2 mb-0 text-left">Recruitment Average</p>
                                 <p class="text-primary text-24 line-height-1 mb-2">80</p>
                             </div>
                         </div>
@@ -62,7 +62,7 @@
                 <div class="col-lg-4 col-sm-12">
                     <div class="card mb-4">
                         <div class="card-body">
-                            <div class="card-title">Leads by province</div>
+                            <div class="card-title">Leads by Province</div>
                             <div id="echartPie" style="height: 300px;"></div>
                         </div>
                     </div>
@@ -76,7 +76,7 @@
                         <div class="col-lg-6 col-md-12">
                             <div class="card card-chart-bottom o-hidden mb-4">
                                 <div class="card-body">
-                                    <div class="text-muted">Last Month recruits</div>
+                                    <div class="text-muted">Last Month - Recruits</div>
                                     <p class="mb-4 text-primary text-24">40250</p>
                                 </div>
                                 <div id="echart1" style="height: 260px;"></div>
@@ -86,7 +86,7 @@
                         <div class="col-lg-6 col-md-12">
                             <div class="card card-chart-bottom o-hidden mb-4">
                                 <div class="card-body">
-                                    <div class="text-muted">Last Week new recruits</div>
+                                    <div class="text-muted">Last Week - Recruits</div>
                                     <p class="mb-4 text-warning text-24">10250</p>
                                 </div>
                                 <div id="echart2" style="height: 260px;"></div>
@@ -103,7 +103,7 @@
                                         <button class="btn bg-gray-100" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <i class="nav-icon i-Gear-2"></i>
                                         </button>
-                                      
+
                                     </div>
                                 </div>
 
@@ -120,17 +120,20 @@
                                                     <th scope="col">Action</th>
                                                 </tr>
                                             </thead>
+
                                             <tbody>
+                                            @foreach($leads as $lead)
+
                                                 <tr>
                                                     <th scope="row">1</th>
-                                                    <td>Smith Doe</td>
+                                                    <td>$lead->firstname $lead->lastname</td>
                                                     <td>
 
                                                         <img class="rounded-circle m-0 avatar-sm-table " src="/assets/images/faces/1.jpg" alt="">
 
                                                     </td>
 
-                                                    <td>Smith@gmail.com</td>
+                                                    <td>$lead->email</td>
                                                     <td><span class="badge badge-success">Active</span></td>
                                                     <td>
                                                         <a href="#" class="text-success mr-2">
@@ -141,67 +144,8 @@
                                                         </a>
                                                     </td>
                                                 </tr>
-                                                <tr>
-                                                    <th scope="row">2</th>
-                                                    <td>Jhon Doe</td>
-                                                    <td>
 
-                                                        <img class="rounded-circle m-0 avatar-sm-table " src="/assets/images/faces/1.jpg" alt="">
-
-                                                    </td>
-
-                                                    <td>Jhon@gmail.com</td>
-                                                    <td><span class="badge badge-info">Pending</span></td>
-                                                    <td>
-                                                        <a href="#" class="text-success mr-2">
-                                                            <i class="nav-icon i-Pen-2 font-weight-bold"></i>
-                                                        </a>
-                                                        <a href="#" class="text-danger mr-2">
-                                                            <i class="nav-icon i-Close-Window font-weight-bold"></i>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">3</th>
-                                                    <td>Alex</td>
-                                                    <td>
-
-                                                        <img class="rounded-circle m-0 avatar-sm-table " src="/assets/images/faces/1.jpg" alt="">
-
-                                                    </td>
-
-                                                    <td>Otto@gmail.com</td>
-                                                    <td><span class="badge badge-warning">Not Active</span></td>
-                                                    <td>
-                                                        <a href="#" class="text-success mr-2">
-                                                            <i class="nav-icon i-Pen-2 font-weight-bold"></i>
-                                                        </a>
-                                                        <a href="#" class="text-danger mr-2">
-                                                            <i class="nav-icon i-Close-Window font-weight-bold"></i>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <th scope="row">4</th>
-                                                    <td>Mathew Doe</td>
-                                                    <td>
-
-                                                        <img class="rounded-circle m-0 avatar-sm-table " src="/assets/images/faces/1.jpg" alt="">
-
-                                                    </td>
-
-                                                    <td>Mathew@gmail.com</td>
-                                                    <td><span class="badge badge-success">Active</span></td>
-                                                    <td>
-                                                        <a href="#" class="text-success mr-2">
-                                                            <i class="nav-icon i-Pen-2 font-weight-bold"></i>
-                                                        </a>
-                                                        <a href="#" class="text-danger mr-2">
-                                                            <i class="nav-icon i-Close-Window font-weight-bold"></i>
-                                                        </a>
-                                                    </td>
-                                                </tr>
+                                            @endforeach
                                             </tbody>
                                         </table>
                                     </div>
@@ -224,7 +168,7 @@
                                 <img class="avatar-lg mb-3 mb-sm-0 rounded mr-sm-3" src="{{asset('assets/images/faces/face01.png')}}" alt="">
                                 <div class="flex-grow-1">
                                     <h5 class=""><a href="">Andzie Mabaso</a></h5>
-                                
+
                                     <p class="text-small  m-0">andzie@thrivebs.co.za <br> <span class="text-muted">(200 recruited)</span></p>
                                 </div>
                                 <div>
@@ -235,7 +179,7 @@
                             <img class="avatar-lg mb-3 mb-sm-0 rounded mr-sm-3" src="{{asset('assets/images/faces/face02.png')}}" alt="">
                                 <div class="flex-grow-1">
                                     <h5 class=""><a href="">Andrew Sebeko</a></h5>
-                                
+
                                     <p class="text-small  m-0"> andrew.novela55@gmail.com <br> <span class="text-muted">(10 recruited)</span></p>
                                 </div>
                                 <div>
@@ -246,23 +190,23 @@
                             <img class="avatar-lg mb-3 mb-sm-0 rounded mr-sm-3" src="{{asset('assets/images/faces/face03.png')}}" alt="">
                                 <div class="flex-grow-1">
                                     <h5 class=""><a href="">Jane van Wyk</a></h5>
-                                
+
                                     <p class="text-small  m-0">jane@yahoo.com <br> <span class="text-muted">(20 recruited)</span></p>
                                 </div>
                                 <div>
                                     <button class="btn btn-outline-primary btn-rounded btn-sm">View details</button>
                                 </div>
                             </div>
-                         
+
                         </div>
                     </div>
 
                     <div class="card mb-4">
                         <div class="card-body p-0">
                             <div class="card-title border-bottom d-flex align-items-center m-0 p-3">
-                                <span>User activity</span>
+                                <span>User Activity</span>
                                 <span class="flex-grow-1"></span>
-                                <span class="badge badge-pill badge-warning">Updated daily</span>
+                                <span class="badge badge-pill badge-warning">23 seconds ago</span>
                             </div>
                             <div class="border-bottom  p-3">
                                 <div class="flex-grow-1">
@@ -290,8 +234,8 @@
                                     <h5 class="mb-3"></h5>
                                 </div>
                             </div>
-                            
-                            
+
+
 
                         </div>
                     </div>

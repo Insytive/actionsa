@@ -62,4 +62,9 @@ class User extends Authenticatable implements MustVerifyEmail
     protected $appends = [
         'profile_photo_url',
     ];
+
+    public function leads()
+    {
+        return $this->hasMany(Lead::class, 'created_by');
+    }
 }
