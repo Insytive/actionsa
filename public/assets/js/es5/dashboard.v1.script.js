@@ -41,7 +41,7 @@ $(document).ready(function () {
             yAxis: [{
                 type: 'value',
                 axisLabel: {
-                    formatter: '${value}'
+                    formatter: '{value}'
                 },
                 min: 0,
                 max: 100000,
@@ -61,7 +61,7 @@ $(document).ready(function () {
                 label: { show: false, color: '#0168c1' },
                 type: 'bar',
                 barGap: 0,
-                color: '#bcbbdd',
+                color: '#4afa5b',
                 smooth: true,
                 itemStyle: {
                     emphasis: {
@@ -76,7 +76,7 @@ $(document).ready(function () {
                 data: [45000, 82000, 35000, 93000, 71000, 89000, 49000, 91000, 80200, 86000, 35000, 40050],
                 label: { show: false, color: '#639' },
                 type: 'bar',
-                color: '#7569b3',
+                color: '#05B616',
                 smooth: true,
                 itemStyle: {
                     emphasis: {
@@ -100,18 +100,18 @@ $(document).ready(function () {
     if (echartElemPie) {
         var echartPie = echarts.init(echartElemPie);
         echartPie.setOption({
-            color: ['#62549c', '#7566b5', '#7d6cbb', '#8877bd', '#9181bd', '#6957af'],
+            color: ['#049d13', '#06dc1b', '#049011', '#05b616', '#06cf19', '#06c918', '#11f827', '#37fa4a', '#5dfb6c'],
             tooltip: {
                 show: true,
                 backgroundColor: 'rgba(0, 0, 0, .8)'
             },
 
             series: [{
-                name: 'Sales by Country',
+                name: 'Leads by province',
                 type: 'pie',
                 radius: '60%',
                 center: ['50%', '50%'],
-                data: [{ value: 535, name: 'USA' }, { value: 310, name: 'Brazil' }, { value: 234, name: 'France' }, { value: 155, name: 'BD' }, { value: 130, name: 'UK' }, { value: 348, name: 'India' }],
+                data: [{ value: 335, name: 'KZN' }, { value: 200, name: 'LP' },  { value: 186, name: 'EC' },  { value: 310, name: 'EC' }, { value: 234, name: 'WC' }, { value: 155, name: 'FS' }, { value: 130, name: 'MP' }, { value: 152, name: 'NW' }, { value: 196, name: 'GT' }],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -146,10 +146,10 @@ $(document).ready(function () {
                     origin: 'start'
                 },
                 lineStyle: {
-                    color: '#663399'
+                    color: '#05B616'
                 },
                 itemStyle: {
-                    color: '#663399'
+                    color: '#05B616'
                 }
             })]
         }));
@@ -177,10 +177,10 @@ $(document).ready(function () {
                     origin: 'start'
                 },
                 lineStyle: {
-                    color: '#FFC107'
+                    color: '#05b616'
                 },
                 itemStyle: {
-                    color: '#FFC107'
+                    color: '#4afa5b'
                 }
             })]
         }));
@@ -198,14 +198,14 @@ $(document).ready(function () {
             series: [{
                 data: [40, 80, 20, 90, 30, 80, 40, 90, 20, 80, 30, 45, 50, 110, 90, 145, 120, 135, 120, 140],
                 lineStyle: _extends({
-                    color: 'rgba(102, 51, 153, 0.8)',
+                    color: '#4afa5b',
                     width: 3
                 }, echartOptions.lineShadow),
                 label: { show: true, color: '#212121' },
                 type: 'line',
                 smooth: true,
                 itemStyle: {
-                    borderColor: 'rgba(102, 51, 153, 1)'
+                    borderColor: '#4afa5b'
                 }
             }]
         }));

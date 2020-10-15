@@ -1,8 +1,8 @@
 <!-- ============ Customizer ============= -->
 <div class="customizer open">
-    <div class="handle" (click)="isOpen = !isOpen">
+    <!-- <div class="handle" (click)="isOpen = !isOpen">
         <i class="i-Gear spin"></i>
-    </div>
+    </div> -->
     <div class="customizer-body" data-perfect-scrollbar data-suppress-scroll-x="true">
         <div class="accordion" id="accordionCustomizer">
             <div class="card">

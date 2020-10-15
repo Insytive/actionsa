@@ -39,7 +39,7 @@ $(document).ready(function () {
             yAxis: [{
                 type: 'value',
                 axisLabel: {
-                    formatter: '${value}'
+                    formatter: '{value}'
                 },
                 min: 0,
                 max: 100000,
@@ -105,11 +105,11 @@ $(document).ready(function () {
             },
 
             series: [{
-                name: 'Sales by Country',
+                name: 'Leads by province',
                 type: 'pie',
                 radius: '60%',
                 center: ['50%', '50%'],
-                data: [{ value: 535, name: 'USA' }, { value: 310, name: 'Brazil' }, { value: 234, name: 'France' }, { value: 155, name: 'BD' }, { value: 130, name: 'UK' }, { value: 348, name: 'India' }],
+                data: [{ value: 535, name: 'KZN' }, { value: 310, name: 'WC' }, { value: 234, name: 'Gauteng' }, { value: 155, name: 'Free State' }, { value: 130, name: 'NC' }, { value: 348, name: 'EC' }],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,

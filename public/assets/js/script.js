@@ -229,7 +229,7 @@ FormStuff.init();
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Server\www\actionsa\resources\gull\assets\js\script.js */"./resources/gull/assets/js/script.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\xampp\actionsa\resources\gull\assets\js\script.js */"./resources/gull/assets/js/script.js");
 
 
 /***/ })

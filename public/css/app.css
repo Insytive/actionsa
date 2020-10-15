@@ -35328,6 +35328,8 @@ a:active {
   border: 2px solid #05b615 !important;
 }
 
+/* Gear customiser */
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -172511,3 +172513,4 @@ a:active {
             animation: bounce 1s infinite;
   }
 }
+

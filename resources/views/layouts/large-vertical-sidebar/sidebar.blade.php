@@ -8,14 +8,31 @@
                 </a>
                 <div class="triangle"></div>
             </li>
-            <li class="nav-item {{ request()->is('uikits/*') ? 'active' : '' }}" data-item="uikits">
-                <a class="nav-item-hold" href="#">
-                    <i class="nav-icon i-Library"></i>
-                    <span class="nav-text">UI kits</span>
+
+            <li class="nav-item {{ request()->is('sessions/*') ? 'active' : '' }}" data-item="sessions">
+                <a class="nav-item-hold" href="/test.html">
+                    <i class="nav-icon i-Administrator"></i>
+                    <span class="nav-text">Leads</span>
                 </a>
                 <div class="triangle"></div>
             </li>
-            <li class="nav-item {{ request()->is('extrakits/*') ? 'active' : '' }}" data-item="extrakits">
+
+            <li class="nav-item {{ request()->is('uikits/*') ? 'active' : '' }}" data-item="uikits">
+                <a class="nav-item-hold" href="#">
+                    <!-- <i class="nav-icon i-Split-Horizontal-2-Window"></i> -->
+                    <i class="nav-icon i-Map2"></i>
+                    <span class="nav-text">Locations</span>
+                </a>
+                <div class="triangle"></div>
+            </li>
+            <li class="nav-item" >
+                <a class="nav-item-hold" href="#">
+                    <i class="nav-icon i-Support"></i>
+                    <span class="nav-text">Support</span>
+                </a>
+                <div class="triangle"></div>
+            </li>
+            <!-- <li class="nav-item {{ request()->is('extrakits/*') ? 'active' : '' }}" data-item="extrakits">
                 <a class="nav-item-hold" href="#">
                     <i class="nav-icon i-Suitcase"></i>
                     <span class="nav-text">Extra kits</span>
@@ -28,59 +45,47 @@
                     <span class="nav-text">Apps</span>
                 </a>
                 <div class="triangle"></div>
-            </li>
-            <li class="nav-item {{ request()->is('forms/*') ? 'active' : '' }}" data-item="forms">
+            </li> -->
+            <!-- <li class="nav-item {{ request()->is('forms/*') ? 'active' : '' }}" data-item="forms">
                 <a class="nav-item-hold" href="#">
                     <i class="nav-icon i-File-Clipboard-File--Text"></i>
                     <span class="nav-text">Forms</span>
                 </a>
                 <div class="triangle"></div>
-            </li>
+            </li> -->
 
-            <li class="nav-item {{ request()->is('widgets/*') ? 'active' : '' }}" data-item="widgets">
+            <!-- <li class="nav-item {{ request()->is('widgets/*') ? 'active' : '' }}" data-item="widgets">
                 <a class="nav-item-hold" href="#">
                     <i class="nav-icon i-Windows-2"></i>
                     <span class="nav-text">widgets</span>
                 </a>
                 <div class="triangle"></div>
-            </li>
+            </li> -->
 
-            <li class="nav-item {{ request()->is('charts/*') ? 'active' : '' }}" data-item="charts">
+            <!-- <li class="nav-item {{ request()->is('charts/*') ? 'active' : '' }}" data-item="charts">
                 <a class="nav-item-hold" href="#">
                     <i class="nav-icon i-File-Clipboard-File--Text"></i>
                     <span class="nav-text">Charts</span>
                 </a>
                 <div class="triangle"></div>
-            </li>
+            </li> -->
 
-            <li class="nav-item {{ request()->is('datatables/*') ? 'active' : '' }}">
+            <!-- <li class="nav-item {{ request()->is('datatables/*') ? 'active' : '' }}">
                 <a class="nav-item-hold" href="{{route('basic-tables')}}">
                     <i class="nav-icon i-File-Horizontal-Text"></i>
                     <span class="nav-text">Datatables</span>
                 </a>
                 <div class="triangle"></div>
-            </li>
-            <li class="nav-item {{ request()->is('sessions/*') ? 'active' : '' }}" data-item="sessions">
-                <a class="nav-item-hold" href="/test.html">
-                    <i class="nav-icon i-Administrator"></i>
-                    <span class="nav-text">Sessions</span>
-                </a>
-                <div class="triangle"></div>
-            </li>
-            <li class="nav-item {{ request()->is('others/*') ? 'active' : '' }}" data-item="others">
+            </li> -->
+         
+            <!-- <li class="nav-item {{ request()->is('others/*') ? 'active' : '' }}" data-item="others">
                 <a class="nav-item-hold" href="">
                     <i class="nav-icon i-Double-Tap"></i>
                     <span class="nav-text">Pages</span>
                 </a>
                 <div class="triangle"></div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-item-hold" href="http://demos.ui-lib.com/gull-html-doc/" target="_blank">
-                    <i class="nav-icon i-Safe-Box1"></i>
-                    <span class="nav-text">Doc</span>
-                </a>
-                <div class="triangle"></div>
-            </li>
+            </li> -->
+        
         </ul>
     </div>
 
@@ -484,142 +489,51 @@
         <ul class="childNav" data-parent="uikits">
             <li class="nav-item">
                 <a class="{{ Route::currentRouteName()=='alerts' ? 'open' : '' }}" href="{{route('alerts')}}">
-                    <i class="nav-icon i-Bell1"></i>
-                    <span class="item-name">Alerts</span>
+                    <i class="nav-icon i-Cursor-Click"></i>
+                    <span class="item-name">Provinces</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="{{ Route::currentRouteName()=='accordion' ? 'open' : '' }}" href="{{route('accordion')}}">
-                    <i class="nav-icon i-Split-Horizontal-2-Window"></i>
-                    <span class="item-name">Accordion</span>
+                    <i class="nav-icon i-Cursor-Click "></i>
+                    <span class="item-name">Areas</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="{{ Route::currentRouteName()=='badges' ? 'open' : '' }}" href="{{route('badges')}}">
-                    <i class="nav-icon i-Medal-2"></i>
-                    <span class="item-name">Badges</span>
+                    <i class="nav-icon i-Cursor-Click"></i>
+                    <span class="item-name">Municipalities</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="{{ Route::currentRouteName()=='buttons' ? 'open' : '' }}" href="{{route('buttons')}}">
                     <i class="nav-icon i-Cursor-Click"></i>
-                    <span class="item-name">Buttons</span>
+                    <span class="item-name">Wards</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="{{ Route::currentRouteName()=='bootstrap-tab' ? 'open' : '' }}"
                     href="{{route('bootstrap-tab')}}">
                     <i class="nav-icon i-Cursor-Click"></i>
-                    <span class="item-name">Bootstrap tab</span>
+                    <span class="item-name">Voting Stations</span>
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="{{ Route::currentRouteName()=='cards' ? 'open' : '' }}" href="{{route('cards')}}">
-                    <i class="nav-icon i-Line-Chart-2"></i>
-                    <span class="item-name">Cards</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="{{ Route::currentRouteName()=='cards-metrics' ? 'open' : '' }}"
-                    href="{{route('cards-metrics')}}">
-                    <i class="nav-icon i-ID-Card"></i>
-                    <span class="item-name">Card Metrics</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="{{ Route::currentRouteName()=='carousel' ? 'open' : '' }}" href="{{route('carousel')}}">
-                    <i class="nav-icon i-Video-Photographer"></i>
-                    <span class="item-name">Carousels</span>
-                </a>
-            </li>
-
-            <li class="nav-item">
-                <a class="{{ Route::currentRouteName()=='collapsible' ? 'open' : '' }}" href="{{route('collapsible')}}">
-                    <i class="nav-icon i-Video-Photographer"></i>
-                    <span class="item-name">Collapsibles</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="{{ Route::currentRouteName()=='lists' ? 'open' : '' }}" href="{{route('lists')}}">
-                    <i class="nav-icon i-Belt-3"></i>
-                    <span class="item-name">Lists</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="{{ Route::currentRouteName()=='pagination' ? 'open' : '' }}" href="{{route('pagination')}}">
-                    <i class="nav-icon i-Arrow-Next"></i>
-                    <span class="item-name">Paginations</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="{{ Route::currentRouteName()=='popover' ? 'open' : '' }}" href="{{route('popover')}}">
-                    <i class="nav-icon i-Speach-Bubble-2"></i>
-                    <span class="item-name">Popover</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="{{ Route::currentRouteName()=='progressbar' ? 'open' : '' }}" href="{{route('progressbar')}}">
-                    <i class="nav-icon i-Loading"></i>
-                    <span class="item-name">Progressbar</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="{{ Route::currentRouteName()=='tables' ? 'open' : '' }}" href="{{route('tables')}}">
-                    <i class="nav-icon i-File-Horizontal-Text"></i>
-                    <span class="item-name">Tables</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="{{ Route::currentRouteName()=='tabs' ? 'open' : '' }}" href="{{route('tabs')}}">
-                    <i class="nav-icon i-New-Tab"></i>
-                    <span class="item-name">Tabs</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="{{ Route::currentRouteName()=='tooltip' ? 'open' : '' }}" href="{{route('tooltip')}}">
-                    <i class="nav-icon i-Speach-Bubble-8"></i>
-                    <span class="item-name">Tooltip</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="{{ Route::currentRouteName()=='typography' ? 'open' : '' }}" href="{{route('typography')}}">
-                    <i class="nav-icon i-Letter-Open"></i>
-                    <span class="item-name">Typography</span>
-                </a>
-            </li>
-
-            <li class="nav-item">
-                <a class="{{ Route::currentRouteName()=='modals' ? 'open' : '' }}" href="{{route('modals')}}">
-                    <i class="nav-icon i-Duplicate-Window"></i>
-                    <span class="item-name">Modals</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="{{ Route::currentRouteName()=='NoUislider' ? 'open' : '' }}" href="{{route('NoUislider')}}">
-                    <i class="nav-icon i-Width-Window"></i>
-                    <span class="item-name">Sliders</span>
-                </a>
-            </li>
+           
         </ul>
         <ul class="childNav" data-parent="sessions">
             <li class="nav-item">
-                <a href="{{route('signIn')}}">
+                <a href="/admin/leads">
                     <i class="nav-icon i-Checked-User"></i>
-                    <span class="item-name">Sign in</span>
+                    <span class="item-name">View Leads</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a href="{{route('signUp')}}">
+                <a href="/admin/leads/create">
                     <i class="nav-icon i-Add-User"></i>
-                    <span class="item-name">Sign up</span>
+                    <span class="item-name">Add Leads</span>
                 </a>
             </li>
-            <li class="nav-item">
-                <a href="{{route('forgot')}}">
-                    <i class="nav-icon i-Find-User"></i>
-                    <span class="item-name">Forgot</span>
-                </a>
-            </li>
+           
         </ul>
         <ul class="childNav" data-parent="others">
             <li class="nav-item">
@@ -651,19 +565,7 @@
                     <span class="item-name">User Profile</span>
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="{{ Route::currentRouteName()=='faq' ? 'open' : '' }}" href="{{route('faq')}}" class="open">
-                    <i class="nav-icon i-File-Horizontal"></i>
-                    <span class="item-name">faq</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="{{ Route::currentRouteName()=='starter' ? 'open' : '' }}" href="{{route('starter')}}"
-                    class="open">
-                    <i class="nav-icon i-File-Horizontal"></i>
-                    <span class="item-name">Blank Page</span>
-                </a>
-            </li>
+        
         </ul>
     </div>
     <div class="sidebar-overlay"></div>

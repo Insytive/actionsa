@@ -26610,6 +26610,10 @@ span.fa.fa-chevron-right:before {
   margin: 4px;
 }
 
+.customizer {
+  display: none !important;
+}
+
 .custom-separator {
   border-bottom: 1px dashed #ebedf2;
   margin: 15px 0;

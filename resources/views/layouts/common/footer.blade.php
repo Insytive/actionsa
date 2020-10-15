@@ -3,11 +3,8 @@
 <div class="app-footer">
     <div class="row">
         <div class="col-md-9">
-            <p><strong>ActionSA Persona Registration</strong></p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero quis beatae officia saepe perferendis
-                voluptatum minima eveniet voluptates dolorum, temporibus nisi maxime nesciunt totam repudiandae commodi
-                sequi dolor quibusdam
-                sunt.
+            <p><strong>ActionSA Persona </strong></p>
+            <p>Persona is a software package developed for ActionSA to help manage organizational processes more efficiently. <br> This is currently a work in progress
             </p>
         </div>
     </div>
