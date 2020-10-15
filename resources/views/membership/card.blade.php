@@ -46,7 +46,7 @@
         <small>Bronze</small>
         <hr>
         <p>Email</p>
-        <small>sales@thrivebs.co.za<</small>
+        <small>sales@thrivebs.co.za</small>
         <hr>
         <p>Phone</p>
         <small>081 493 8640</small>
