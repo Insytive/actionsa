@@ -45,7 +45,7 @@
         <p>Plan - Bronze</p>
         <small>Bronze</small>
         <hr>
-        <p>Email/p>
+        <p>Email</p>
         <small>sales@thrivebs.co.za<</small>
         <hr>
         <p>Phone</p>
