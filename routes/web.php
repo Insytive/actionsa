@@ -73,15 +73,15 @@ Route::get('/admin/leads', [AdminLeadsController::class, 'index'])->name('admin.
 
 
 // forms
-// Route::view('forms/basic-action-bar', 'forms.basic-action-bar')->name('basic-action-bar');
-// Route::view('forms/multi-column-forms', 'forms.multi-column-forms')->name('multi-column-forms');
-// Route::view('forms/smartWizard', 'forms.smartWizard')->name('smartWizard');
-// Route::view('forms/tagInput', 'forms.tagInput')->name('tagInput');
-// Route::view('forms/forms-basic', 'forms.forms-basic')->name('forms-basic');
-// Route::view('forms/form-layouts', 'forms.form-layouts')->name('form-layouts');
-// Route::view('forms/form-input-group', 'forms.form-input-group')->name('form-input-group');
-// Route::view('forms/form-validation', 'forms.form-validation')->name('form-validation');
-// Route::view('forms/form-editor', 'forms.form-editor')->name('form-editor');
+Route::view('forms/basic-action-bar', 'forms.basic-action-bar')->name('basic-action-bar');
+Route::view('forms/multi-column-forms', 'forms.multi-column-forms')->name('multi-column-forms');
+Route::view('forms/smartWizard', 'forms.smartWizard')->name('smartWizard');
+Route::view('forms/tagInput', 'forms.tagInput')->name('tagInput');
+Route::view('forms/forms-basic', 'forms.forms-basic')->name('forms-basic');
+Route::view('forms/form-layouts', 'forms.form-layouts')->name('form-layouts');
+Route::view('forms/form-input-group', 'forms.form-input-group')->name('form-input-group');
+Route::view('forms/form-validation', 'forms.form-validation')->name('form-validation');
+Route::view('forms/form-editor', 'forms.form-editor')->name('form-editor');
 
 
 

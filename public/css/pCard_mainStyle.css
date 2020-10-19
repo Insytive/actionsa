@@ -8,12 +8,14 @@ body {
     box-sizing: content-box;
     padding: 0;
     margin: 0;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .pCard_card {
     width: 400px;
-    height: 615px;
-    margin: 50px auto;
+    height: 610px;
+    margin: 15px auto;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
@@ -39,7 +41,7 @@ Back
     left: 0;
     right: 0;
     top: 50%;
-    margin-top: -139px;
+    margin-top: -185px;
     font-weight: 600;
     z-index: 1;
 
@@ -47,6 +49,16 @@ Back
 }
 .pCard_card .pCard_back a {
     text-decoration: none;
+}
+
+
+.pCard_card .pCard_back-content {
+    padding: 0 0 15px 0;
+}
+
+
+.pCard_card .pCard_back-content:not(:last-child) {
+    border-bottom: 2px dashed #ebedf2;
 }
 
 /****************
@@ -57,7 +69,8 @@ UP
     position: absolute;
     width: 100%;
     height: 437px;
-    background-image: url(../images/Image_Profile.png);
+    /* background-image: url(../images/Image_Profile.png); */
+    background-color: #05b615;
     background-position: 50%;
     background-size: cover;
     z-index: 3;
@@ -82,7 +95,19 @@ UP
 
 .pCard_on  .pCard_up {
     height: 100px;
+    background-image: linear-gradient(180deg, #05B615 0%, #1B7D40 100%);
     box-shadow: 0 0 30px #CFD8DC;
+}
+
+.pCard_on  .pCard_up-logo {
+    display: none;
+}
+
+.pCard_up-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
 }
 
 .pCard_card  .pCard_up .pCard_text {
@@ -120,12 +145,10 @@ UP
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     border-radius: 50%;
-    background-color: #ed145b;
-    -webkit-box-shadow: 0px 5px 24px 0px rgba(0, 0, 0, 0.43);
-    -moz-box-shadow: 0px 5px 24px 0px rgba(0, 0, 0, 0.43);
-    -ms-box-shadow: 0px 5px 24px 0px rgba(0, 0, 0, 0.43);
-    -o-box-shadow: 0px 5px 24px 0px rgba(0, 0, 0, 0.43);
-    box-shadow: 0px 5px 24px 0px rgba(0, 0, 0, 0.43);
+    background-image: linear-gradient(180deg, #05B615 0%, #1B7D40 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 392px;
     left: 0;
@@ -148,6 +171,13 @@ UP
     -o-transform: rotate(360deg) scale(.5);
     transform: rotate(360deg) scale(.5);
     top: 470px;
+}
+
+
+.pCard_card  .pCard_up .pCard_add svg {
+    width: 48px;
+    height: 48px;
+    fill: #fff;
 }
 
 /****************
@@ -215,3 +245,9 @@ Down
     font-weight: 700;
     margin-top: 0;
 }
+
+
+
+/* color: white;
+font-size: 38px;
+line-height: 88px */

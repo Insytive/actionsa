@@ -18,12 +18,20 @@
 <div class="pCard_card">
 
     <div class="pCard_up">
+
+        <div class="pCard_up-logo">
+            <img src="{{ asset('images/logo.svg') }}" alt="site logo" >
+        </div>
         <div class="pCard_text">
             <h2>Tshidiso Gumbo</h2>
             <p>ASA-20102305487</p>
         </div>
 
-        <div class="pCard_add"><i class="fa fa-plus"></i></div>
+        <div class="pCard_add">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+            </svg>
+        </div>
     </div>
 
     <div class="pCard_down">
@@ -42,17 +50,24 @@
     </div>
 
     <div class="pCard_back">
-        <p>Plan</p>
-        <small>Bronze - Free</small>
-        <hr>
+        <div class="pCard_back-content">
+            <p>Plan</p>
+            <small>Bronze - Free</small>
+        </div>
+        <div class="pCard_back-content">
         <p>Email</p>
         <small>sales@thrivebs.co.za</small>
-        <hr>
+        </div>
+        
+        <div class="pCard_back-content">
         <p>Phone</p>
         <small>081 493 8640</small>
-        <hr>
+        </div>
+
+        <div class="pCard_back-content">
         <p>Voting Station</p>
         <small>Mosaledi Primary School</small>
+        </div>
     </div>
 
 </div>
