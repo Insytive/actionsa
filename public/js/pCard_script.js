@@ -9,6 +9,7 @@ $(function () {
         superBlock.toggleClass('pCard_on');
         superBlock.find('.pCard_add i').toggleClass('fa-minus');
     });
+
     
 
 });

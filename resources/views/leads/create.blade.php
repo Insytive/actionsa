@@ -19,7 +19,7 @@
                     <!-- start card -->
                     <div class="card">
                         <div class="card-header bg-transparent">
-                            <h3 class="card-title"> Add a new supporter </h3>
+                            <h3 class="card-title"> Add a new lead </h3>
                         </div>
                         <!--begin::form-->
                         <form action="">
@@ -95,14 +95,28 @@
                                     </div>
                                 </div>
 
-                                <div class="form-row">
-                                    <div class="form-group col-md-12 ">
-                                        <input type="text" class="form-control" id="email" placeholder="Type in your address" name="address">
-                                        <small id="passwordHelpBlock" class="ul-form__text form-text ">
+                                <div class="form-row" >
+                                    <div class="form-group col-md-12 " id="AddressFields">
+                                        <input type="text" class="form-control" id="address" placeholder="Search for your address" name="address" class="addrs">
+
+                                        <input type="text" class="form-control" id="CustomAddress" placeholder="Type in your address" name="address">
+
+                                        <small id="passwordHelpBlock" class="ul-form__text form-text " class="addrs">
                                             
                                         </small>
                                     </div>
                                 </div>
+
+                  
+
+
+
+
+                                <div id="divs">
+                   <div id="div1">One</div>
+                   <div id="div2">Two</div>
+                 
+              </div>
 
                                 <div class="custom-separator"></div>
 
@@ -111,17 +125,24 @@
                                     <div class="form-group col-md-12 ">
                                         <label for="votingStation" class="ul-form__label">Voting Station</label>
                                         <input type="text" class="form-control" id="votingStation" placeholder="Please type your voting station address" name="voting_station">
+                                        
+
+                                        <input type="text" class="form-control" id="CustomVotingStation" placeholder="Enter your voting station, nearest school or town" name="voting_station">
+
+                                    
                                         <small id="passwordHelpBlock" class="ul-form__text form-text ">
                                             
                                         </small>
 
                                         <label class="checkbox checkbox-primary">
-                                        <input type="checkbox">
+                                        <input type="checkbox" class="vStationToggle">
                                             <span>I could not find my voting station </span>
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
                                 </div>
+
+                                
 
                                 <div class="custom-separator"></div>
                                 <div class="form-row">
@@ -167,7 +188,9 @@
 
 
     <script src="{{ asset('assets/js/vendor/datatables.min.js') }}"></script>
+    <script src="{{ asset('assets/js/es5/custom.js') }}"></script>
     <!-- page script -->
+    <script src="{{ asset('assets/js/tooltip.script.js') }}"></script>
     <script src="{{ asset('assets/js/tooltip.script.js') }}"></script>
 
     <script>

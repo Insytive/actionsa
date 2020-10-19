@@ -29080,6 +29080,15 @@ span.fa.fa-chevron-right:before {
   margin: 4px;
 }
 
+#CustomVotingStation,
+#CustomAddress {
+  display: none;
+}
+
+#divs div {
+  display: none;
+}
+
 .customizer {
   display: none !important;
 }
