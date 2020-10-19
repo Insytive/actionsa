@@ -18,7 +18,7 @@
                             <i class="i-Add-User"></i>
                             <div class="content">
                                 <p class="text-muted mt-2 mb-0 text-left">Total Leads Registered</p>
-                                <p class="text-primary text-24 line-height-1 mb-2">205</p>
+                                <p class="text-primary text-24 line-height-1 mb-2">{{ $leadCount }}</p>
                             </div>
                         </div>
                     </div>
@@ -30,7 +30,7 @@
                             <i class="i-Map2"></i>
                             <div class="content">
                                 <p class="text-muted mt-2 mb-0 text-left">Unknown Stations</p>
-                                <p class="text-primary text-24 line-height-1 mb-2">4221</p>
+                                <p class="text-primary text-24 line-height-1 mb-2">{{ $stations }}</p>
                             </div>
                         </div>
                     </div>
@@ -77,7 +77,7 @@
                             <div class="card card-chart-bottom o-hidden mb-4">
                                 <div class="card-body">
                                     <div class="text-muted">Last Month - Recruits</div>
-                                    <p class="mb-4 text-primary text-24">40250</p>
+                                    <p class="mb-4 text-primary text-24">{{ $totalRecruitedMTD }}</p>
                                 </div>
                                 <div id="echart1" style="height: 260px;"></div>
                             </div>
@@ -87,7 +87,7 @@
                             <div class="card card-chart-bottom o-hidden mb-4">
                                 <div class="card-body">
                                     <div class="text-muted">Last Week - Recruits</div>
-                                    <p class="mb-4 text-warning text-24">10250</p>
+                                    <p class="mb-4 text-warning text-24">{{ $totalRecruitedWTD }}</p>
                                 </div>
                                 <div id="echart2" style="height: 260px;"></div>
                             </div>
@@ -115,7 +115,7 @@
                                                     <th scope="col">#</th>
                                                     <th scope="col">Name</th>
                                                     <th scope="col">Avatar</th>
-                                                    <th scope="col">Email</th>
+                                                    <th scope="col">Phone</th>
                                                     <th scope="col">Status</th>
                                                     <th scope="col">Action</th>
                                                 </tr>
@@ -126,14 +126,14 @@
 
                                                 <tr>
                                                     <th scope="row">1</th>
-                                                    <td>$lead->firstname $lead->lastname</td>
+                                                    <td>{{ $lead->first_name }} {{ $lead->last_name }}</td>
                                                     <td>
 
                                                         <img class="rounded-circle m-0 avatar-sm-table " src="/assets/images/faces/1.jpg" alt="">
 
                                                     </td>
 
-                                                    <td>$lead->email</td>
+                                                    <td>{{ $lead->phone }}</td>
                                                     <td><span class="badge badge-success">Active</span></td>
                                                     <td>
                                                         <a href="#" class="text-success mr-2">

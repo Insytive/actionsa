@@ -414,7 +414,7 @@ ul {
  */
 
 html {
-  font-family: Nunito, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 1 */
+  font-family: Futura Std, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 1 */
   line-height: 1.5; /* 2 */
 }
 
@@ -13371,7 +13371,7 @@ video {
 }
 
 .font-sans {
-  font-family: Nunito, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Futura Std, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .font-serif {
@@ -35191,6 +35191,54 @@ video {
           animation: bounce 1s infinite;
 }
 
+@font-face {
+  font-family: "Futura Std";
+
+  src: url(/fonts/FuturaStd-Book.woff?5646a4241e741100b00764c4b0688944) format("woff");
+
+  font-weight: normal;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura Std";
+
+  src: url(/fonts/FuturaStd-Bold.woff?9bb46b9357831d13ad8441e11445a641) format("woff");
+
+  font-weight: bold;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura Std";
+
+  src: url(/fonts/FuturaStd-Medium.woff?44103330175b831666c67ef552d03899) format("woff");
+
+  font-weight: 500;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura Std";
+
+  src: url(/fonts/FuturaStd-Heavy.woff?f3e66dc296afeb67384870071d89872b) format("woff");
+
+  font-weight: 900;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
 #custom-card {
   box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.4);
   color: #fff !important;
@@ -35200,6 +35248,26 @@ video {
   background-position: center;
   background-repeat: no-repeat;
   border: none;
+  transition: all 0.2s ease;
+  transform: translateY(0);
+  position: relative;
+}
+
+#custom-card::before {
+  content: "";
+  transition: all .3s ease;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  left: 12px;
+  bottom: 12px;
+  border-radius: 16px;
+  border: 1px solid #fff;
+}
+
+#custom-card:hover {
+  cursor: pointer;
+  box-shadow: 0 10px 12px -7px rgba(0, 0, 0, 0.4);
 }
 
 .card-2 {
@@ -35222,6 +35290,10 @@ video {
   background-position: center;
   background-repeat: no-repeat;
   border: none;
+}
+
+.card-3:hover {
+  cursor: not-allowed !important;
 }
 
 #custom-card {
@@ -35328,7 +35400,104 @@ a:active {
   border: 2px solid #05b615 !important;
 }
 
-/* Gear customiser */
+/* The overlay effect with black background */
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(
+        0,
+        0,
+        0,
+        0.9
+    ); /* Black with a little bit see-through */
+}
+
+/* The content */
+
+.overlay-content {
+  position: relative;
+  top: 46%;
+  width: 80%;
+  text-align: center;
+  margin-top: 30px;
+  margin: auto;
+}
+
+/* Close button */
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  cursor: pointer;
+  color: white;
+}
+
+.overlay .closebtn:hover {
+  color: #ccc;
+}
+
+/* Style the search field */
+
+.overlay input[type="text"] {
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  float: left;
+  width: 80%;
+  background: white;
+}
+
+.overlay input[type="text"]:hover,
+.overlay input[type="text"]:active,
+.overlay input[type="text"]:focus {
+  background: #f1f1f1;
+  outline: none;
+  border: unset;
+}
+
+/* Style the submit button */
+
+.overlay button {
+  float: left;
+  /* width: 20%; */
+  padding: 19px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.overlay button:hover {
+  background: #bbb;
+}
+
+.svg__search svg {
+  transition: all 0.2s ease;
+}
+
+.svg__search svg:hover,
+.svg__search svg:active,
+.svg__search svg:focus {
+  fill: #05b615;
+  cursor: pointer;
+}
+
+.iconfont {
+  font-family: "btfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 @media (min-width: 640px) {
   .sm\:container {
@@ -47871,7 +48040,7 @@ a:active {
   }
 
   .sm\:font-sans {
-    font-family: Nunito, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Futura Std, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .sm\:font-serif {
@@ -82167,7 +82336,7 @@ a:active {
   }
 
   .md\:font-sans {
-    font-family: Nunito, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Futura Std, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .md\:font-serif {
@@ -116463,7 +116632,7 @@ a:active {
   }
 
   .lg\:font-sans {
-    font-family: Nunito, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Futura Std, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .lg\:font-serif {
@@ -150759,7 +150928,7 @@ a:active {
   }
 
   .xl\:font-sans {
-    font-family: Nunito, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Futura Std, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .xl\:font-serif {
@@ -172513,4 +172682,3 @@ a:active {
             animation: bounce 1s infinite;
   }
 }
-

@@ -43,14 +43,16 @@ class AdminDashboardController extends Controller
 
         return view('dashboard.dashboardv1', compact(
             'leads',
-            'stations',
+            'leadCount',
             'total_leads_by_provinces',
-            'totalSelfRegistered',
             'totalRecruited',
+            'totalRecruitedLastWeek',
+            'totalRecruitedWTD',
+            'totalRecruitedMTD',
             'totalRecruitedLastMonth',
-            'totalRecruitedLastWeek'
-        ));
-
+            'totalSelfRegistered',
+            'stations'
+            ));
 //        echo '<pre>';
 //        print_r($stations);
 //        print_r($total_leads_by_provinces);

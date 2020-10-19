@@ -1,263 +1,171 @@
 @extends('layouts.master')
-@section('before-css')
-
+@section('page-css')
+    <link rel="stylesheet" href="{{ asset('assets/styles/vendor/datatables.min.css') }}">
 
 @endsection
 
 @section('main-content')
-           <div class="breadcrumb">
-                <h1>Admin</h1>
-                <ul>
-                    <li><a href="">Leads</a></li>
-                    <li>Create</li>
-                </ul>
-            </div>
 
-            <div class="separator-breadcrumb border-top"></div>
-
-            <div class="row">
-
-            <div class="col-md-4">
-            <div class="card mb-4">
-                <div class="card-header bg-transparent">
-                    <h3 class="card-title"> Join option </h3>
-                </div>
+    <div class="breadcrumb">
+        <h1>Leads</h1>
+        <ul>
+            <li><a href="">List</a></li>
+            <li>Captured</li>
+        </ul>
+    </div>
+    <div class="separator-breadcrumb border-top"></div>
 
 
-                <div class="card-body">
-               
-                    <div class="form-group mb-3">
-                        <div class="ul-form__radio">
-                            <label class=" ul-radio__position radio radio-primary form-check-inline">
-                                <input type="radio" name="radio" value="supporter" checked>
-                                <span class="ul-form__radio-font">Add Supporter</span>
-                                <span class="checkmark"></span>
-                            </label> 
-                            <label class="ul-radio__position radio radio-primary">
-                                <input type="radio" name="radio" value="member">
-                                <span class="ul-form__radio-font">Add Member </span>
-                                <span class="checkmark"></span>
-                            </label>
-                        </div>
+    <section class="contact-list">
+        <div class="row">
+            <div class="col-md-12 mb-4">
+                <div class="card text-left">
+                    <div class="card-header text-right bg-transparent">
+                        <button type="button" data-toggle="modal" data-target=".bd-example-modal-lg" class="btn btn-primary btn-md m-1"><i class="i-Add-User text-white mr-2"></i> Add Supporter</button>
+                        <button type="button" data-toggle="modal" data-target=".bd-example-modal-lg" class="btn btn-danger btn-md m-1"><i class="i-Add-User text-white mr-2"></i> Add Member</button>
                     </div>
-                
-                </div> <!-- ./card body -->
-
-            </div>
-            </div> 
-            <!-- ./options -->
-                <div class="col-md-8">
-                
-                    <div class="card mb-4">
-                    <div class="card-header bg-transparent">
-                        <h3 class="card-title"> Add a new supporter</h3>
-                    </div>
-                        <div class="card-body">
-                            <form class="needs-validation" novalidate>
-                                <div class="form-row">
-                                <div class="col-md-12">
-                                        <label for="validationCustom01">ID Number</label>
-                                        <input type="text" class="form-control" id="validationCustom01" placeholder="ID Number" name="id_number" required>
-                                        <div class="valid-feedback">
-                                            Looks good!
-                                        </div>
-
-                                        <div class="invalid-feedback">
-                                            Please fill out this field.
-                                        </div>
-                                    </div>
-                                </div> <hr>
-                                <div class="form-row">
-                                    <div class="col-md-6 mb-3">
-                                        <label for="validationCustom01">First name</label>
-                                        <input type="text" name="first_name" class="form-control" id="validationCustom01" placeholder="First name"  required>
-                                        <div class="valid-feedback">
-                                            Looks good!
-                                        </div>
-
-                                        <div class="invalid-feedback">
-                                            Please fill out this field.
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 mb-3">
-                                        <label for="validationCustom02">Last name</label>
-                                        <input type="text" name="last_name" class="form-control" id="validationCustom02" placeholder="Last name"  required>
-                                        <div class="valid-feedback">
-                                            Looks good!
-                                        </div>
-
-                                        <div class="invalid-feedback">
-                                            Please fill out this field.
-                                        </div>
-                                    </div>
-                                 
-                                </div>
-                                <div class="form-row">
-                                    <div class="col-md-6 mb-3">
-                                        <label for="validationCustom03">Email</label>
-                                        <input type="text" name="email" class="form-control" id="validationCustom03" placeholder="Email Address">
-                                       
-                                    </div>    
-                                
-
-                                    <div class="col-md-6 mb-3">
-                                        <label for="validationCustom04">Phone</label>
-                                        <input type="text" name="phone" class="form-control" id="validationCustom04" placeholder="phone" required>
-
-                                    </div>    
-                                </div>
-                 
-                                <div class="form-row">
-                                    <div class="form-group col-md-6 mb-3">
-                                        <label for="i" id="address" class="ul-form__label">Address</label>
-                                        <div class="ul-form__radio-inline">
-                                            <label class=" ul-radio__position radio radio-primary form-check-inline">
-                                                <input type="radio" id="address" name="address"  checked required> 
-                                                <span class="ul-form__radio-font">Search for address</span>
-                                                <span class="checkmark"></span>
-                                            </label>
-                                            <label class="ul-radio__position radio radio-primary">
-                                                <input type="radio" name="address" value="0">
-                                                <span class="ul-form__radio-font">I will enter my own address</span>
-                                                <span class="checkmark"></span>
-                                            </label>
-                                        </div>
-                                        
-                                    </div>
-                               </div>
-                               
-
-                               
-
-                        <!-- Address inputs -->
-                
-                            <div class="form-row">
-                                <div class="col-md-12 mb-3">
-                                    <div class="input-right-icon">
-                                        <input type="text" name="which-dog" class="form-control" id="choice-animals-dogs" placeholder="Please type your address" data-require-pair="address"  required>
-
-
-                                        <span class="span-right-input-icon">
-                                            <i class="ul-form__icon i-Map-Marker"></i>
-                                        </span>
-
-                                    </div>
-                                </div>  
-                            
-
-                        </div>
-
-                        <!-- end:Address inputs -->
-    
-
-                        <div class="form-row">
-                            <div class="form-group col-md-6 mb-3">
-                                <label for="inputvoting" class="ul-form__label">Voting Station</label>
-                                <div class="ul-form__radio-inline">
-                                    <label class=" ul-radio__position radio radio-primary form-check-inline">
-                                        <input type="radio" id="voting_station" name="voting_station" value="1" checked>
-                                        <span class="ul-form__radio-font">Search for voting station</span>
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="ul-radio__position radio radio-primary">
-                                        <input type="radio" id="voting_station" name="voting_station" value="0">
-                                        <span class="ul-form__radio-font">I could not find my voting station</span>
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <!-- voting station inputs -->
-
-                        <div class="form-row">
-                                <div class="col-md-12 mb-3">
-                                    <div class="input-right-icon">
-                                        <input type="text" class="form-control" id="inputaddress" placeholder="Please type your voting station address" required>
-                                        <!-- <span class="span-right-input-icon">
-                                            <i class="ul-form__icon i-Map-Marker"></i>
-                                        </span> -->
-
-                                        <div class="valid-feedback">
-                                            Looks good!
-                                        </div>
-
-                                        <div class="invalid-feedback">
-                                            Please fill out this field.
-                                        </div>
-                                    </div>
-                                </div>  
-                            </div>
-
-                        <!-- end:Voting station inputs -->
-
-                            <div class="form-row">
-                                <div class="form-group col-md-6 mb-3">
-                                    <label for="inputftvoter" class="ul-form__label">Are you a first time voter?</label>
-                                    <div class="ul-form__radio">
-                                        <label class=" ul-radio__position radio radio-primary form-check-inline">
-                                            <input type="radio" id="first_time_voter" name="first_time_voter" value="1" checked>
-                                            <span class="ul-form__radio-font">Yes</span>
-                                            <span class="checkmark"></span>
-                                        </label> 
-                                        <label class="ul-radio__position radio radio-primary">
-                                            <input type="radio" id="first_time_voter" name="first_time_voter" value="0">
-                                            <span class="ul-form__radio-font">No</span>
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="form-group">
-                                <div class="col-md-12 mb-3" style=" padding: unset;">
-                                    <label class="checkbox checkbox-primary" required>
-                                        <input type="checkbox" name="terms_conditions" >
-                                        <span>I hereby consent and agree to the Interim Constitition of ActionSA</span>
-                                        <span class="checkmark"></span>
-
-
-                                    </label>
-                                    <div class="invalid-feedback">
-                                            Please fill out this field.
-                                        </div>
-
-                                </div>
-                            </div>
-
-
-                              <div class="card-footer">
-                                    <div class="mc-footer">
-                                        <div class="row">
-                                            <div class="col-lg-12 text-right">
-                                                <button type="submit" class="btn  btn-primary m-1">Save</button>
-                                                <button type="button" class="btn btn-outline-secondary m-1">Cancel</button>
+                    <!-- begin::modal -->
+                    <div class="ul-card-list__modal">
+                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-group row">
+                                                <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+                                                <div class="col-sm-10">
+                                                    <input type="email" class="form-control" id="inputName" placeholder="Name">
+                                                </div>
                                             </div>
-                                        </div>
+                                            <div class="form-group row">
+                                                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                                                <div class="col-sm-10">
+                                                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="" class="col-sm-2 col-form-label">Phone</label>
+                                                <div class="col-sm-10">
+                                                    <input type="number" class="form-control" id="" placeholder="number....">
+                                                </div>
+                                            </div>
+                                            <fieldset class="form-group">
+                                                <div class="row">
+                                                    <div class="col-form-label col-sm-2 pt-0">Radios</div>
+                                                    <div class="col-sm-10">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked="">
+                                                            <label class="form-check-label ml-3" for="gridRadios1">
+                                                                First radio
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                                            <label class="form-check-label ml-3" for="gridRadios2">
+                                                                Second radio
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check disabled ">
+                                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled="">
+                                                            <label class="form-check-label ml-3" for="gridRadios3">
+                                                                Third disabled radio
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                            <div class="form-group row">
+                                                <div class="col-sm-2">Checkbox</div>
+                                                <div class="col-sm-10">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                                        <label class="form-check-label ml-3" for="gridCheck1">
+                                                            Example checkbox
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <div class="col-sm-10">
+
+                                                    <button type="submit" class="btn btn-success">Update</button>
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
-                           
-                            </form>
+                            </div>
                         </div>
                     </div>
-                </div>
+                    <!-- end::modal -->
 
+                    <div class="card-body">
+
+                        <div class="table-responsive">
+                            <table id="ul-contact-list" class="display table " style="width:100%">
+                                <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Surname</th>
+                                    <th>Phone</th>
+                                    <th>Type</th>
+                                    <th>Joining Date</th>
+                                    <th>Voting Station</th>
+                                    <th>Action</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                @foreach($leads as $lead)
+
+                                <tr>
+                                    <td>
+                                        <a href="">
+                                            <div class="ul-widget-app__profile-pic">
+                                                <img class="profile-picture avatar-sm mb-2 rounded-circle img-fluid" src="{{ asset('assets/images/faces/1.jpg') }}" alt="">
+                                                {{ $lead->first_name }}
+                                            </div>
+
+                                        </a>
+                                    </td>
+                                    <td>{{ $lead->last_name }}</td>
+                                    <td>{{ $lead->phone }}</td>
+                                    <td><a href="#" class="badge badge-primary m-2 p-2">{{ $lead->is_member }}</a></td>
+                                    <td>{{ $lead->created_at->format('Y.m.d') }}</td>
+                                    <td>{{ $lead->station->name }}</td>
+                                    <td>
+                                        <a href="" class="ul-link-action text-success"  data-toggle="tooltip" data-placement="top" title="Edit">
+                                            <i class="i-Edit"></i>
+                                        </a>
+                                        <a href="/admin/leads/delete/{{$lead->id}}" class="ul-link-action text-danger mr-1"  data-toggle="tooltip" data-placement="top" title="Want To Delete !!!">
+                                            <i class="i-Eraser-2"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                @endforeach
+                                </tbody>
+
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
+
+
 
 @endsection
 
 @section('page-js')
 
 
+    <script src="{{ asset('assets/js/vendor/datatables.min.js') }}"></script>
+    <!-- page script -->
+    <script src="{{ asset('assets/js/tooltip.script.js') }}"></script>
 
-
-@endsection
-
-@section('bottom-js')
-
- <script src="{{asset('assets/js/form.validation.script.js')}}"></script>
-
-
+    <script>
+        $('#ul-contact-list').DataTable();
+    </script>
 @endsection
