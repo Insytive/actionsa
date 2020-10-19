@@ -10,149 +10,154 @@
         <h1>Leads</h1>
         <ul>
             <li><a href="">List</a></li>
-            <li>Captured</li>
+            <li>Create</li>
         </ul>
     </div>
     <div class="separator-breadcrumb border-top"></div>
 
 
-    <section class="contact-list">
-        <div class="row">
-            <div class="col-md-12 mb-4">
-                <div class="card text-left">
-                    <div class="card-header text-right bg-transparent">
-                        <button type="button" data-toggle="modal" data-target=".bd-example-modal-lg" class="btn btn-primary btn-md m-1"><i class="i-Add-User text-white mr-2"></i> Add Supporter</button>
-                        <button type="button" data-toggle="modal" data-target=".bd-example-modal-lg" class="btn btn-danger btn-md m-1"><i class="i-Add-User text-white mr-2"></i> Add Member</button>
-                    </div>
-                    <!-- begin::modal -->
-                    <div class="ul-card-list__modal">
-                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-body">
-                                        <form>
-                                            <div class="form-group row">
-                                                <label for="inputName" class="col-sm-2 col-form-label">Name</label>
-                                                <div class="col-sm-10">
-                                                    <input type="email" class="form-control" id="inputName" placeholder="Name">
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                                                <div class="col-sm-10">
-                                                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <label for="" class="col-sm-2 col-form-label">Phone</label>
-                                                <div class="col-sm-10">
-                                                    <input type="number" class="form-control" id="" placeholder="number....">
-                                                </div>
-                                            </div>
-                                            <fieldset class="form-group">
-                                                <div class="row">
-                                                    <div class="col-form-label col-sm-2 pt-0">Radios</div>
-                                                    <div class="col-sm-10">
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked="">
-                                                            <label class="form-check-label ml-3" for="gridRadios1">
-                                                                First radio
-                                                            </label>
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                                                            <label class="form-check-label ml-3" for="gridRadios2">
-                                                                Second radio
-                                                            </label>
-                                                        </div>
-                                                        <div class="form-check disabled ">
-                                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled="">
-                                                            <label class="form-check-label ml-3" for="gridRadios3">
-                                                                Third disabled radio
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </fieldset>
-                                            <div class="form-group row">
-                                                <div class="col-sm-2">Checkbox</div>
-                                                <div class="col-sm-10">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" id="gridCheck1">
-                                                        <label class="form-check-label ml-3" for="gridCheck1">
-                                                            Example checkbox
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <div class="col-sm-10">
+                    <!-- start card -->
+                    <div class="card">
+                        <div class="card-header bg-transparent">
+                            <h3 class="card-title"> Add a new supporter </h3>
+                        </div>
+                        <!--begin::form-->
+                        <form action="">
+                            <div class="card-body">
 
-                                                    <button type="submit" class="btn btn-success">Update</button>
-                                                </div>
-                                            </div>
-                                        </form>
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputid" class="ul-form__label">ID Number</label>
+                                        <input type="text" class="form-control" id="inputid" placeholder="Enter ID Number">
+                                        <small id="passwordHelpBlock" class="ul-form__text form-text ">
+                                            
+                                        </small>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputContact" class="ul-form__label">Contact Number</label>
+                                        <input type="text" class="form-control" id="inputContact" placeholder="Enter Contact Number" name="phone">
+                                        
+                                    </div>
+                                </div>
+
+
+                                <div class="custom-separator"></div>
+
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputfirstname" class="ul-form__label">First Name</label>
+                                            <input type="text" class="form-control" name="first_name" id="firstname" placeholder="Enter your first name">
+                                        <small id="passwordHelpBlock" class="ul-form__text form-text ">
+                                            
+                                        </small>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="lastname" class="ul-form__label">Last Name</label>
+                                        <input type="text" class="form-control" id="lastname" placeholder="Enter your last name">
+                                        <small id="passwordHelpBlock" class="ul-form__text form-text ">
+                                            
+                                        </small>
+                                    </div>
+                                </div>
+
+
+                                <div class="custom-separator"></div>
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-12 ">
+                                        <label for="email" class="ul-form__label">Email</label>
+                                        <input type="text" class="form-control" id="email" placeholder="Enter your Email">
+                                        <small id="passwordHelpBlock" class="ul-form__text form-text ">
+                                            
+                                        </small>
+                                    </div>
+                                </div>
+
+                                <div class="custom-separator"></div>
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-6 ">
+                                        <label for="address" class="ul-form__label">Address</label>
+                                        <div class="ul-form__radio-block">
+                                            <label class=" ul-radio__position radio radio-primary form-check-inline">
+                                                <input type="radio" name="address" value="1" checked>
+                                                <span class="ul-form__radio-font">Search for address</span>
+                                                <span class="checkmark"></span>
+                                            </label> 
+                                            <label class="ul-radio__position radio radio-primary">
+                                                <input type="radio" name="address" value="0">
+                                                <span class="ul-form__radio-font">I will enter my own address</span>
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-12 ">
+                                        <input type="text" class="form-control" id="email" placeholder="Type in your address" name="address">
+                                        <small id="passwordHelpBlock" class="ul-form__text form-text ">
+                                            
+                                        </small>
+                                    </div>
+                                </div>
+
+                                <div class="custom-separator"></div>
+
+                                
+                                <div class="form-row">
+                                    <div class="form-group col-md-12 ">
+                                        <label for="votingStation" class="ul-form__label">Voting Station</label>
+                                        <input type="text" class="form-control" id="votingStation" placeholder="Please type your voting station address" name="voting_station">
+                                        <small id="passwordHelpBlock" class="ul-form__text form-text ">
+                                            
+                                        </small>
+
+                                        <label class="checkbox checkbox-primary">
+                                        <input type="checkbox">
+                                            <span>I could not find my voting station </span>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="custom-separator"></div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6 ">
+                                        <label for="address" class="ul-form__label">Are you a first time voter?</label>
+                                        <div class="ul-form__radio-block">
+                                            <label class=" ul-radio__position radio radio-primary form-check-inline">
+                                                <input type="radio" name="first_time_voter" value="1" checked>
+                                                <span class="ul-form__radio-font">Yes</span>
+                                                <span class="checkmark"></span>
+                                            </label> 
+                                            <label class="ul-radio__position radio radio-primary">
+                                                <input type="radio" name="first_time_voter" value="0">
+                                                <span class="ul-form__radio-font">No</span>
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="card-footer">
+                                <div class="mc-footer">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <button type="button" class="btn  btn-primary m-1">Save</button>
+                                            <button type="button" class="btn btn-outline-secondary m-1">Cancel</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </form>
+
+                        <!-- end::form -->
                     </div>
-                    <!-- end::modal -->
-
-                    <div class="card-body">
-
-                        <div class="table-responsive">
-                            <table id="ul-contact-list" class="display table " style="width:100%">
-                                <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Surname</th>
-                                    <th>Phone</th>
-                                    <th>Type</th>
-                                    <th>Joining Date</th>
-                                    <th>Voting Station</th>
-                                    <th>Action</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                @foreach($leads as $lead)
-
-                                <tr>
-                                    <td>
-                                        <a href="">
-                                            <div class="ul-widget-app__profile-pic">
-                                                <img class="profile-picture avatar-sm mb-2 rounded-circle img-fluid" src="{{ asset('assets/images/faces/1.jpg') }}" alt="">
-                                                {{ $lead->first_name }}
-                                            </div>
-
-                                        </a>
-                                    </td>
-                                    <td>{{ $lead->last_name }}</td>
-                                    <td>{{ $lead->phone }}</td>
-                                    <td><a href="#" class="badge badge-primary m-2 p-2">{{ $lead->is_member }}</a></td>
-                                    <td>{{ $lead->created_at->format('Y.m.d') }}</td>
-                                    <td>{{ $lead->station->name }}</td>
-                                    <td>
-                                        <a href="" class="ul-link-action text-success"  data-toggle="tooltip" data-placement="top" title="Edit">
-                                            <i class="i-Edit"></i>
-                                        </a>
-                                        <a href="/admin/leads/delete/{{$lead->id}}" class="ul-link-action text-danger mr-1"  data-toggle="tooltip" data-placement="top" title="Want To Delete !!!">
-                                            <i class="i-Eraser-2"></i>
-                                        </a>
-                                    </td>
-                                </tr>
-
-                                @endforeach
-                                </tbody>
-
-                            </table>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                    <!-- end card -->
 
 
 

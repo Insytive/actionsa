@@ -68,7 +68,8 @@ Route::group(['middleware' => 'auth:sanctum', 'verified'], function () {
     Route::post('admin/leads/save', [AdminLeadsController::class, 'store']);
 });
 
-Route::get('/admin/leads/create', [AdminLeadsController::class, 'create']);
+// Route::get('/admin/leads/create', [AdminLeadsController::class, 'create']);
+Route::view('admin/leads/create', 'leads.create')->name('adminCreate');
 Route::get('/admin/leads', [AdminLeadsController::class, 'index'])->name('admin.leads.index');
 
 
